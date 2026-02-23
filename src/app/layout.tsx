@@ -5,6 +5,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { RetellWidget } from "@/components/RetellWidget";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -46,6 +47,9 @@ export default function RootLayout({
         </main>
         {/* <SiteFooter /> */}
 
+        {/* Retell AI Voice Agent Widget */}
+        <RetellWidget />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -56,7 +60,7 @@ export default function RootLayout({
               "image": "https://homeprosgroup.com/logo.png",
               "@id": "https://homeprosgroup.com",
               "url": "https://homeprosgroup.com/spruce-grove-furnace-cleaning-by-home-pros-group/",
-              "telephone": "780-932-7337",
+              "telephone": "+1 (825) 435-9977",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Spruce Grove",

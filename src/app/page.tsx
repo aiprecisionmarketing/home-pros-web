@@ -127,15 +127,15 @@ export default function Home() {
       {/* URGENCY TICKER */}
       <div className="ticker-wrap">
         <div className="ticker-track">
-          <span>⚡ $345 Flat Rate — ALL registers included, zero vent counting</span>
+          <span>⚡ Flat Rate Cleaning — ALL registers included, zero vent counting</span>
           <span>✓ 100% Satisfaction Guaranteed or we return FREE</span>
-          <span>📞 Call Now: 780-932-7337 — 7 days a week</span>
+          <span>📞 Call Now: +1 (825) 435-9977 — Get Your Free Quote</span>
           <span>💰 Other companies charge per vent — we never do</span>
           <span>🏠 Serving Spruce Grove · Stony Plain · Greater Edmonton</span>
-          <span>⚡ $345 Flat Rate — ALL registers included, zero vent counting</span>
+          <span>⚡ Transparent Pricing — No hidden fees, no surprises</span>
           <span>✓ 100% Satisfaction Guaranteed or we return FREE</span>
           <span className="cursor-pointer hover:underline font-bold" onClick={() => setIsConciergeOpen(true)}>🤖 Tap to Speak with AI Agent — 24/7 Support</span>
-          <span>💰 Other companies charge per vent — we never do</span>
+          <span>💰 Honest flat-rate pricing — call for your custom quote</span>
           <span>🏠 Serving Spruce Grove · Stony Plain · Greater Edmonton</span>
         </div>
       </div>
@@ -165,8 +165,8 @@ export default function Home() {
             <a className="text-charcoal text-sm font-semibold hover:text-primary transition-colors" href="#process">
               Process
             </a>
-            <a className="text-charcoal text-sm font-semibold hover:text-primary transition-colors" href="#pricing">
-              Pricing
+            <a className="text-charcoal text-sm font-semibold hover:text-primary transition-colors" href="/blog">
+              Blog
             </a>
             <a className="text-charcoal text-sm font-semibold hover:text-primary transition-colors" href="#reviews">
               Reviews
@@ -192,7 +192,7 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1.5 rounded-full w-fit">
                 <span className="material-symbols-outlined text-sm">verified</span>
                 <span className="text-xs font-bold uppercase tracking-wider">
-                  Spruce Grove's Flat-Rate Cleaning Specialists
+                  Spruce Grove's Trusted Flat-Rate Specialists Since 2018
                 </span>
               </div>
               <div className="flex flex-col gap-4">
@@ -207,29 +207,31 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 items-center">
+                <a
+                  href="tel:18254359977"
+                  className="flex min-w-[220px] cursor-pointer items-center justify-center gap-2 rounded-xl h-14 px-8 bg-primary text-white text-lg font-bold shadow-xl shadow-primary/30 hover:scale-105 hover:bg-red-700 transition-all active:scale-95"
+                >
+                  <span className="material-symbols-outlined">phone</span> Get Your Free Quote
+                </a>
                 <button
                   onClick={() => setIsConciergeOpen(true)}
-                  className="flex min-w-[200px] cursor-pointer items-center justify-center gap-2 rounded-xl h-14 px-8 bg-primary text-white text-lg font-bold shadow-xl shadow-primary/30 hover:scale-105 hover:bg-red-700 transition-all active:scale-95"
+                  className="flex min-w-[200px] cursor-pointer items-center justify-center gap-2 rounded-xl h-14 px-8 bg-charcoal text-white text-lg font-bold shadow-xl hover:scale-105 hover:bg-slate-800 transition-all active:scale-95"
                 >
                   <span className="material-symbols-outlined">smart_toy</span> Speak to Agent
                 </button>
-                <div className="flex flex-col">
-                  <span className="text-3xl font-black text-charcoal tracking-tight leading-none">$345 Flat Rate</span>
-                  <span className="text-sm text-slate-500 font-medium">All registers included. Zero hidden fees.</span>
-                </div>
               </div>
               <div className="flex flex-wrap gap-5 pt-2">
                 <div className="flex items-center gap-1.5 text-sm text-slate-600">
                   <span className="material-symbols-outlined text-primary text-base filled">star</span>
-                  <span className="font-semibold">4.9 ★ Google</span>
+                  <span className="font-semibold">4.9 ★ Google (200+ Reviews)</span>
                 </div>
                 <div className="flex items-center gap-1.5 text-sm text-slate-600">
                   <span className="material-symbols-outlined text-primary text-base">verified_user</span>
-                  <span>WCB Insured</span>
+                  <span>WCB Insured & Bonded</span>
                 </div>
                 <div className="flex items-center gap-1.5 text-sm text-slate-600">
-                  <span className="material-symbols-outlined text-primary text-base">calendar_month</span>
-                  <span>7-Day Availability</span>
+                  <span className="material-symbols-outlined text-primary text-base">business</span>
+                  <span>Locally Owned Since 2018</span>
                 </div>
                 <div className="flex items-center gap-1.5 text-sm text-slate-600">
                   <span className="material-symbols-outlined text-primary text-base">thumb_up</span>
@@ -241,12 +243,13 @@ export default function Home() {
               <div className="absolute -inset-4 bg-primary/5 rounded-3xl blur-2xl transition-all group-hover:bg-primary/10"></div>
               <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                 <Image
-                  alt="Home Pros Group furnace cleaning technician at work in Spruce Grove"
+                  alt="Home Pros Group furnace cleaning truck and technician in Spruce Grove"
                   className="object-cover"
-                  src="/furnace-clean-real.jpg"
+                  src="https://homeprosgroup.com/wp-content/uploads/2018/05/duct-cleaning-companies-near-Edmonton-1-1024x683.jpg"
                   fill
                   priority
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-charcoal text-white p-5 rounded-2xl shadow-2xl flex items-center gap-4 border border-slate-700">
@@ -273,9 +276,9 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center w-full">
               <div className="flex flex-col items-center">
                 <p className="text-primary text-4xl font-black leading-none" id="counter-homes" ref={counterRef}>
-                  0+
+                  1200+
                 </p>
-                <p className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-1">Homes Cleaned</p>
+                <p className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-1">Homes Serviced</p>
               </div>
               <div className="flex flex-col items-center">
                 <p className="text-primary text-4xl font-black leading-none">
@@ -285,15 +288,15 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center">
                 <p className="text-primary text-4xl font-black leading-none">
-                  4.9<span className="text-2xl text-primary">+</span>
+                  8<span className="text-2xl">+</span>
                 </p>
-                <p className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-1">Average Rating</p>
+                <p className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-1">Years Experience</p>
               </div>
               <div className="flex flex-col items-center">
                 <p className="text-primary text-4xl font-black leading-none">
                   100<span className="text-2xl">%</span>
                 </p>
-                <p className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-1">Satisfaction</p>
+                <p className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-1">Local & Family-Owned</p>
               </div>
             </div>
           </div>
@@ -369,17 +372,18 @@ export default function Home() {
                 <p className="text-slate-600 leading-relaxed">
                   Most duct cleaning companies advertise a low base price, then add $15–$25 per register. By the time they&apos;re
                   done, a typical Alberta home with 15–20 vents costs $500–$700+. Our{" "}
-                  <strong>$345 flat rate covers every single register in your home</strong> — every hot supply and every cold
-                  return — regardless of how many you have.
+                  <strong>honest flat rate covers every single register in your home</strong> — every hot supply and every cold
+                  return — regardless of how many you have. Call us for a transparent quote based on your home&apos;s specific needs.
                 </p>
               </div>
               <div className="flex-shrink-0 flex flex-col items-center gap-3 text-center">
                 <div className="w-36 h-36 rounded-full bg-primary flex flex-col items-center justify-center text-white shadow-2xl shadow-primary/30">
-                  <span className="text-5xl font-black leading-none">$345</span>
-                  <span className="text-xs font-bold uppercase opacity-80 mt-1">Flat Rate</span>
+                  <span className="text-4xl font-black leading-none">FLAT</span>
+                  <span className="text-2xl font-black leading-none">RATE</span>
+                  <span className="text-xs font-bold uppercase opacity-80 mt-1">No Surprises</span>
                 </div>
                 <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider">
-                  All-In. No Surprises.
+                  Call for Your Custom Quote
                 </span>
               </div>
             </div>
@@ -494,11 +498,14 @@ export default function Home() {
                     <span className="material-symbols-outlined text-primary text-2xl">air</span>
                     <h3 className="text-2xl font-black text-charcoal">Furnace &amp; Duct Cleaning</h3>
                   </div>
-                  <div className="flex items-baseline gap-2 mb-1">
-                    <span className="text-6xl font-black text-charcoal tracking-tight">$345</span>
-                    <span className="text-slate-400 font-medium text-lg">flat rate + GST</span>
-                  </div>
-                  <p className="text-primary font-bold text-sm">No vent counting. No hidden charges. Ever.</p>
+                  <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                    <strong className="text-primary">Transparent flat-rate pricing</strong> customized for your home.
+                    No vent counting. No hidden charges. Ever.
+                  </p>
+                  <a href="tel:18254359977" className="inline-flex items-center gap-2 text-primary hover:text-red-700 font-bold text-lg transition-colors">
+                    <span className="material-symbols-outlined">phone</span>
+                    Call +1 (825) 435-9977 for Your Free Quote
+                  </a>
                 </div>
                 <ul className="space-y-4 mb-8">
                   <li className="flex gap-3 items-start">
@@ -549,16 +556,15 @@ export default function Home() {
                       <span className="material-symbols-outlined">local_laundry_service</span>
                     </div>
                     <div>
-                      <h4 className="font-black text-charcoal text-lg leading-none">Dryer Vent</h4>
-                      <span className="text-primary font-black text-2xl">+$60</span>
+                      <h4 className="font-black text-charcoal text-lg leading-none">Dryer Vent Cleaning</h4>
                     </div>
                   </div>
                   <p className="text-slate-600 text-sm leading-relaxed">
-                    Add dryer vent cleaning while we&apos;re already there. The standalone price is $149 — bundling with your
-                    furnace clean saves you <strong>$89</strong>. Prevents fires and cuts drying times.
+                    Bundle dryer vent cleaning with your furnace service and save significantly. Prevents dangerous fires,
+                    reduces drying times, and protects your home. Ask about our bundle pricing.
                   </p>
                   <p className="mt-3 text-xs font-bold text-green-600 uppercase tracking-wide">
-                    ★ Most popular add-on — saves $89
+                    ★ Most popular add-on — Maximum savings
                   </p>
                 </div>
                 <div className="addon-card">
@@ -567,13 +573,12 @@ export default function Home() {
                       <span className="material-symbols-outlined">heat_pump</span>
                     </div>
                     <div>
-                      <h4 className="font-black text-charcoal text-lg leading-none">Second Furnace</h4>
-                      <span className="text-primary font-black text-2xl">+$100</span>
+                      <h4 className="font-black text-charcoal text-lg leading-none">Multi-Zone Service</h4>
                     </div>
                   </div>
                   <p className="text-slate-600 text-sm leading-relaxed">
-                    Have a second furnace in a basement suite, in-law suite, or additional zone? Add it to the same visit
-                    for just $100. Full cleaning included.
+                    Have a second furnace in a basement suite, in-law suite, or additional zone? We offer special bundle
+                    pricing when cleaning multiple systems in one visit. Full cleaning included.
                   </p>
                   <p className="mt-3 text-xs font-bold text-slate-400 uppercase tracking-wide">
                     Great for suites &amp; duplexes
@@ -585,8 +590,7 @@ export default function Home() {
                       <span className="material-symbols-outlined">ac_unit</span>
                     </div>
                     <div>
-                      <h4 className="font-black text-charcoal text-lg leading-none">AC Coil Cleaning</h4>
-                      <span className="text-primary font-black text-2xl">+$60</span>
+                      <h4 className="font-black text-charcoal text-lg leading-none">AC Coil Service</h4>
                     </div>
                   </div>
                   <p className="text-slate-600 text-sm leading-relaxed">
@@ -899,7 +903,7 @@ export default function Home() {
                   Don&apos;t Wait for a Breakdown.
                 </h2>
                 <p className="text-white/80 text-xl font-medium max-w-2xl mx-auto leading-relaxed">
-                  Book your $345 flat-rate cleaning today. Every register in your home cleaned — no vent counting, no hidden
+                  Get your custom flat-rate quote today. Every register in your home cleaned — no vent counting, no hidden
                   fees. Satisfaction guaranteed or we return for free.
                 </p>
               </div>
@@ -940,24 +944,24 @@ export default function Home() {
               <span className="text-2xl font-black">HOME PROS</span>
             </div>
             <p className="text-sm leading-relaxed">
-              Providing Spruce Grove, Stony Plain, and greater Edmonton with the most honest, transparent furnace and duct
-              cleaning service since 2018.
+              Proudly serving Spruce Grove, Stony Plain, and greater Edmonton with honest, transparent furnace and duct
+              cleaning services since 2018. Locally owned and operated.
             </p>
           </div>
           <div className="space-y-5">
             <h6 className="text-white font-bold uppercase tracking-widest text-xs">Services</h6>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
-                <span className="text-primary">→</span> Furnace &amp; Duct Cleaning — $345
+                <span className="text-primary">→</span> Furnace &amp; Duct Cleaning
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-primary">→</span> Dryer Vent Cleaning — add $60
+                <span className="text-primary">→</span> Dryer Vent Cleaning
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-primary">→</span> Second Furnace — add $100
+                <span className="text-primary">→</span> Multi-Zone Systems
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-primary">→</span> AC Coil Cleaning — add $60
+                <span className="text-primary">→</span> AC Coil Service
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-primary">→</span> Commercial Services
@@ -981,10 +985,10 @@ export default function Home() {
           <div className="space-y-5">
             <h6 className="text-white font-bold uppercase tracking-widest text-xs">Contact</h6>
             <a
-              href="tel:7809327337"
+              href="tel:18254359977"
               className="block text-3xl font-black text-white hover:text-primary transition-colors"
             >
-              780-932-7337
+              +1 (825) 435-9977
             </a>
             <p className="text-sm">Available 7 days a week</p>
             <div className="flex flex-wrap gap-3 mt-2">
@@ -1017,8 +1021,8 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <span className="material-symbols-outlined text-primary">air</span>
             <div>
-              <p className="font-black text-base leading-none">$345 Flat Rate — All registers included</p>
-              <p className="text-xs text-slate-400">No vent counting · No hidden fees · 7-day availability</p>
+              <p className="font-black text-base leading-none">Flat-Rate Pricing — All registers included</p>
+              <p className="text-xs text-slate-400">No vent counting · No hidden fees · Call for your free quote</p>
             </div>
           </div>
           <button
