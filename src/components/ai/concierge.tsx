@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Bot, X, Mic, Phone, Loader2, Volume2 } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { RetellWebClient } from "retell-client-js-sdk"
 
 // Configuration from environment variables
 const AGENT_ID = process.env.NEXT_PUBLIC_RETELL_AGENT_ID || 'agent_4396fcbf2a8b61ef6d2317619f';
@@ -21,28 +22,13 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
     const [callStatus, setCallStatus] = React.useState<'idle' | 'connecting' | 'active' | 'error'>('idle');
     const [errorMessage, setErrorMessage] = React.useState<string | null>(null);
     const [agentState, setAgentState] = React.useState<'listening' | 'speaking' | 'idle'>('idle');
-    const [isLoaded, setIsLoaded] = React.useState(false);
-    const retellClientRef = React.useRef<any>(null);
+    const retellClientRef = React.useRef<RetellWebClient | null>(null);
 
     React.useEffect(() => {
         console.log("🤖 Initializing Retell AI Widget");
         console.log("📋 Agent ID:", AGENT_ID);
         console.log("📞 Phone Number:", PHONE_NUMBER);
-
-        // Load Retell Web SDK
-        const script = document.createElement('script');
-        script.src = 'https://cdn.jsdelivr.net/npm/retell-sdk@latest/dist/retell-sdk.min.js';
-        script.async = true;
-        script.onload = () => {
-            console.log("✅ Retell SDK loaded successfully");
-            console.log("🔍 RetellWebClient available:", typeof (window as any).RetellWebClient);
-            setIsLoaded(true);
-        };
-        script.onerror = (error) => {
-            console.error("❌ Failed to load Retell SDK:", error);
-            setErrorMessage("Failed to load voice SDK. Please refresh the page.");
-        };
-        document.body.appendChild(script);
+        console.log("✅ Retell SDK imported successfully");
 
         return () => {
             // Cleanup
@@ -52,9 +38,6 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
                 } catch (e) {
                     console.error("Error stopping call:", e);
                 }
-            }
-            if (document.body.contains(script)) {
-                document.body.removeChild(script);
             }
         };
     }, []);
@@ -74,26 +57,13 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
             return;
         }
 
-        // Check if SDK is loaded
-        if (!isLoaded || !(window as any).RetellWebClient) {
-            console.error('❌ Retell SDK not loaded');
-            console.error('isLoaded:', isLoaded);
-            console.error('RetellWebClient:', typeof (window as any).RetellWebClient);
-            setErrorMessage("Voice system still loading. Redirecting to phone...");
-            // Fallback to phone call
-            setTimeout(() => {
-                window.location.href = `tel:${PHONE_NUMBER}`;
-            }, 1500);
-            return;
-        }
-
         try {
             setCallStatus('connecting');
             setErrorMessage(null);
 
             // Initialize Retell client if not already done
             if (!retellClientRef.current) {
-                retellClientRef.current = new (window as any).RetellWebClient();
+                retellClientRef.current = new RetellWebClient();
 
                 // Setup event listeners
                 retellClientRef.current.on("call_started", () => {
@@ -259,38 +229,19 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
             {!isOpen && (
                 <button
                     onClick={() => onOpenChange(true)}
-                    disabled={!isLoaded}
                     className="group relative"
                     aria-label="Talk to AI Agent"
                 >
                     <div className="relative">
                         {/* Pulsing ring animation */}
-                        {isLoaded && (
-                            <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75"></span>
-                        )}
+                        <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75"></span>
 
                         {/* Main button */}
-                        <div className={cn(
-                            "relative flex items-center gap-3 px-6 py-4 rounded-full shadow-2xl transition-all",
-                            isLoaded
-                                ? "bg-gradient-to-r from-primary to-red-700 text-white hover:scale-105 cursor-pointer"
-                                : "bg-slate-300 text-slate-500 cursor-wait"
-                        )}>
-                            {isLoaded ? (
-                                <>
-                                    <Bot className="w-6 h-6 animate-pulse" />
-                                    <span className="font-bold text-lg whitespace-nowrap">
-                                        Talk to AI Agent
-                                    </span>
-                                </>
-                            ) : (
-                                <>
-                                    <Loader2 className="w-6 h-6 animate-spin" />
-                                    <span className="font-bold text-sm whitespace-nowrap">
-                                        Loading...
-                                    </span>
-                                </>
-                            )}
+                        <div className="relative flex items-center gap-3 px-6 py-4 rounded-full shadow-2xl transition-all bg-gradient-to-r from-primary to-red-700 text-white hover:scale-105 cursor-pointer">
+                            <Bot className="w-6 h-6 animate-pulse" />
+                            <span className="font-bold text-lg whitespace-nowrap">
+                                Talk to AI Agent
+                            </span>
                         </div>
                     </div>
                 </button>
