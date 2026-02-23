@@ -6,7 +6,8 @@ import { Phone, X, PhoneCall } from 'lucide-react';
 export function RetellWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
-  const AGENT_ID = 'agent_4396fcbf2a8b61ef6d2317619f';
+  const AGENT_ID = process.env.NEXT_PUBLIC_RETELL_AGENT_ID || 'agent_4396fcbf2a8b61ef6d2317619f';
+  const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER || '+18254359977';
 
   useEffect(() => {
     // Load Retell Web SDK
@@ -43,7 +44,7 @@ export function RetellWidget() {
     } catch (error) {
       console.error('Error starting call:', error);
       // Fallback to regular phone call
-      window.location.href = 'tel:+18254359977';
+      window.location.href = `tel:${PHONE_NUMBER}`;
     }
   };
 
@@ -112,7 +113,7 @@ export function RetellWidget() {
                   <span>Voice AI Active</span>
                 </div>
                 <div className="text-xs text-slate-500">
-                  Or call directly: <a href="tel:+18254359977" className="text-primary font-bold">+1 (825) 435-9977</a>
+                  Or call directly: <a href={`tel:${PHONE_NUMBER}`} className="text-primary font-bold">{PHONE_NUMBER}</a>
                 </div>
               </div>
             </div>
