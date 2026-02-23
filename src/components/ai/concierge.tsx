@@ -25,17 +25,22 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
     const retellClientRef = React.useRef<any>(null);
 
     React.useEffect(() => {
+        console.log("🤖 Initializing Retell AI Widget");
+        console.log("📋 Agent ID:", AGENT_ID);
+        console.log("📞 Phone Number:", PHONE_NUMBER);
+
         // Load Retell Web SDK
         const script = document.createElement('script');
         script.src = 'https://cdn.jsdelivr.net/npm/retell-sdk@latest/dist/retell-sdk.min.js';
         script.async = true;
         script.onload = () => {
+            console.log("✅ Retell SDK loaded successfully");
+            console.log("🔍 RetellWebClient available:", typeof (window as any).RetellWebClient);
             setIsLoaded(true);
-            console.log("Retell SDK loaded");
         };
-        script.onerror = () => {
-            console.error("Failed to load Retell SDK");
-            setErrorMessage("Failed to load voice SDK");
+        script.onerror = (error) => {
+            console.error("❌ Failed to load Retell SDK:", error);
+            setErrorMessage("Failed to load voice SDK. Please refresh the page.");
         };
         document.body.appendChild(script);
 
@@ -48,7 +53,9 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
                     console.error("Error stopping call:", e);
                 }
             }
-            document.body.removeChild(script);
+            if (document.body.contains(script)) {
+                document.body.removeChild(script);
+            }
         };
     }, []);
 
@@ -69,8 +76,10 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
 
         // Check if SDK is loaded
         if (!isLoaded || !(window as any).RetellWebClient) {
-            console.error('Retell SDK not loaded');
-            setErrorMessage("Voice SDK not ready. Please try again.");
+            console.error('❌ Retell SDK not loaded');
+            console.error('isLoaded:', isLoaded);
+            console.error('RetellWebClient:', typeof (window as any).RetellWebClient);
+            setErrorMessage("Voice system still loading. Redirecting to phone...");
             // Fallback to phone call
             setTimeout(() => {
                 window.location.href = `tel:${PHONE_NUMBER}`;
@@ -233,13 +242,43 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
             )}
 
             {!isOpen && (
-                <Button
+                <button
                     onClick={() => onOpenChange(true)}
-                    size="lg"
-                    className="h-14 w-14 rounded-full shadow-xl hover:scale-105 transition-transform bg-primary text-primary-foreground animate-in zoom-in duration-300"
+                    disabled={!isLoaded}
+                    className="group relative"
+                    aria-label="Talk to AI Agent"
                 >
-                    <Bot className="h-7 w-7" />
-                </Button>
+                    <div className="relative">
+                        {/* Pulsing ring animation */}
+                        {isLoaded && (
+                            <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75"></span>
+                        )}
+
+                        {/* Main button */}
+                        <div className={cn(
+                            "relative flex items-center gap-3 px-6 py-4 rounded-full shadow-2xl transition-all",
+                            isLoaded
+                                ? "bg-gradient-to-r from-primary to-red-700 text-white hover:scale-105 cursor-pointer"
+                                : "bg-slate-300 text-slate-500 cursor-wait"
+                        )}>
+                            {isLoaded ? (
+                                <>
+                                    <Bot className="w-6 h-6 animate-pulse" />
+                                    <span className="font-bold text-lg whitespace-nowrap">
+                                        Talk to AI Agent
+                                    </span>
+                                </>
+                            ) : (
+                                <>
+                                    <Loader2 className="w-6 h-6 animate-spin" />
+                                    <span className="font-bold text-sm whitespace-nowrap">
+                                        Loading...
+                                    </span>
+                                </>
+                            )}
+                        </div>
+                    </div>
+                </button>
             )}
         </div>
     )
