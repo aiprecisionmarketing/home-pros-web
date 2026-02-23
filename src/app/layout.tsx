@@ -5,7 +5,6 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
-import { RetellWidget } from "@/components/RetellWidget";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -46,9 +45,6 @@ export default function RootLayout({
           {children}
         </main>
         {/* <SiteFooter /> */}
-
-        {/* Retell AI Voice Agent Widget */}
-        <RetellWidget />
 
         <script
           type="application/ld+json"

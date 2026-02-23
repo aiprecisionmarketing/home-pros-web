@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Bot, X, Mic, Phone, Loader2, Volume2 } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { RetellWebClient } from "retell-client-js-sdk"
 
-// Initialize client outside component to persist across re-renders
-const retellWebClient = new RetellWebClient();
+// Configuration from environment variables
+const AGENT_ID = process.env.NEXT_PUBLIC_RETELL_AGENT_ID || 'agent_4396fcbf2a8b61ef6d2317619f';
+const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER || '+18254359977';
 
 
 interface ConciergeProps {
@@ -21,54 +21,60 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
     const [callStatus, setCallStatus] = React.useState<'idle' | 'connecting' | 'active' | 'error'>('idle');
     const [errorMessage, setErrorMessage] = React.useState<string | null>(null);
     const [agentState, setAgentState] = React.useState<'listening' | 'speaking' | 'idle'>('idle');
+    const [isLoaded, setIsLoaded] = React.useState(false);
+    const retellClientRef = React.useRef<any>(null);
 
     React.useEffect(() => {
-        // Setup event listeners
-        retellWebClient.on("call_started", () => {
-            console.log("Call started");
-            setCallStatus('active');
-            setAgentState('idle');
-        });
-
-        retellWebClient.on("call_ended", () => {
-            console.log("Call ended");
-            setCallStatus('idle');
-            setAgentState('idle');
-        });
-
-        retellWebClient.on("error", (error: any) => {
-            console.error("Retell error:", error);
-            setCallStatus('error');
-            setErrorMessage("Connection failed. Please try again.");
-            // Reset after delay
-            setTimeout(() => {
-                setCallStatus('idle');
-                setErrorMessage(null);
-            }, 3000);
-        });
-
-        retellWebClient.on("agent_start_talking", () => {
-            setAgentState('speaking');
-        });
-
-        retellWebClient.on("agent_stop_talking", () => {
-            setAgentState('listening');
-        });
-
-        retellWebClient.on("update", (update: any) => {
-            // Can handle real-time transcripts here if needed
-            console.log("Update:", update);
-        });
+        // Load Retell Web SDK
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/retell-sdk@latest/dist/retell-sdk.min.js';
+        script.async = true;
+        script.onload = () => {
+            setIsLoaded(true);
+            console.log("Retell SDK loaded");
+        };
+        script.onerror = () => {
+            console.error("Failed to load Retell SDK");
+            setErrorMessage("Failed to load voice SDK");
+        };
+        document.body.appendChild(script);
 
         return () => {
-            retellWebClient.stopCall(); // Cleanup on unmount
+            // Cleanup
+            if (retellClientRef.current) {
+                try {
+                    retellClientRef.current.stopCall();
+                } catch (e) {
+                    console.error("Error stopping call:", e);
+                }
+            }
+            document.body.removeChild(script);
         };
     }, []);
 
     const toggleCall = async () => {
+        // Stop call if already active
         if (callStatus === 'active' || callStatus === 'connecting') {
-            retellWebClient.stopCall();
+            if (retellClientRef.current) {
+                try {
+                    retellClientRef.current.stopCall();
+                } catch (e) {
+                    console.error("Error stopping call:", e);
+                }
+            }
             setCallStatus('idle');
+            setAgentState('idle');
+            return;
+        }
+
+        // Check if SDK is loaded
+        if (!isLoaded || !(window as any).RetellWebClient) {
+            console.error('Retell SDK not loaded');
+            setErrorMessage("Voice SDK not ready. Please try again.");
+            // Fallback to phone call
+            setTimeout(() => {
+                window.location.href = `tel:${PHONE_NUMBER}`;
+            }, 1500);
             return;
         }
 
@@ -76,30 +82,67 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
             setCallStatus('connecting');
             setErrorMessage(null);
 
-            // Fetch access token from our backend (Netlify Function)
-            const response = await fetch('/.netlify/functions/retell-token', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({}) // Agent ID is handled by backend env var
-            });
+            // Initialize Retell client if not already done
+            if (!retellClientRef.current) {
+                retellClientRef.current = new (window as any).RetellWebClient();
 
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.error || 'Failed to get access token');
+                // Setup event listeners
+                retellClientRef.current.on("call_started", () => {
+                    console.log("Call started");
+                    setCallStatus('active');
+                    setAgentState('idle');
+                });
+
+                retellClientRef.current.on("call_ended", () => {
+                    console.log("Call ended");
+                    setCallStatus('idle');
+                    setAgentState('idle');
+                });
+
+                retellClientRef.current.on("error", (error: any) => {
+                    console.error("Retell error:", error);
+                    setCallStatus('error');
+                    setErrorMessage("Connection failed. Please try again.");
+                    // Reset after delay
+                    setTimeout(() => {
+                        setCallStatus('idle');
+                        setErrorMessage(null);
+                    }, 3000);
+                });
+
+                retellClientRef.current.on("agent_start_talking", () => {
+                    setAgentState('speaking');
+                });
+
+                retellClientRef.current.on("agent_stop_talking", () => {
+                    setAgentState('listening');
+                });
+
+                retellClientRef.current.on("update", (update: any) => {
+                    console.log("Update:", update);
+                });
             }
 
-            const data = await response.json();
-
-            // Start the call
-            await retellWebClient.startCall({
-                accessToken: data.accessToken,
+            // Start the call with direct agent ID
+            await retellClientRef.current.startCall({
+                agentId: AGENT_ID,
+                sampleRate: 24000,
             });
 
         } catch (error: any) {
             console.error("Failed to start call:", error);
             setCallStatus('error');
             setErrorMessage(error.message || "Failed to connect");
-            setCallStatus('idle');
+
+            // Fallback to phone call
+            setTimeout(() => {
+                window.location.href = `tel:${PHONE_NUMBER}`;
+            }, 2000);
+
+            setTimeout(() => {
+                setCallStatus('idle');
+                setErrorMessage(null);
+            }, 3000);
         }
     };
 
