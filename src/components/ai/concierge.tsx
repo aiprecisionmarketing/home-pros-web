@@ -132,9 +132,24 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
                 });
             }
 
-            // Start the call with direct agent ID
+            // Get access token from our API
+            console.log("🔑 Fetching access token from API...");
+            const tokenResponse = await fetch('/api/retell-token', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+            });
+
+            if (!tokenResponse.ok) {
+                const errorData = await tokenResponse.json();
+                throw new Error(errorData.error || 'Failed to get access token');
+            }
+
+            const { accessToken } = await tokenResponse.json();
+            console.log("✅ Access token received");
+
+            // Start the call with access token
             await retellClientRef.current.startCall({
-                agentId: AGENT_ID,
+                accessToken: accessToken,
                 sampleRate: 24000,
             });
 
