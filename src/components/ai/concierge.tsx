@@ -22,6 +22,7 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
     const [callStatus, setCallStatus] = React.useState<'idle' | 'connecting' | 'active' | 'error'>('idle');
     const [errorMessage, setErrorMessage] = React.useState<string | null>(null);
     const [agentState, setAgentState] = React.useState<'listening' | 'speaking' | 'idle'>('idle');
+    const [micPermission, setMicPermission] = React.useState<'granted' | 'denied' | 'prompt' | 'unknown'>('unknown');
     const retellClientRef = React.useRef<RetellWebClient | null>(null);
 
     React.useEffect(() => {
@@ -29,6 +30,22 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
         console.log("📋 Agent ID:", AGENT_ID);
         console.log("📞 Phone Number:", PHONE_NUMBER);
         console.log("✅ Retell SDK imported successfully");
+
+        // Check microphone permission status
+        const checkMicPermission = async () => {
+            if (navigator.permissions && navigator.permissions.query) {
+                try {
+                    const result = await navigator.permissions.query({ name: 'microphone' as PermissionName });
+                    setMicPermission(result.state as 'granted' | 'denied' | 'prompt');
+                    result.onchange = () => {
+                        setMicPermission(result.state as 'granted' | 'denied' | 'prompt');
+                    };
+                } catch (error) {
+                    console.log("Permission API not supported, will request on call start");
+                }
+            }
+        };
+        checkMicPermission();
 
         return () => {
             // Cleanup
@@ -60,6 +77,31 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
         try {
             setCallStatus('connecting');
             setErrorMessage(null);
+
+            // Request microphone permission explicitly
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                // Stop the stream immediately - we just needed to request permission
+                stream.getTracks().forEach(track => track.stop());
+                setMicPermission('granted');
+                console.log("🎤 Microphone permission granted");
+            } catch (micError: any) {
+                console.error("🎤 Microphone permission denied:", micError);
+                setMicPermission('denied');
+                setCallStatus('error');
+                setErrorMessage("Microphone access is required. Please enable it in your browser settings.");
+
+                // Fallback to phone call after showing error
+                setTimeout(() => {
+                    window.location.href = `tel:${PHONE_NUMBER}`;
+                }, 3000);
+
+                setTimeout(() => {
+                    setCallStatus('idle');
+                    setErrorMessage(null);
+                }, 5000);
+                return;
+            }
 
             // Initialize Retell client if not already done
             if (!retellClientRef.current) {
@@ -141,9 +183,9 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
     };
 
     return (
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex flex-col items-end max-w-[calc(100vw-2rem)] md:max-w-none">
             {isOpen && (
-                <Card className="w-[350px] mb-4 shadow-2xl flex flex-col animate-in slide-in-from-bottom-10 fade-in border-primary/20 overflow-hidden">
+                <Card className="w-full md:w-[350px] mb-4 shadow-2xl flex flex-col animate-in slide-in-from-bottom-10 fade-in border-primary/20 overflow-hidden">
                     <CardHeader className="bg-primary text-primary-foreground p-4 flex flex-row items-center justify-between">
                         <div className="flex items-center gap-2">
                             <Bot className="h-6 w-6" />
@@ -156,7 +198,7 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
                             <X className="h-4 w-4" />
                         </Button>
                     </CardHeader>
-                    <CardContent className="p-6 bg-white min-h-[300px] flex flex-col items-center justify-center gap-6">
+                    <CardContent className="p-4 md:p-6 bg-white min-h-[280px] md:min-h-[300px] flex flex-col items-center justify-center gap-4 md:gap-6">
 
                         {/* Status Indicator / Animation */}
                         <div className="relative">
@@ -182,8 +224,8 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
                         </div>
 
                         {/* Status Text */}
-                        <div className="text-center space-y-1">
-                            <h3 className="font-bold text-lg text-charcoal">
+                        <div className="text-center space-y-1 px-2">
+                            <h3 className="font-bold text-base md:text-lg text-charcoal">
                                 {callStatus === 'idle' && "Start a Conversation"}
                                 {callStatus === 'connecting' && "Connecting..."}
                                 {callStatus === 'active' && agentState === 'speaking' && "AI is speaking..."}
@@ -191,11 +233,12 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
                                 {callStatus === 'active' && agentState === 'idle' && "Connected"}
                                 {callStatus === 'error' && "Connection Error"}
                             </h3>
-                            <p className="text-sm text-slate-500">
-                                {callStatus === 'idle' && "Tap the button below to talk to our AI assistant about booking or services."}
-                                {callStatus === 'connecting' && "Establishing secure voice connection..."}
+                            <p className="text-xs md:text-sm text-slate-500">
+                                {callStatus === 'idle' && micPermission === 'prompt' && "You'll be asked to allow microphone access."}
+                                {callStatus === 'idle' && micPermission !== 'prompt' && "Tap the button below to talk to our AI assistant about booking or services."}
+                                {callStatus === 'connecting' && "Please allow microphone access when prompted..."}
                                 {callStatus === 'active' && "Go ahead, I'm listening."}
-                                {errorMessage && <span className="text-red-500 block mt-2">{errorMessage}</span>}
+                                {errorMessage && <span className="text-red-500 block mt-2 font-medium">{errorMessage}</span>}
                             </p>
                         </div>
 
@@ -204,7 +247,7 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
                             onClick={toggleCall}
                             size="lg"
                             className={cn(
-                                "w-full h-14 text-lg font-bold shadow-lg transition-all active:scale-95",
+                                "w-full h-12 md:h-14 text-base md:text-lg font-bold shadow-lg transition-all active:scale-95 touch-manipulation",
                                 callStatus === 'active' || callStatus === 'connecting'
                                     ? "bg-red-100 text-red-600 hover:bg-red-200"
                                     : "bg-primary text-white hover:bg-red-700"
@@ -213,11 +256,11 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
                         >
                             {callStatus === 'active' || callStatus === 'connecting' ? (
                                 <>
-                                    <Phone className="mr-2 h-5 w-5 rotate-135" /> End Call
+                                    <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5 rotate-135" /> End Call
                                 </>
                             ) : (
                                 <>
-                                    <Phone className="mr-2 h-5 w-5" /> Start Call
+                                    <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" /> Start Call
                                 </>
                             )}
                         </Button>
@@ -236,11 +279,11 @@ export function Concierge({ isOpen, onOpenChange }: ConciergeProps) {
                         {/* Pulsing ring animation */}
                         <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75"></span>
 
-                        {/* Main button */}
-                        <div className="relative flex items-center gap-3 px-6 py-4 rounded-full shadow-2xl transition-all bg-gradient-to-r from-primary to-red-700 text-white hover:scale-105 cursor-pointer">
-                            <Bot className="w-6 h-6 animate-pulse" />
-                            <span className="font-bold text-lg whitespace-nowrap">
-                                Talk to AI Agent
+                        {/* Main button - responsive sizing */}
+                        <div className="relative flex items-center gap-2 md:gap-3 px-4 py-3 md:px-6 md:py-4 rounded-full shadow-2xl transition-all bg-gradient-to-r from-primary to-red-700 text-white hover:scale-105 active:scale-95 cursor-pointer touch-manipulation">
+                            <Bot className="w-5 h-5 md:w-6 md:h-6 animate-pulse flex-shrink-0" />
+                            <span className="font-bold text-sm md:text-lg whitespace-nowrap">
+                                Talk to AI
                             </span>
                         </div>
                     </div>
