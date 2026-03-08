@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "Duct Cleaning Cost in Stony Plain & Spruce Grove: Complete 2026 Guide",
     description:
       "How much does duct cleaning cost in Stony Plain & Spruce Grove? Flat-rate $345 for unlimited vents. No hidden fees. Compare prices, avoid scams, and learn what professional duct cleaning really includes.",
-    url: "https://homeprosgroup.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
+    url: "https://www.sprucegrovefurnacecleaning.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "article",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     authors: ["Home Pros Group"],
     images: [
       {
-        url: "https://homeprosgroup.com/images/blog/cost-guide.png",
+        url: "https://www.sprucegrovefurnacecleaning.com/images/blog/cost-guide.png",
         width: 1200,
         height: 630,
         alt: "Duct Cleaning Cost Guide for Stony Plain and Spruce Grove",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://homeprosgroup.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
+      "https://www.sprucegrovefurnacecleaning.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
   },
 };
 
@@ -126,18 +126,18 @@ const articleJsonLd = {
     "Duct Cleaning in Stony Plain & Spruce Grove: The Complete 2026 Cost & Service Guide",
   description:
     "Comprehensive guide to duct cleaning costs in Stony Plain, Spruce Grove, and Parkland County. Flat-rate pricing, what to expect, scams to avoid, and how to prepare.",
-  image: "https://homeprosgroup.com/images/duct-cleaning-stony-plain.jpg",
+  image: "https://www.sprucegrovefurnacecleaning.com/images/duct-cleaning-stony-plain.jpg",
   author: {
     "@type": "Organization",
     name: "Home Pros Group",
-    url: "https://homeprosgroup.com",
+    url: "https://www.sprucegrovefurnacecleaning.com",
   },
   publisher: {
     "@type": "Organization",
     name: "Home Pros Group",
     logo: {
       "@type": "ImageObject",
-      url: "https://homeprosgroup.com/images/logo.png",
+      url: "https://www.sprucegrovefurnacecleaning.com/images/logo.png",
     },
   },
   datePublished: "2025-11-15",
@@ -145,7 +145,7 @@ const articleJsonLd = {
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://homeprosgroup.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
+      "https://www.sprucegrovefurnacecleaning.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
   },
 };
 
@@ -168,7 +168,7 @@ const localBusinessJsonLd = {
   name: "Home Pros Group",
   description:
     "Professional furnace cleaning, duct cleaning, and dryer vent cleaning in Stony Plain, Spruce Grove, and Parkland County. Flat-rate pricing, family-owned since 2018.",
-  url: "https://homeprosgroup.com",
+  url: "https://www.sprucegrovefurnacecleaning.com",
   telephone: "+1-825-435-9977",
   address: {
     "@type": "PostalAddress",

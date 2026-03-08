@@ -24,17 +24,17 @@ export const metadata: Metadata = {
   verification: {
     google: "IqYPDuB_UqlKoDM3zjlydFRn7z5FcAvF4BQEM-xOAgM",
   },
-  metadataBase: new URL("https://homeprosgroup.com"),
+  metadataBase: new URL("https://www.sprucegrovefurnacecleaning.com"),
   openGraph: {
     title: "Duct Cleaning Stony Plain & Spruce Grove | Home Pros Group",
     description: "Top-rated furnace & duct cleaning in Stony Plain and Spruce Grove. $345 flat-rate, unlimited vents. Family-owned since 2018.",
-    url: "https://homeprosgroup.com",
+    url: "https://www.sprucegrovefurnacecleaning.com",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "website",
   },
   alternates: {
-    canonical: "https://homeprosgroup.com",
+    canonical: "https://www.sprucegrovefurnacecleaning.com",
   },
 };
 
@@ -68,9 +68,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "HVACBusiness",
               "name": "Home Pros Group",
-              "image": "https://homeprosgroup.com/logo.png",
-              "@id": "https://homeprosgroup.com",
-              "url": "https://homeprosgroup.com/spruce-grove-furnace-cleaning-by-home-pros-group/",
+              "image": "https://www.sprucegrovefurnacecleaning.com/logo.png",
+              "@id": "https://www.sprucegrovefurnacecleaning.com",
+              "url": "https://www.sprucegrovefurnacecleaning.com/spruce-grove-furnace-cleaning-by-home-pros-group/",
               "telephone": "+1 (825) 435-9977",
               "address": {
                 "@type": "PostalAddress",

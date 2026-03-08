@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         openGraph: {
             title: post.title,
             description,
-            url: `https://homeprosgroup.com/blog/${slug}`,
+            url: `https://www.sprucegrovefurnacecleaning.com/blog/${slug}`,
             siteName: "Home Pros Group",
             locale: "en_CA",
             type: "article",
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             authors: [post.author || "Home Pros Team"],
         },
         alternates: {
-            canonical: `https://homeprosgroup.com/blog/${slug}`,
+            canonical: `https://www.sprucegrovefurnacecleaning.com/blog/${slug}`,
         },
     };
 }

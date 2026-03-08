@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin/", "/api/"],
       },
     ],
-    sitemap: "https://homeprosgroup.com/sitemap.xml",
+    sitemap: "https://www.sprucegrovefurnacecleaning.com/sitemap.xml",
   };
 }

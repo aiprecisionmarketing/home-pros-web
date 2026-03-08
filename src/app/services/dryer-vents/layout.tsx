@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Professional Dryer Vent Cleaning | Home Pros Group",
     description: "Prevent fire hazards with professional dryer vent cleaning in Stony Plain and Spruce Grove. Flat-rate pricing, no hidden fees.",
-    url: "https://homeprosgroup.com/services/dryer-vents",
+    url: "https://www.sprucegrovefurnacecleaning.com/services/dryer-vents",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "website",
   },
   alternates: {
-    canonical: "https://homeprosgroup.com/services/dryer-vents",
+    canonical: "https://www.sprucegrovefurnacecleaning.com/services/dryer-vents",
   },
 };
 

@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://homeprosgroup.com";
+  const baseUrl = "https://www.sprucegrovefurnacecleaning.com";
 
   // Core pages
   const staticPages: MetadataRoute.Sitemap = [

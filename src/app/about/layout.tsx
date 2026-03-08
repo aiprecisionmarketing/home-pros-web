@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Home Pros Group | Family-Owned HVAC Cleaning",
     description: "Family-owned furnace and duct cleaning serving Stony Plain, Spruce Grove, and Parkland County since 2018.",
-    url: "https://homeprosgroup.com/about",
+    url: "https://www.sprucegrovefurnacecleaning.com/about",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "website",
   },
   alternates: {
-    canonical: "https://homeprosgroup.com/about",
+    canonical: "https://www.sprucegrovefurnacecleaning.com/about",
   },
 };
 
