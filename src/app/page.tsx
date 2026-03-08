@@ -692,7 +692,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="p-8 rounded-2xl bg-white border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all reveal">
                 <div className="flex gap-1 text-yellow-500 mb-5">
                   <span className="material-symbols-outlined filled">star</span>
@@ -702,16 +702,15 @@ export default function Home() {
                   <span className="material-symbols-outlined filled">star</span>
                 </div>
                 <p className="text-slate-700 italic mb-6 leading-relaxed">
-                  &quot;The difference in air quality was immediate. My heating bills dropped noticeably and I didn&apos;t have to
-                  worry about a surprise invoice — the $345 flat rate was exactly what they charged. Highly recommend.&quot;
+                  &quot;Keith &amp; Eric did a fantastic job at cleaning our ducts, AC coil &amp; dryer vent. They were in &amp; out relatively quick, offered some free educational information on our humidifier, furnace etc. Turns out, we were buying furnace filters that were not compatible with a high efficiency furnace. Very thankful that we booked them!! Professional &amp; friendly guys.&quot;
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-black text-lg">
-                    S
+                    A
                   </div>
                   <div>
-                    <h5 className="font-bold text-charcoal">Sarah Jenkins</h5>
-                    <p className="text-xs text-slate-500">Homeowner · Spruce Grove</p>
+                    <h5 className="font-bold text-charcoal">A W</h5>
+                    <p className="text-xs text-slate-500">Local Guide · Google Review</p>
                   </div>
                 </div>
               </div>
@@ -724,17 +723,15 @@ export default function Home() {
                   <span className="material-symbols-outlined filled">star</span>
                 </div>
                 <p className="text-slate-700 italic mb-6 leading-relaxed">
-                  &quot;Called around — every other company wanted to count our 22 registers and charge per vent. Would&apos;ve been
-                  nearly $600 elsewhere. Home Pros cleaned everything for $345. The flat rate is real and it&apos;s the best
-                  deal out there.&quot;
+                  &quot;Keith was professional, friendly, quick and thorough! He&apos;s competitively priced and even showed us before and after pictures of our ducts once he was done. We will absolutely be recommending and calling him again in the future.&quot;
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center text-white font-black text-lg">
-                    M
+                    K
                   </div>
                   <div>
-                    <h5 className="font-bold text-charcoal">Mark Donaldson</h5>
-                    <p className="text-xs text-slate-500">Local Business Owner · Stony Plain</p>
+                    <h5 className="font-bold text-charcoal">Kirsten Savill</h5>
+                    <p className="text-xs text-slate-500">Google Review</p>
                   </div>
                 </div>
               </div>
@@ -747,16 +744,36 @@ export default function Home() {
                   <span className="material-symbols-outlined filled">star</span>
                 </div>
                 <p className="text-slate-700 italic mb-6 leading-relaxed">
-                  &quot;Added the dryer vent for $60 — 100% worth it. They showed me how blocked it was; I had no idea that was
-                  a fire hazard. Professional, honest, and no pressure. Will book every single year.&quot;
+                  &quot;Keith and Eric have done a phenomenal job at cleaning our vents. They went above and beyond our expectations! Extremely thorough, professional and fairly priced. Do yourself a favor and book with these guys and support local.&quot;
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-black text-lg">
-                    E
+                    C
                   </div>
                   <div>
-                    <h5 className="font-bold text-charcoal">Emily Thompson</h5>
-                    <p className="text-xs text-slate-500">Homeowner · Edmonton</p>
+                    <h5 className="font-bold text-charcoal">Carmen Menacho</h5>
+                    <p className="text-xs text-slate-500">Google Review</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-8 rounded-2xl bg-white border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all reveal">
+                <div className="flex gap-1 text-yellow-500 mb-5">
+                  <span className="material-symbols-outlined filled">star</span>
+                  <span className="material-symbols-outlined filled">star</span>
+                  <span className="material-symbols-outlined filled">star</span>
+                  <span className="material-symbols-outlined filled">star</span>
+                  <span className="material-symbols-outlined filled">star</span>
+                </div>
+                <p className="text-slate-700 italic mb-6 leading-relaxed">
+                  &quot;Keith and Eric were amazing, professional, courteous and polite. They came and did a great job. Their price was reasonable. They were very clean and answered any questions I had. What else could you want from a contractor.&quot;
+                </p>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center text-white font-black text-lg">
+                    L
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-charcoal">Lee Malo</h5>
+                    <p className="text-xs text-slate-500">Local Guide · Google Review</p>
                   </div>
                 </div>
               </div>
