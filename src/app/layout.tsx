@@ -70,7 +70,7 @@ export default function RootLayout({
               "name": "Home Pros Group",
               "image": "https://www.sprucegrovefurnacecleaning.com/logo.png",
               "@id": "https://www.sprucegrovefurnacecleaning.com",
-              "url": "https://www.sprucegrovefurnacecleaning.com/spruce-grove-furnace-cleaning-by-home-pros-group/",
+              "url": "https://www.sprucegrovefurnacecleaning.com",
               "telephone": "+1 (825) 435-9977",
               "address": {
                 "@type": "PostalAddress",

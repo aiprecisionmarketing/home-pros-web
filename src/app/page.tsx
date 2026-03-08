@@ -245,7 +245,7 @@ export default function Home() {
                 <Image
                   alt="Home Pros Group furnace cleaning truck and technician in Spruce Grove"
                   className="object-cover"
-                  src="https://homeprosgroup.com/wp-content/uploads/2018/05/duct-cleaning-companies-near-Edmonton-1-1024x683.jpg"
+                  src="/images/duct-cleaning-companies-near-Edmonton.jpg"
                   fill
                   priority
                   sizes="(max-width: 768px) 100vw, 50vw"

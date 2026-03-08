@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
+import { ALL_URLS } from "@/lib/all_urls";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.sprucegrovefurnacecleaning.com";
@@ -71,5 +72,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   } catch {}
 
-  return [...staticPages, ...articlePages, ...dynamicPosts];
+  // Legacy pages from the catch-all route
+  const legacyPages: MetadataRoute.Sitemap = ALL_URLS
+    .filter((url) => url !== "/")
+    .map((url) => ({
+      url: `${baseUrl}/${url}`,
+      lastModified: new Date("2025-01-01"),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    }));
+
+  return [...staticPages, ...articlePages, ...dynamicPosts, ...legacyPages];
 }
