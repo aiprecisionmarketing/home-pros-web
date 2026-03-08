@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Mic } from "lucide-react";
+import { Mic, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -59,9 +59,18 @@ export function SiteHeader() {
                     <Link href="/about" className="hover:text-red-500 transition-colors">Audit Team</Link>
                     <Link href="/blog" className="hover:text-red-500 transition-colors">Intelligence</Link>
                 </nav>
-                <Button className="bg-white text-black hover:bg-red-600 hover:text-white rounded-md font-black uppercase tracking-widest text-[11px] h-10 px-6">
-                    Request Audit
-                </Button>
+                <div className="flex items-center gap-3">
+                    <a href="tel:18254359977" className="hidden md:flex items-center gap-2 text-white hover:text-red-400 transition-colors">
+                        <Phone className="h-4 w-4" />
+                        <span className="text-[11px] font-black uppercase tracking-widest">(825) 435-9977</span>
+                    </a>
+                    <a href="tel:18254359977">
+                        <Button className="bg-white text-black hover:bg-red-600 hover:text-white rounded-md font-black uppercase tracking-widest text-[11px] h-10 px-6">
+                            <Phone className="h-3 w-3 mr-1 md:hidden" />
+                            Call Now
+                        </Button>
+                    </a>
+                </div>
             </header>
         </>
     );

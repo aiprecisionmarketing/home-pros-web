@@ -40,11 +40,11 @@ export default function RootLayout({
           publicSans.variable
         )}
       >
-        {/* <SiteHeader /> */}
+        <SiteHeader />
         <main className="flex-1">
           {children}
         </main>
-        {/* <SiteFooter /> */}
+        <SiteFooter />
 
         <script
           type="application/ld+json"

@@ -16,7 +16,12 @@ export function SiteFooter() {
                     <a href="/about" className="hover:text-red-500 transition-colors">Audit</a>
                     <a href="/blog" className="hover:text-red-500 transition-colors">Intelligence</a>
                 </div>
-                <p className="text-[10px] font-medium tracking-[0.1em] uppercase opacity-40">© 2026 Home Pros Engineering. PRC_STP_AB</p>
+                <div className="flex flex-col items-center md:items-end gap-2">
+                    <a href="tel:18254359977" className="flex items-center gap-2 text-white hover:text-red-500 transition-colors">
+                        <span className="text-sm font-black tracking-wider">+1 (825) 435-9977</span>
+                    </a>
+                    <p className="text-[10px] font-medium tracking-[0.1em] uppercase opacity-40">© 2026 Home Pros Engineering. PRC_STP_AB</p>
+                </div>
             </div>
         </footer>
     );

@@ -4,6 +4,8 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/blog/Breadcrumbs";
+import { ArticleSidebar } from "@/components/blog/ArticleSidebar";
 
 // Generate static params for all posts
 export async function generateStaticParams() {
@@ -22,6 +24,16 @@ async function getPost(slug: string) {
     return posts.find((p: any) => p.slug === slug);
 }
 
+async function getRelatedPosts(currentSlug: string) {
+    const filePath = path.join(process.cwd(), "src/data/posts.json");
+    if (!fs.existsSync(filePath)) return [];
+    const posts = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    return posts
+        .filter((p: any) => p.slug !== currentSlug)
+        .slice(0, 4)
+        .map((p: any) => ({ title: p.title, slug: p.slug }));
+}
+
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const post = await getPost(slug);
@@ -30,8 +42,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         notFound();
     }
 
+    const relatedPosts = await getRelatedPosts(slug);
+
+    const breadcrumbItems = [
+        { label: "Home", href: "/" },
+        { label: "Blog", href: "/blog" },
+        { label: post.title },
+    ];
+
     return (
         <article className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+            {/* Breadcrumbs */}
+            <div className="max-w-5xl mx-auto px-6 pt-4">
+                <Breadcrumbs items={breadcrumbItems} />
+            </div>
+
             {/* Hero Section with Featured Image */}
             {post.featured_image && (
                 <div className="relative h-[400px] w-full overflow-hidden">
@@ -109,73 +134,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         </div>
                     </div>
 
-                    {/* Sidebar */}
-                    <div className="lg:col-span-4 space-y-6">
-                        {/* Quick Contact Card */}
-                        <div className="bg-gradient-to-br from-primary to-red-700 rounded-2xl shadow-xl p-6 text-white sticky top-6">
-                            <h3 className="text-2xl font-black mb-4">Need Help Now?</h3>
-                            <p className="mb-6 text-white/90">
-                                Call us today for your free quote!
-                            </p>
-                            <a
-                                href="tel:18254359977"
-                                className="block w-full py-4 px-6 bg-white text-primary text-center text-lg font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg hover:scale-105"
-                            >
-                                📞 +1 (825) 435-9977
-                            </a>
-                            <div className="mt-6 pt-6 border-t border-white/20">
-                                <div className="space-y-3 text-sm text-white/90">
-                                    <div className="flex items-start gap-2">
-                                        <span>✓</span>
-                                        <span>Flat-rate pricing</span>
-                                    </div>
-                                    <div className="flex items-start gap-2">
-                                        <span>✓</span>
-                                        <span>No hidden fees</span>
-                                    </div>
-                                    <div className="flex items-start gap-2">
-                                        <span>✓</span>
-                                        <span>Local family-owned</span>
-                                    </div>
-                                    <div className="flex items-start gap-2">
-                                        <span>✓</span>
-                                        <span>Serving since 2018</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Service Areas Card */}
-                        <div className="bg-white rounded-2xl shadow-lg p-6">
-                            <h3 className="text-xl font-black mb-4 text-slate-900">Service Areas</h3>
-                            <ul className="space-y-2 text-sm text-slate-600">
-                                <li className="flex items-center gap-2">
-                                    <span className="w-2 h-2 bg-primary rounded-full"></span>
-                                    Stony Plain
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <span className="w-2 h-2 bg-primary rounded-full"></span>
-                                    Spruce Grove
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <span className="w-2 h-2 bg-primary rounded-full"></span>
-                                    Parkland County
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <span className="w-2 h-2 bg-primary rounded-full"></span>
-                                    Wabamun
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <span className="w-2 h-2 bg-primary rounded-full"></span>
-                                    Duffield
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <span className="w-2 h-2 bg-primary rounded-full"></span>
-                                    Entwistle
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    {/* Sidebar with Related Articles */}
+                    <ArticleSidebar relatedSlugs={relatedPosts} />
                 </div>
 
                 {/* Final CTA */}
@@ -188,10 +148,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         href="tel:18254359977"
                         className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-white text-2xl font-black rounded-xl hover:bg-red-600 transition-all shadow-xl hover:scale-105"
                     >
-                        <span>📞</span> Call +1 (825) 435-9977 for Your Free Quote
+                        Call +1 (825) 435-9977 for Your Free Quote
                     </a>
                     <p className="mt-6 text-sm text-slate-400">
-                        No hidden fees • Flat-rate pricing • Local family-owned business
+                        No hidden fees &bull; Flat-rate pricing &bull; Local family-owned business
                     </p>
                 </div>
             </div>
