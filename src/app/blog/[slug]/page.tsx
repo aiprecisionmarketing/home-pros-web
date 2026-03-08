@@ -4,8 +4,36 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import { Breadcrumbs } from "@/components/blog/Breadcrumbs";
 import { ArticleSidebar } from "@/components/blog/ArticleSidebar";
+
+// Generate metadata for each blog post
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params;
+    const post = await getPost(slug);
+    if (!post) return {};
+
+    const description = post.excerpt || `Read about ${post.title} - expert HVAC cleaning tips from Home Pros Group, serving Stony Plain, Spruce Grove, and Parkland County.`;
+
+    return {
+        title: `${post.title} | Home Pros Group`,
+        description,
+        openGraph: {
+            title: post.title,
+            description,
+            url: `https://homeprosgroup.com/blog/${slug}`,
+            siteName: "Home Pros Group",
+            locale: "en_CA",
+            type: "article",
+            publishedTime: post.date,
+            authors: [post.author || "Home Pros Team"],
+        },
+        alternates: {
+            canonical: `https://homeprosgroup.com/blog/${slug}`,
+        },
+    };
+}
 
 // Generate static params for all posts
 export async function generateStaticParams() {

@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://homeprosgroup.ca/images/blog/best-company-guide.png",
+        url: "https://homeprosgroup.com/images/blog/best-company-guide.png",
         width: 1200,
         height: 630,
         alt: "Professional HVAC technician with a checklist in a clean home",

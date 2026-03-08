@@ -24,6 +24,18 @@ export const metadata: Metadata = {
   verification: {
     google: "IqYPDuB_UqlKoDM3zjlydFRn7z5FcAvF4BQEM-xOAgM",
   },
+  metadataBase: new URL("https://homeprosgroup.com"),
+  openGraph: {
+    title: "Duct Cleaning Stony Plain & Spruce Grove | Home Pros Group",
+    description: "Top-rated furnace & duct cleaning in Stony Plain and Spruce Grove. $345 flat-rate, unlimited vents. Family-owned since 2018.",
+    url: "https://homeprosgroup.com",
+    siteName: "Home Pros Group",
+    locale: "en_CA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://homeprosgroup.com",
+  },
 };
 
 export default function RootLayout({
