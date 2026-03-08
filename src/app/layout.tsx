@@ -21,6 +21,9 @@ const publicSans = Public_Sans({
 export const metadata: Metadata = {
   title: "Duct Cleaning Stony Plain & Spruce Grove | Furnace Cleaning | Home Pros",
   description: "Top-rated Furnace & Duct Cleaning in Stony Plain and Spruce Grove. Flat-rate pricing, unlimited vents. Local family-owned HVAC cleaning experts.",
+  verification: {
+    google: "IqYPDuB_UqlKoDM3zjlydFRn7z5FcAvF4BQEM-xOAgM",
+  },
 };
 
 export default function RootLayout({
