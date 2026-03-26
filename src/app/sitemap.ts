@@ -1,8 +1,12 @@
 import { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
-import { ALL_URLS } from "@/lib/all_urls";
 
+/**
+ * Clean sitemap — ONLY quality pages that should be indexed.
+ * Legacy/junk pages removed to restore topical authority.
+ * SEO fix: March 26, 2026
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.sprucegrovefurnacecleaning.com";
 
@@ -58,7 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Location pages
+  // Location-specific service pages (these have real, unique content)
   const locationPages: MetadataRoute.Sitemap = [
     "stony-plain",
     "spruce-grove",
@@ -71,7 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Dedicated blog article pages
+  // Dedicated blog articles (hardcoded, high-quality content)
   const blogArticles = [
     "duct-cleaning-cost-guide-stony-plain-spruce-grove",
     "best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
@@ -86,14 +90,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Dynamic blog posts from posts.json
+  // Dynamic blog posts from posts.json (only include posts with real content)
   let dynamicPosts: MetadataRoute.Sitemap = [];
   try {
     const filePath = path.join(process.cwd(), "src/data/posts.json");
     if (fs.existsSync(filePath)) {
       const posts = JSON.parse(fs.readFileSync(filePath, "utf8"));
       dynamicPosts = posts
-        .filter((p: any) => !p.isDedicatedPage)
+        .filter((p: any) => !p.isDedicatedPage && p.content && p.content.length > 200)
         .map((post: any) => ({
           url: `${baseUrl}/blog/${post.slug}`,
           lastModified: new Date(post.date),
@@ -103,15 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   } catch {}
 
-  // Legacy pages from the catch-all route
-  const legacyPages: MetadataRoute.Sitemap = ALL_URLS
-    .filter((url) => url !== "/")
-    .map((url) => ({
-      url: `${baseUrl}/${url}`,
-      lastModified: new Date("2025-01-01"),
-      changeFrequency: "monthly" as const,
-      priority: 0.5,
-    }));
+  // NO legacy pages — removed 392 off-topic URLs that were destroying topical authority
 
-  return [...staticPages, ...locationPages, ...articlePages, ...dynamicPosts, ...legacyPages];
+  return [...staticPages, ...locationPages, ...articlePages, ...dynamicPosts];
 }

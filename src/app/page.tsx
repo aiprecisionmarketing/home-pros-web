@@ -197,9 +197,9 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-4">
                 <h1 className="text-charcoal text-5xl md:text-7xl font-black leading-[1.05] tracking-tight">
-                  Breathe Clean,
+                  Furnace & Duct Cleaning
                   <br />
-                  <span className="text-primary">Save Big.</span>
+                  <span className="text-primary">Spruce Grove & Stony Plain</span>
                 </h1>
                 <p className="text-slate-600 text-lg md:text-xl max-w-[520px] leading-relaxed">
                   One flat rate. <strong className="text-charcoal">Every register in your home cleaned</strong> — hot

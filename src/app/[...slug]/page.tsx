@@ -52,6 +52,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return {
         title: `${title} | Home Pros Group`,
         description,
+        robots: { index: false, follow: false }, // Noindex legacy pages — they dilute topical authority
         alternates: {
             canonical: `https://www.sprucegrovefurnacecleaning.com/${slugPath}`,
         },
