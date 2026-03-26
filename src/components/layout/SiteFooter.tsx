@@ -69,6 +69,12 @@ export function SiteFooter() {
                 <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-[10px] font-medium tracking-[0.1em] uppercase opacity-40">&copy; 2026 Home Pros Group. All rights reserved. Stony Plain, AB.</p>
                     <p className="text-[10px] font-medium tracking-[0.1em] uppercase opacity-40">Family-owned and operated since 2005</p>
+                    <p className="text-[10px] font-medium tracking-[0.1em] uppercase opacity-30 mt-2">
+                        Website by{" "}
+                        <a href="https://aiprecisionmarketing.ca/portfolio" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 hover:opacity-100 transition-all">
+                            AI Precision Marketing
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>
