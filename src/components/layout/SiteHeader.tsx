@@ -54,10 +54,10 @@ export function SiteHeader() {
                     <span className="font-black text-xl tracking-tighter uppercase italic hidden sm:block text-white">HOME PROS</span>
                 </Link>
                 <nav className="hidden md:flex gap-8 text-[11px] font-black uppercase tracking-[0.15em] text-gray-500">
-                    <Link href="/services/dryer-vents" className="hover:text-red-500 transition-colors">Dryer Vents</Link>
-                    <Link href="/services/gutters" className="hover:text-red-500 transition-colors">Climate Shields</Link>
-                    <Link href="/about" className="hover:text-red-500 transition-colors">Audit Team</Link>
-                    <Link href="/blog" className="hover:text-red-500 transition-colors">Intelligence</Link>
+                    <Link href="/services" className="hover:text-red-500 transition-colors">Services</Link>
+                    <Link href="/services/furnace-cleaning" className="hover:text-red-500 transition-colors">Furnace Cleaning</Link>
+                    <Link href="/about" className="hover:text-red-500 transition-colors">About</Link>
+                    <Link href="/blog" className="hover:text-red-500 transition-colors">Blog</Link>
                 </nav>
                 <div className="flex items-center gap-3">
                     <a href="tel:18254359977" className="hidden md:flex items-center gap-2 text-white hover:text-red-400 transition-colors">

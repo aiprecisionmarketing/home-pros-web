@@ -9,9 +9,9 @@ try {
     const content = fs.readFileSync(sitemapPath, 'utf-8');
     const urls = content
         .split('\n')
-        .filter(line => line.startsWith('- https://homeprosgroup.com/'))
+        .filter(line => line.startsWith('- https://sprucegrovefurnacecleaning.com/'))
         .map(line => {
-            const url = line.replace('- https://homeprosgroup.com/', '').trim().replace(/\/$/, '');
+            const url = line.replace('- https://sprucegrovefurnacecleaning.com/', '').trim().replace(/\/$/, '');
             return url || '/'; // Handle homepage
         });
 

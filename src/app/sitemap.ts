@@ -27,6 +27,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/services`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/services/furnace-cleaning`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/services/duct-cleaning`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/services/dryer-vents`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -39,6 +57,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
   ];
+
+  // Location pages
+  const locationPages: MetadataRoute.Sitemap = [
+    "stony-plain",
+    "spruce-grove",
+    "parkland-county",
+    "edmonton",
+  ].map((location) => ({
+    url: `${baseUrl}/services/${location}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
 
   // Dedicated blog article pages
   const blogArticles = [
@@ -82,5 +113,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     }));
 
-  return [...staticPages, ...articlePages, ...dynamicPosts, ...legacyPages];
+  return [...staticPages, ...locationPages, ...articlePages, ...dynamicPosts, ...legacyPages];
 }

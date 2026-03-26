@@ -183,6 +183,35 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     </p>
                 </div>
             </div>
+
+            {/* Article Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": post.title,
+                        "description": post.excerpt || `Read about ${post.title} from Home Pros Group.`,
+                        "author": { "@type": "Organization", "name": "Home Pros Group" },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Home Pros Group",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://www.sprucegrovefurnacecleaning.com/logo.png"
+                            }
+                        },
+                        "datePublished": post.date,
+                        "dateModified": post.date,
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": `https://www.sprucegrovefurnacecleaning.com/blog/${slug}`
+                        },
+                        ...(post.featured_image ? { "image": post.featured_image } : {})
+                    })
+                }}
+            />
         </article>
     );
 }

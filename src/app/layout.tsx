@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.sprucegrovefurnacecleaning.com"),
   openGraph: {
     title: "Duct Cleaning Stony Plain & Spruce Grove | Home Pros Group",
-    description: "Top-rated furnace & duct cleaning in Stony Plain and Spruce Grove. $345 flat-rate, unlimited vents. Family-owned since 2018.",
+    description: "Top-rated furnace & duct cleaning in Stony Plain and Spruce Grove. $345 flat-rate, unlimited vents. Family-owned since 2005.",
     url: "https://www.sprucegrovefurnacecleaning.com",
     siteName: "Home Pros Group",
     locale: "en_CA",
@@ -68,33 +68,84 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "HVACBusiness",
               "name": "Home Pros Group",
+              "legalName": "Home Pros Group",
               "image": "https://www.sprucegrovefurnacecleaning.com/logo.png",
               "@id": "https://www.sprucegrovefurnacecleaning.com",
               "url": "https://www.sprucegrovefurnacecleaning.com",
-              "telephone": "+1 (825) 435-9977",
+              "telephone": "+18254359977",
+              "email": "info@sprucegrovefurnacecleaning.com",
+              "description": "Professional furnace cleaning, duct cleaning, and dryer vent cleaning in Stony Plain, Spruce Grove, and Parkland County. Flat-rate pricing, unlimited vents. Family-owned and operated since 2005.",
+              "foundingDate": "2005",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Spruce Grove",
+                "streetAddress": "53 Umbach Road",
+                "addressLocality": "Stony Plain",
                 "addressRegion": "AB",
+                "postalCode": "T7Z 1G1",
                 "addressCountry": "CA"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 53.545,
-                "longitude": -113.901
+                "latitude": 53.5251,
+                "longitude": -114.0076
               },
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                "opens": "00:00",
-                "closes": "23:59"
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "08:00",
+                "closes": "18:00"
               },
               "areaServed": [
-                { "@type": "City", "name": "Spruce Grove" },
                 { "@type": "City", "name": "Stony Plain" },
-                { "@type": "City", "name": "Parkland County" }
+                { "@type": "City", "name": "Spruce Grove" },
+                { "@type": "City", "name": "Parkland County" },
+                { "@type": "City", "name": "Edmonton" },
+                { "@type": "City", "name": "St. Albert" },
+                { "@type": "City", "name": "Devon" },
+                { "@type": "City", "name": "Beaumont" }
               ],
-              "priceRange": "$$"
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Home Pros Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Furnace & Duct Cleaning",
+                      "description": "Complete furnace and duct cleaning. Flat rate $345, unlimited vents."
+                    },
+                    "price": "345.00",
+                    "priceCurrency": "CAD"
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Dryer Vent Cleaning",
+                      "description": "Professional dryer vent cleaning to prevent fires and improve efficiency."
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Gutter Cleaning",
+                      "description": "Professional gutter cleaning and maintenance."
+                    }
+                  }
+                ]
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "bestRating": "5",
+                "ratingCount": "200",
+                "reviewCount": "200"
+              },
+              "priceRange": "$$",
+              "paymentAccepted": ["Cash", "Credit Card", "E-Transfer"],
+              "slogan": "Your Local Home Maintenance Experts"
             })
           }}
         />
