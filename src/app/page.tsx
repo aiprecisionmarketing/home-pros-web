@@ -129,7 +129,7 @@ export default function Home() {
         <div className="ticker-track">
           <span>⚡ Flat Rate Cleaning — ALL registers included, zero vent counting</span>
           <span>✓ 100% Satisfaction Guaranteed or we return FREE</span>
-          <span>📞 Call Now: +1 (825) 435-9977 — Get Your Free Quote</span>
+          <span>📞 Call Now: +1 (780) 932-7337 — Get Your Free Quote</span>
           <span>💰 Other companies charge per vent — we never do</span>
           <span>🏠 Serving Spruce Grove · Stony Plain · Greater Edmonton</span>
           <span>⚡ Transparent Pricing — No hidden fees, no surprises</span>
@@ -208,7 +208,7 @@ export default function Home() {
               </div>
               <div className="flex flex-wrap gap-4 items-center">
                 <a
-                  href="tel:18254359977"
+                  href="tel:17809327337"
                   className="flex min-w-[220px] cursor-pointer items-center justify-center gap-2 rounded-xl h-14 px-8 bg-primary text-white text-lg font-bold shadow-xl shadow-primary/30 hover:scale-105 hover:bg-red-700 transition-all active:scale-95"
                 >
                   <span className="material-symbols-outlined">phone</span> Get Your Free Quote
@@ -502,9 +502,9 @@ export default function Home() {
                     <strong className="text-primary">Transparent flat-rate pricing</strong> customized for your home.
                     No vent counting. No hidden charges. Ever.
                   </p>
-                  <a href="tel:18254359977" className="inline-flex items-center gap-2 text-primary hover:text-red-700 font-bold text-lg transition-colors">
+                  <a href="tel:17809327337" className="inline-flex items-center gap-2 text-primary hover:text-red-700 font-bold text-lg transition-colors">
                     <span className="material-symbols-outlined">phone</span>
-                    Call +1 (825) 435-9977 for Your Free Quote
+                    Call +1 (780) 932-7337 for Your Free Quote
                   </a>
                 </div>
                 <ul className="space-y-4 mb-8">
@@ -793,12 +793,12 @@ export default function Home() {
                   className="faq-btn w-full py-6 flex justify-between items-center text-left gap-4"
                   style={{ background: "none", border: "none", cursor: "pointer" }}
                 >
-                  <span className="text-lg font-bold text-charcoal">What does the $345 flat rate actually include?</span>
+                  <span className="text-lg font-bold text-charcoal">What does the $285 single / $385 double + GST actually include?</span>
                   <span className="material-symbols-outlined faq-icon text-primary flex-shrink-0">add</span>
                 </button>
                 <div className="faq-body pb-6">
                   <p className="text-slate-600 leading-relaxed">
-                    The $345 flat rate includes cleaning <strong>every register in your home</strong> — every hot supply and
+                    The $285 single / $385 double + GST includes cleaning <strong>every register in your home</strong> — every hot supply and
                     every cold return, no matter how many you have. It also includes cleaning all accessible furnace
                     components: burners, blower compartment, motors, and electrical areas. There is no per-vent charge and
                     no hidden fees of any kind.
@@ -1002,10 +1002,10 @@ export default function Home() {
           <div className="space-y-5">
             <h6 className="text-white font-bold uppercase tracking-widest text-xs">Contact</h6>
             <a
-              href="tel:18254359977"
+              href="tel:17809327337"
               className="block text-3xl font-black text-white hover:text-primary transition-colors"
             >
-              +1 (825) 435-9977
+              +1 (780) 932-7337
             </a>
             <p className="text-sm">Available 7 days a week</p>
             <div className="flex flex-wrap gap-3 mt-2">

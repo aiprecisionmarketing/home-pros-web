@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "Duct Cleaning Cost in Stony Plain & Spruce Grove: Complete 2026 Guide",
     description:
       "How much does duct cleaning cost in Stony Plain & Spruce Grove? Flat-rate $345 for unlimited vents. No hidden fees. Compare prices, avoid scams, and learn what professional duct cleaning really includes.",
-    url: "https://www.sprucegrovefurnacecleaning.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
+    url: "https://www.homeprosgroup.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "article",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     authors: ["Home Pros Group"],
     images: [
       {
-        url: "https://www.sprucegrovefurnacecleaning.com/images/blog/cost-guide.png",
+        url: "https://www.homeprosgroup.com/images/blog/cost-guide.png",
         width: 1200,
         height: 630,
         alt: "Duct Cleaning Cost Guide for Stony Plain and Spruce Grove",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://www.sprucegrovefurnacecleaning.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
+      "https://www.homeprosgroup.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
   },
 };
 
@@ -126,18 +126,18 @@ const articleJsonLd = {
     "Duct Cleaning in Stony Plain & Spruce Grove: The Complete 2026 Cost & Service Guide",
   description:
     "Comprehensive guide to duct cleaning costs in Stony Plain, Spruce Grove, and Parkland County. Flat-rate pricing, what to expect, scams to avoid, and how to prepare.",
-  image: "https://www.sprucegrovefurnacecleaning.com/images/duct-cleaning-stony-plain.jpg",
+  image: "https://www.homeprosgroup.com/images/duct-cleaning-stony-plain.jpg",
   author: {
     "@type": "Organization",
     name: "Home Pros Group",
-    url: "https://www.sprucegrovefurnacecleaning.com",
+    url: "https://www.homeprosgroup.com",
   },
   publisher: {
     "@type": "Organization",
     name: "Home Pros Group",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.sprucegrovefurnacecleaning.com/images/logo.png",
+      url: "https://www.homeprosgroup.com/images/logo.png",
     },
   },
   datePublished: "2025-11-15",
@@ -145,7 +145,7 @@ const articleJsonLd = {
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://www.sprucegrovefurnacecleaning.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
+      "https://www.homeprosgroup.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",
   },
 };
 
@@ -168,8 +168,8 @@ const localBusinessJsonLd = {
   name: "Home Pros Group",
   description:
     "Professional furnace cleaning, duct cleaning, and dryer vent cleaning in Stony Plain, Spruce Grove, and Parkland County. Flat-rate pricing, family-owned since 2018.",
-  url: "https://www.sprucegrovefurnacecleaning.com",
-  telephone: "+1-825-435-9977",
+  url: "https://www.homeprosgroup.com",
+  telephone: "+1-780-932-7337",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Stony Plain",
@@ -350,10 +350,10 @@ export default function DuctCleaningCostGuidePage() {
                       the real cost for a typical 14-vent home to $450&ndash;$730.
                     </p>
                     <a
-                      href="tel:18254359977"
+                      href="tel:17809327337"
                       className="inline-flex items-center gap-2 px-5 py-3 bg-[#e9261c] text-white font-bold rounded-xl hover:bg-red-700 transition-colors no-underline text-sm"
                     >
-                      Call (825) 435-9977 for Your Flat-Rate Quote
+                      Call (780) 932-7337 for Your Flat-Rate Quote
                     </a>
                   </div>
                 </div>
@@ -511,10 +511,10 @@ export default function DuctCleaningCostGuidePage() {
                       included.
                     </p>
                     <a
-                      href="tel:18254359977"
+                      href="tel:17809327337"
                       className="inline-flex items-center gap-2 px-8 py-4 bg-[#e9261c] text-white text-lg font-bold rounded-xl hover:bg-red-700 transition-colors no-underline"
                     >
-                      Call (825) 435-9977
+                      Call (780) 932-7337
                     </a>
                   </div>
                 </section>
@@ -588,10 +588,10 @@ export default function DuctCleaningCostGuidePage() {
                     should know exactly what you will pay before we arrive. When you call
                     us at{" "}
                     <a
-                      href="tel:18254359977"
+                      href="tel:17809327337"
                       className="text-[#e9261c] font-semibold no-underline hover:underline"
                     >
-                      (825) 435-9977
+                      (780) 932-7337
                     </a>
                     , the price we quote on the phone is the price on your invoice. Period.
                   </p>
@@ -817,10 +817,10 @@ export default function DuctCleaningCostGuidePage() {
                       recommendation &mdash; even if that means telling you to wait.
                     </p>
                     <a
-                      href="tel:18254359977"
+                      href="tel:17809327337"
                       className="inline-flex items-center gap-2 px-6 py-3 bg-[#e9261c] text-white font-bold rounded-xl hover:bg-red-700 transition-colors no-underline"
                     >
-                      (825) 435-9977 &mdash; Honest Advice, No Pressure
+                      (780) 932-7337 &mdash; Honest Advice, No Pressure
                     </a>
                   </div>
                 </section>
@@ -1219,10 +1219,10 @@ export default function DuctCleaningCostGuidePage() {
                     Plain, Spruce Grove, and Parkland County. If your question is not
                     listed here, call us at{" "}
                     <a
-                      href="tel:18254359977"
+                      href="tel:17809327337"
                       className="text-[#e9261c] font-semibold no-underline hover:underline"
                     >
-                      (825) 435-9977
+                      (780) 932-7337
                     </a>{" "}
                     and we will be happy to answer.
                   </p>
@@ -1282,10 +1282,10 @@ export default function DuctCleaningCostGuidePage() {
                         &bull; WCB insured
                       </p>
                       <a
-                        href="tel:18254359977"
+                        href="tel:17809327337"
                         className="inline-flex items-center gap-3 px-10 py-5 bg-[#e9261c] text-white text-xl md:text-2xl font-black rounded-xl hover:bg-red-700 transition-all no-underline shadow-xl hover:shadow-2xl"
                       >
-                        Call +1 (825) 435-9977
+                        Call +1 (780) 932-7337
                       </a>
                       <p className="mt-6 text-sm text-slate-500">
                         Or{" "}

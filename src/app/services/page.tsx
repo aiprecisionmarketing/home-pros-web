@@ -10,7 +10,7 @@ const services = [
         icon: Flame,
         title: "Furnace Cleaning",
         description: "Complete furnace cleaning covering burners, blower compartment, motor, flame sensor, and all accessible components. Keep your furnace running efficiently and safely all winter long.",
-        price: "$345 Flat Rate",
+        price: "$285 Single / $385 Double + GST",
         href: "/services/furnace-cleaning",
         color: "bg-orange-50 border-orange-200 hover:border-orange-400",
         iconColor: "text-orange-600",
@@ -69,9 +69,9 @@ export default function ServicesPage() {
                         <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-8">
                             Home Pros Group provides professional furnace cleaning, duct cleaning, dryer vent cleaning, and gutter cleaning for homeowners in Stony Plain, Spruce Grove, Parkland County, and Greater Edmonton. Flat-rate pricing with no hidden fees.
                         </p>
-                        <a href="tel:18254359977">
+                        <a href="tel:17809327337">
                             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-primary/25 transition-all">
-                                Call (825) 435-9977 — Free Quote
+                                Call (780) 932-7337 — Free Quote
                             </Button>
                         </a>
                     </motion.div>
@@ -107,7 +107,7 @@ export default function ServicesPage() {
                     <h2 className="text-3xl font-bold mb-6 text-slate-900">Why Homeowners Choose Home Pros Group</h2>
                     <div className="grid md:grid-cols-3 gap-8 mt-12">
                         <div className="text-center">
-                            <div className="text-4xl font-black text-primary mb-2">$345</div>
+                            <div className="text-4xl font-black text-primary mb-2">$285+</div>
                             <p className="text-sm font-bold text-slate-700 uppercase tracking-wider">Flat Rate Pricing</p>
                             <p className="text-slate-500 mt-2">Every vent included. No vent counting, no surprise charges.</p>
                         </div>
@@ -153,9 +153,9 @@ export default function ServicesPage() {
                     <p className="text-xl text-slate-300 mb-8">
                         Call today for a free quote. Flat-rate pricing, no hidden fees, and 100% satisfaction guaranteed.
                     </p>
-                    <a href="tel:18254359977">
+                    <a href="tel:17809327337">
                         <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-xl rounded-full shadow-lg hover:shadow-primary/25 transition-all">
-                            Call (825) 435-9977
+                            Call (780) 932-7337
                         </Button>
                     </a>
                     <p className="mt-4 text-sm text-slate-400">53 Umbach Road, Stony Plain, AB T7Z 1G1</p>

@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     title: "HVAC Cleaning Blog | Home Pros Group",
     description:
       "Expert furnace & duct cleaning guides for Stony Plain, Spruce Grove, and Parkland County homeowners.",
-    url: "https://www.sprucegrovefurnacecleaning.com/blog",
+    url: "https://www.homeprosgroup.com/blog",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.sprucegrovefurnacecleaning.com/blog",
+    canonical: "https://www.homeprosgroup.com/blog",
   },
 };
 
@@ -251,10 +251,10 @@ export default async function BlogIndexPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="tel:18254359977"
+              href="tel:17809327337"
               className="inline-flex items-center gap-3 px-8 py-4 bg-[#e9261c] text-white text-lg font-bold rounded-xl hover:bg-red-700 transition-colors no-underline shadow-lg"
             >
-              Call +1 (825) 435-9977
+              Call +1 (780) 932-7337
             </a>
             <span className="text-slate-400 text-sm">
               Free quotes &bull; No hidden fees &bull; Local since 2018
@@ -273,12 +273,12 @@ export default async function BlogIndexPage() {
             name: "Home Pros Group HVAC Cleaning Blog",
             description:
               "Expert furnace cleaning, duct cleaning, and indoor air quality guides for Stony Plain, Spruce Grove, and Parkland County homeowners.",
-            url: "https://www.sprucegrovefurnacecleaning.com/blog",
+            url: "https://www.homeprosgroup.com/blog",
             publisher: {
               "@type": "Organization",
               name: "Home Pros Group",
-              url: "https://www.sprucegrovefurnacecleaning.com",
-              telephone: "+1-825-435-9977",
+              url: "https://www.homeprosgroup.com",
+              telephone: "+1-780-932-7337",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Spruce Grove",
@@ -295,7 +295,7 @@ export default async function BlogIndexPage() {
                 "@type": "Organization",
                 name: "Home Pros Group",
               },
-              url: `https://www.sprucegrovefurnacecleaning.com/blog/${post.slug}`,
+              url: `https://www.homeprosgroup.com/blog/${post.slug}`,
             })),
           }),
         }}

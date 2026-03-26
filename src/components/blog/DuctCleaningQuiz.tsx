@@ -118,7 +118,7 @@ function getResult(score: number): Result {
       borderColor: "border-orange-400",
       message: "Your home has multiple indicators that your ducts need professional attention.",
       recommendation:
-        "We strongly recommend booking duct cleaning as soon as possible. Dirty ducts are likely affecting your air quality, energy bills, and HVAC system lifespan. Call Home Pros Group at +1 (825) 435-9977 for a free quote — flat-rate pricing, no hidden fees.",
+        "We strongly recommend booking duct cleaning as soon as possible. Dirty ducts are likely affecting your air quality, energy bills, and HVAC system lifespan. Call Home Pros Group at +1 (780) 932-7337 for a free quote — flat-rate pricing, no hidden fees.",
     };
   }
   return {
@@ -128,7 +128,7 @@ function getResult(score: number): Result {
     borderColor: "border-red-500",
     message: "Your home is showing serious signs of contaminated ductwork.",
     recommendation:
-      "Don't wait — your air quality and HVAC system are at risk. Dirty ducts at this level can cause health issues, significantly higher energy bills, and premature furnace failure. Call Home Pros Group today at +1 (825) 435-9977 for immediate service in Stony Plain, Spruce Grove, and Parkland County.",
+      "Don't wait — your air quality and HVAC system are at risk. Dirty ducts at this level can cause health issues, significantly higher energy bills, and premature furnace failure. Call Home Pros Group today at +1 (780) 932-7337 for immediate service in Stony Plain, Spruce Grove, and Parkland County.",
   };
 }
 
@@ -215,10 +215,10 @@ export function DuctCleaningQuiz() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:18254359977"
+                href="tel:17809327337"
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#e9261c] text-white text-lg font-bold rounded-xl hover:bg-red-700 transition-colors no-underline"
               >
-                📞 Call (825) 435-9977 for Free Quote
+                📞 Call (780) 932-7337 for Free Quote
               </a>
               <button
                 onClick={reset}

@@ -1,0 +1,310 @@
+{
+  "scraped_date": "2026-03-26",
+  "source": "homeprosgroup.com",
+  "notes": "Content scraped for Next.js site rebuild. Some pages had heavy JS rendering that limited extraction. Fort Saskatchewan city page had best content - use as template for other city pages.",
+  "company_info": {
+    "name": "Home Pros Group",
+    "address": "53 Umbach Road, Stony Plain, T7Z 1G1",
+    "phone": "780-932-7337",
+    "email": "[email protected]",
+    "hours": {
+      "monday_friday": "9:00 AM - 5:00 PM",
+      "saturday": "8:00 AM - 5:00 PM"
+    },
+    "years_in_business": "20+",
+    "service_areas": ["Stony Plain", "Spruce Grove", "Edmonton", "Parkland County", "St. Albert", "Sherwood Park", "Leduc", "Fort Saskatchewan", "Edson"],
+    "social_media": {
+      "facebook": "https://www.facebook.com/homeprosgroup/",
+      "twitter": "https://x.com/HomeProsGroup",
+      "linkedin": "https://www.linkedin.com/company/home-pros-group/",
+      "pinterest": "https://www.pinterest.ca/kwick67544/pins/",
+      "youtube": "https://www.youtube.com/channel/UCOI7XcPKNdKKdYcu9XH8PHA"
+    },
+    "tagline": "Furnace & Duct Cleaning - Dryer Vent Cleaning - Gutter Cleaning",
+    "description": "Home Pros group provides homeowners, property managers, insurance companies with one phone call service for your residential and commercial HVAC needs."
+  },
+  "pages": [
+    {
+      "url": "https://homeprosgroup.com/",
+      "title": "Home Pros Group - Homepage",
+      "type": "core",
+      "content": "Home Pros group provides homeowners, property managers, insurance companies with one phone call service for your residential and commercial HVAC needs.",
+      "services_listed": ["Furnace Cleaning", "Duct Cleaning", "Furnace Repair", "Dryer Vent Cleaning", "Gutter Cleaning"],
+      "meta_description": "Home Pros group provides homeowners, property managers, insurance companies with one phone call service for your residential and commercial HVAC needs.",
+      "extraction_quality": "low - page heavily JS-rendered, limited text extracted"
+    },
+    {
+      "url": "https://homeprosgroup.com/services/",
+      "title": "Services Hub",
+      "type": "core",
+      "content": "Home Pros group provides homeowners, property managers, insurance companies with one phone call service for your residential and commercial HVAC needs. Services include Furnace Cleaning, Duct Cleaning, Furnace Repair, Dryer Vent Cleaning, and Gutter Cleaning.",
+      "services_listed": ["Furnace Cleaning", "Duct Cleaning", "Furnace Repair", "Dryer Vent Cleaning", "Gutter Cleaning"],
+      "extraction_quality": "low - mostly meta/schema data extracted"
+    },
+    {
+      "url": "https://homeprosgroup.com/services/duct-cleaning/",
+      "title": "Duct Cleaning Services",
+      "type": "service",
+      "content": "Home Pros group provides homeowners, property managers, insurance companies with one phone call service for your residential and commercial HVAC needs. Since 2010, serving residential and commercial HVAC in Edmonton area.",
+      "stats": {
+        "years_in_business": "Since 2010"
+      },
+      "extraction_quality": "low - JS-rendered content not fully accessible"
+    },
+    {
+      "url": "https://homeprosgroup.com/furnace-and-duct-cleaning/",
+      "title": "Furnace And Duct Cleaning | What is It? | Why You Need It?",
+      "type": "service",
+      "extraction_quality": "excellent",
+      "content": "Furnace And Duct Cleaning – Cleaner air is only a phone call away! Harmful contaminants such as dust, dirt, bacteria, and pet dander, collect in your home's air ducts over time...\n\nThe company employs NADCA trained technicians using truck mount equipment for professional duct cleaning services.\n\nYour furnace and duct cleaning service is carefully premeditated and closely managed from start to finish to make sure you get the most from your investment.\n\nWe guarantee you will be absolutely pleased with our duct cleaning services every time or your money back.\n\nTo book an appointment for furnace and duct cleaning please call 780-932-7337.",
+      "pricing": {
+        "single_furnace_system": {
+          "price": "$285.00 + GST",
+          "includes": "furnace, all ducting (hot and cold), all registers, HWT, one dryer vent",
+          "ac_addition": "$49.00"
+        },
+        "double_furnace_system": {
+          "price": "$385.00 + GST",
+          "includes": "Same inclusions as single system",
+          "ac_addition": "$49.00 per furnace"
+        },
+        "additional_services": {
+          "duct_sanitizing": "$59.00 (with full system cleaning)",
+          "vac_u_flow_cleaning": "$89.00 (with full system cleaning)"
+        }
+      },
+      "service_process": [
+        {
+          "step": 1,
+          "title": "Home Protection",
+          "description": "Drop cloths, corner guards, and plastic tape protect the property during service."
+        },
+        {
+          "step": 2,
+          "title": "HVAC Cleaning",
+          "description": "Truck-mount vacuum system uses bypass cleaning method with power-driven whip system to clean ducts using compressed air."
+        },
+        {
+          "step": 3,
+          "title": "Main Trunk Cleaning",
+          "description": "Technicians power whip the main trunk line, forcing contaminants into the truck-mounted vacuum for disposal."
+        },
+        {
+          "step": 4,
+          "title": "Inspection",
+          "description": "High-tech video inspection system allows before-and-after documentation of duct conditions and cleaning results."
+        }
+      ],
+      "guarantee": "We guarantee you will be absolutely pleased with our duct cleaning services every time or your money back."
+    },
+    {
+      "url": "https://homeprosgroup.com/dryer-vent-cleaning/",
+      "title": "Dryer Vent Cleaners",
+      "type": "service",
+      "extraction_quality": "good",
+      "content": "Finding a dryer vent cleaning provider is often harder than it's supposed to be. We make the work simple by providing you with vetted, qualified contractors in your area.\n\nWe are in the business of cleaning dryer vents. After countless years of experience, we can claim that we are very efficient in what we do. We provide inexpensive rates and the very best customer service around, you can be certain that our team will take great care of your home!\n\nWe know that people today are rather busy. That's why we provide incredibly convenient bookings and annual service contracts are available. So whether you desire us to turn up first thing in the morning or later on in the day, we will do our absolute best to deal with your schedule. We want your experience with our technicians to be so great that you call us back the next year and the year after that.\n\nHome Pros is constantly working to make your experience the best we can. Let us show you why we are, Alberta's #1 choice for finding Dryer Vent Cleaners. So give us a call today for a complimentary \"Absolutely No Commitment\" quote.",
+      "key_selling_points": [
+        "Vetted, qualified contractors",
+        "Inexpensive rates",
+        "Convenient bookings",
+        "Annual service contracts available",
+        "Flexible scheduling",
+        "Alberta's #1 choice for Dryer Vent Cleaners",
+        "Free no-commitment quote"
+      ]
+    },
+    {
+      "url": "https://homeprosgroup.com/gutter-cleaning-services/",
+      "title": "Gutter Cleaning Services",
+      "type": "service",
+      "content": "Home Pros Group - Furnace & Duct Cleaning - Dryer Vent Cleaning - Gutter Cleaning",
+      "extraction_quality": "very low - page content mostly JS-rendered, could not extract body text"
+    },
+    {
+      "url": "https://homeprosgroup.com/commercial-duct-cleaning-services/",
+      "title": "Commercial Duct Cleaning Services",
+      "type": "service",
+      "extraction_quality": "excellent",
+      "content": "For over 20 years, Home Pros Group has provided professional commercial duct cleaning for heating, ventilation, and air conditioning systems (HVAC) cleaning throughout North America.\n\nCall Home Pros Group for your free Commercial Duct Cleaning Quote at 780-932-7337.\n\nIf you own or rent a commercial building, you're probably familiar with the term \"sick building syndrome\". People who spend time in \"sick buildings\" tend to experience a higher than the average number of physical ailments like colds, flu, dizziness, asthma, headaches, and difficulty concentrating. Symptoms generally improve when people go on vacation and return when they return to work.\n\nSick Building Syndrome is usually traceable to poor indoor air quality. In many cases of high employee absenteeism, poor indoor air quality is the real culprit. A thorough cleaning of your building's heating, cooling, and ventilation systems can improve indoor air quality (IAQ) and reduce absenteeism. As an added bonus, heating and ventilation systems cleaning can reduce your heating and cooling costs.\n\nFor more information on heating and ventilation systems duct cleaning in apartments, hotels, shopping centers, and all other types of commercial buildings, contact us at 780-932-7337. We are oilfield commercial duct cleaning specialists!",
+      "cleaning_methods": [
+        {
+          "name": "Standard Duct Cleaning",
+          "description": "Cleans the duct system using forced air and a strong vacuum. Recommended for removing dust and debris from the ducting systems of brand new buildings only. Once a building has been occupied, moisture in the air causes the dust to stick to the interior of the ducts, so the building must be cleaned using more advanced technology."
+        },
+        {
+          "name": "Power Whip/Viper Method",
+          "description": "Suitable for most cleaning tasks. A power whip cleaning tool is used along with forced air and vacuum to dislodge dirt and debris from the ducts. All commercial, industrial, and institutional cleaning involve either the Power Whip or Pneumatic Brush method."
+        },
+        {
+          "name": "Pneumatic Brush Method",
+          "description": "The most advanced of the three commercial duct cleaning methods, giving superior cleaning results. Hi-tech rotating brushes and a strong vacuum are used to clean the ducts. Common in hospital and institutional cleaning, where very high standards of cleanliness are required. White-glove testing of the ducting should detect no dust residue after this method."
+        }
+      ],
+      "services_list": [
+        "Heating, ventilation, and air conditioning duct systems cleaning",
+        "Boiler cleaning (firebox area and most types of heat exchangers)",
+        "Fume hood system cleaning",
+        "Heating and cooling coil cleaning",
+        "Exhaust stack cleaning",
+        "Dryer room vent cleaning (lint removal for increased dryer efficiency)",
+        "Roof air handling unit cleaning",
+        "Dust removal for sandblasting contracts",
+        "Asbestos removal cleanup",
+        "Mold testing and remediation",
+        "Indoor air quality testing"
+      ],
+      "guarantees": [
+        "Video inspection",
+        "Certificate of completion",
+        "Photos of ductwork before and after cleaning",
+        "Testing to confirm cleaning to specifications (Level 1 or Level 2) of the NADCA standard"
+      ]
+    },
+    {
+      "url": "https://homeprosgroup.com/home-pros-group/quality-you-can-trust/",
+      "title": "Quality You Can Trust",
+      "type": "core",
+      "content": "Quality you can trust is the core statement Home Pros Group lives by. When customers call, service begins immediately with this commitment as their foundation.",
+      "extraction_quality": "low - limited body text extracted from JS-heavy page"
+    },
+    {
+      "url": "https://homeprosgroup.com/home-pros-group/why-home-pros/",
+      "title": "Why Home Pros",
+      "type": "core",
+      "content": "Information about Home Pros Group's commitment to client satisfaction and service excellence.",
+      "extraction_quality": "very low - page content entirely JS-rendered, no body text extracted"
+    },
+    {
+      "url": "https://homeprosgroup.com/home-pros-group/contact-us/",
+      "title": "Contact Us",
+      "type": "core",
+      "extraction_quality": "medium",
+      "content": "Contact Home Pros Group for furnace cleaning and duct cleaning services.",
+      "contact_form_fields": ["Name", "Email", "Phone", "Message"],
+      "footer_tagline": "Furnace Cleaning Stony Plain, Spruce Grove, Edmonton, Parkland County",
+      "footer_description": "Furnace cleaning and duct cleaning specialists located in Stony Plain and Spruce Grove. We offer our services to Edmonton, surrounding areas, and Parkland County."
+    },
+    {
+      "url": "https://homeprosgroup.com/spruce-grove-services-by-home-pros-group/",
+      "title": "Spruce Grove Services by Home Pros Group",
+      "type": "city",
+      "city": "Spruce Grove",
+      "meta_description": "Find reliable Spruce Grove services with Home Pros Group! From duct cleaning to wasp removal. Call 780-932-7337 today!",
+      "content": "Find reliable Spruce Grove services with Home Pros Group! From duct cleaning to wasp removal. Call 780-932-7337 today!",
+      "services_listed": ["Duct cleaning", "Furnace cleaning", "Dryer vent cleaning", "Gutter cleaning", "Wasp removal"],
+      "extraction_quality": "low - JS-rendered, using meta description as primary content"
+    },
+    {
+      "url": "https://homeprosgroup.com/stony-plain-services-by-home-pros-group/",
+      "title": "Stony Plain Services by Home Pros Group",
+      "type": "city",
+      "city": "Stony Plain",
+      "meta_description": "Discover top-quality Stony Plain services with Home Pros Group! From duct cleaning to wasp removal, we offer reliable solutions 780-932-7337",
+      "content": "Discover top-quality Stony Plain services with Home Pros Group! From duct cleaning to wasp removal, we offer reliable solutions. Call 780-932-7337.",
+      "services_listed": ["Furnace Cleaning", "Duct Cleaning", "Dryer Vent Cleaning", "Gutter Cleaning", "Wasp Removal"],
+      "extraction_quality": "low - JS-rendered"
+    },
+    {
+      "url": "https://homeprosgroup.com/edmonton-services-by-home-pros-group/",
+      "title": "Edmonton Services by Home Pros Group",
+      "type": "city",
+      "city": "Edmonton",
+      "meta_description": "Discover reliable Edmonton services! From duct cleaning to Wasp removal, we offer solutions for your home or business.",
+      "content": "Discover reliable Edmonton services! From duct cleaning to wasp removal, we offer solutions for your home or business. Call 780-932-7337.",
+      "services_listed": ["Furnace Cleaning", "Duct Cleaning", "Dryer Vent Cleaning", "Gutter Cleaning", "Wasp Removal"],
+      "extraction_quality": "low - JS-rendered"
+    },
+    {
+      "url": "https://homeprosgroup.com/st-albert-services-by-home-pros-group/",
+      "title": "St. Albert Services by Home Pros Group",
+      "type": "city",
+      "city": "St. Albert",
+      "meta_description": "Discover reliable St. Albert services with Home Pros Group! From duct cleaning to wasp removal, top-quality solutions.",
+      "extraction_quality": "good",
+      "content": "Your Trusted Provider for St. Albert Services!\n\nLooking for reliable home and commercial services in St. Albert? Home Pros Group is here to help! With over 20 years of experience, we proudly offer a comprehensive range of St. Albert services to keep your property safe, clean, and efficient. From duct cleaning to wasp and hornet removal, our skilled team has you covered. Don't wait—call us today at 780-932-7337 and see why we are the trusted choice in St. Albert!",
+      "services_listed": [
+        "Residential Duct Cleaning",
+        "Commercial Duct Cleaning",
+        "Residential Dryer Vent Cleaning",
+        "Commercial Dryer Vent Cleaning",
+        "Furnace Cleaning",
+        "St. Albert Gutter Cleaning"
+      ],
+      "stats": {
+        "years_in_business": "Over 20 years"
+      }
+    },
+    {
+      "url": "https://homeprosgroup.com/leduc-services-by-home-pros-group/",
+      "title": "Leduc Services by Home Pros Group",
+      "type": "city",
+      "city": "Leduc",
+      "meta_description": "Find reliable Leduc services with Home Pros Group! From duct cleaning to dust collector cleaning, we provide. Call 780-932-7337 today!",
+      "content": "Find reliable Leduc services with Home Pros Group! From duct cleaning to dust collector cleaning, we provide professional services. Call 780-932-7337 today!",
+      "extraction_quality": "low - JS-rendered"
+    },
+    {
+      "url": "https://homeprosgroup.com/sherwood-park-services-by-home-pros-group/",
+      "title": "Sherwood Park Services by Home Pros Group",
+      "type": "city",
+      "city": "Sherwood Park",
+      "meta_description": "Find reliable Sherwood Park services with Home Pros Group! From duct cleaning to dust collector cleaning - Call 780-932-7337 today!",
+      "content": "Find reliable Sherwood Park services with Home Pros Group! From duct cleaning to dust collector cleaning. Call 780-932-7337 today!",
+      "services_listed": ["Duct cleaning", "Dust collector cleaning", "Furnace cleaning", "Dryer vent cleaning", "Gutter cleaning"],
+      "extraction_quality": "low - JS-rendered"
+    },
+    {
+      "url": "https://homeprosgroup.com/fort-saskatchewan-services-by-home-pros-group/",
+      "title": "Fort Saskatchewan Services by Home Pros Group",
+      "type": "city",
+      "city": "Fort Saskatchewan",
+      "meta_description": "Looking for reliable duct cleaning, dryer vent cleaning, furnace cleaning, or dust collector cleaning in Fort Saskatchewan?",
+      "extraction_quality": "excellent - best city page, use as template",
+      "content": "Looking for reliable duct cleaning, dryer vent cleaning, furnace cleaning, or dust collector cleaning in Fort Saskatchewan? Home Pros Group is here to help! With over 20 years of experience, we offer a range of Fort Saskatchewan services designed to keep your property safe, clean, and efficient. Don't wait—call us today at 780-932-7337 and see why we are the trusted choice in Fort Saskatchewan!",
+      "services_detailed": [
+        {
+          "name": "Duct Cleaning",
+          "description": "Improve air quality and enhance HVAC efficiency with our professional duct cleaning services. We remove dust, allergens, and pollutants to keep your home or business fresh and healthy."
+        },
+        {
+          "name": "Commercial Duct Cleaning",
+          "description": "Maintain a healthier environment in your commercial space with our specialized duct cleaning services, tailored to meet the unique needs of your business."
+        },
+        {
+          "name": "Dryer Vent Cleaning",
+          "description": "Reduce fire risks and improve dryer performance with our dryer vent cleaning services. We clear lint and blockages, ensuring safe and efficient operation."
+        },
+        {
+          "name": "Commercial Dryer Vent Cleaning",
+          "description": "Ensure safety and efficiency for your business with professional dryer vent cleaning. We help minimize fire risks and maintain optimal dryer performance."
+        },
+        {
+          "name": "Furnace Cleaning",
+          "description": "Keep your furnace running smoothly and safely with our expert furnace cleaning service. Lower energy costs, prevent breakdowns and extend the life of your heating system."
+        },
+        {
+          "name": "Dust Collector Cleaning",
+          "description": "For businesses with large dust collection systems, our specialized dust collector cleaning service keeps your equipment in peak condition and your workspace safe."
+        }
+      ],
+      "why_choose_us": "When you choose Home Pros Group, you're choosing quality, experience, and a commitment to customer satisfaction. Our Fort Saskatchewan services are trusted by residents and businesses for their reliability and outstanding results.",
+      "testimonials": [
+        {
+          "quote": "Home Pros Group delivered excellent service! Their team was professional, thorough, and left our property looking great. Highly recommend!",
+          "author": "Sarah K., Fort Saskatchewan"
+        }
+      ],
+      "cta": "Don't delay in improving the safety, cleanliness, and efficiency of your property. Contact Home Pros Group now to schedule your service! Our friendly team is ready to provide a free estimate and answer any questions you have. Call 780-932-7337 or email [email protected] to book your Fort Saskatchewan services today!",
+      "linked_service_areas": ["Stony Plain", "Spruce Grove", "Edmonton", "St. Albert", "Sherwood Park", "Leduc", "Edson"]
+    },
+    {
+      "url": "https://homeprosgroup.com/edson-services-by-home-pros-group/",
+      "title": "Edson Services by Home Pros Group",
+      "type": "city",
+      "city": "Edson",
+      "meta_description": "Edson Services by Home Pros Group - furnace cleaning, duct cleaning, dryer vent cleaning, gutter cleaning",
+      "content": "Home Pros Group provides furnace cleaning, duct cleaning, dryer vent cleaning, and gutter cleaning services in Edson. Call 780-932-7337.",
+      "extraction_quality": "very low - JS-rendered, minimal content extracted"
+    }
+  ]
+}

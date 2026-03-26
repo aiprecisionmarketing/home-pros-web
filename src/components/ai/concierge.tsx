@@ -9,7 +9,7 @@ import { RetellWebClient } from "retell-client-js-sdk"
 
 // Configuration from environment variables
 const AGENT_ID = process.env.NEXT_PUBLIC_RETELL_AGENT_ID || 'agent_4396fcbf2a8b61ef6d2317619f';
-const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER || '+18254359977';
+const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER || '+17809327337';
 
 
 interface ConciergeProps {

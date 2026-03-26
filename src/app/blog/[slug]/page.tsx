@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         openGraph: {
             title: post.title,
             description,
-            url: `https://www.sprucegrovefurnacecleaning.com/blog/${slug}`,
+            url: `https://www.homeprosgroup.com/blog/${slug}`,
             siteName: "Home Pros Group",
             locale: "en_CA",
             type: "article",
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             authors: [post.author || "Home Pros Team"],
         },
         alternates: {
-            canonical: `https://www.sprucegrovefurnacecleaning.com/blog/${slug}`,
+            canonical: `https://www.homeprosgroup.com/blog/${slug}`,
         },
     };
 }
@@ -173,10 +173,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         Serving Stony Plain, Spruce Grove, and all of Parkland County with honest, flat-rate HVAC cleaning since 2018.
                     </p>
                     <a
-                        href="tel:18254359977"
+                        href="tel:17809327337"
                         className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-white text-2xl font-black rounded-xl hover:bg-red-600 transition-all shadow-xl hover:scale-105"
                     >
-                        Call +1 (825) 435-9977 for Your Free Quote
+                        Call +1 (780) 932-7337 for Your Free Quote
                     </a>
                     <p className="mt-6 text-sm text-slate-400">
                         No hidden fees &bull; Flat-rate pricing &bull; Local family-owned business
@@ -199,14 +199,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             "name": "Home Pros Group",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://www.sprucegrovefurnacecleaning.com/logo.png"
+                                "url": "https://www.homeprosgroup.com/logo.png"
                             }
                         },
                         "datePublished": post.date,
                         "dateModified": post.date,
                         "mainEntityOfPage": {
                             "@type": "WebPage",
-                            "@id": `https://www.sprucegrovefurnacecleaning.com/blog/${slug}`
+                            "@id": `https://www.homeprosgroup.com/blog/${slug}`
                         },
                         ...(post.featured_image ? { "image": post.featured_image } : {})
                     })

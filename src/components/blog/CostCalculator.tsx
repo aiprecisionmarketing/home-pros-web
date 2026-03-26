@@ -169,10 +169,10 @@ export function CostCalculator() {
             )}
 
             <a
-              href="tel:18254359977"
+              href="tel:17809327337"
               className="block w-full py-4 px-6 bg-[#e9261c] text-white text-center text-lg font-bold rounded-xl hover:bg-red-700 transition-colors no-underline shadow-lg"
             >
-              📞 Get Your Flat-Rate Quote — (825) 435-9977
+              📞 Get Your Flat-Rate Quote — (780) 932-7337
             </a>
             <p className="text-xs text-center text-slate-400 mb-0">
               Prices shown are estimates. Call for your exact quote. No obligation.

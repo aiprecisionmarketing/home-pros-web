@@ -3,12 +3,33 @@ import fs from "fs";
 import path from "path";
 
 /**
- * Clean sitemap — ONLY quality pages that should be indexed.
- * Legacy/junk pages removed to restore topical authority.
- * SEO fix: March 26, 2026
+ * Sitemap for homeprosgroup.com
+ * Includes core pages, service pages, city hub pages, and city+service combo pages.
  */
+
+const CITIES = [
+  "stony-plain",
+  "spruce-grove",
+  "edmonton",
+  "st-albert",
+  "leduc",
+  "sherwood-park",
+  "fort-saskatchewan",
+  "edson",
+];
+
+const SERVICES = [
+  "furnace-cleaning",
+  "duct-cleaning",
+  "dryer-vent-cleaning",
+  "gutter-cleaning",
+  "dust-collector-cleaning",
+  "commercial-duct-cleaning",
+  "commercial-furnace-cleaning",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.sprucegrovefurnacecleaning.com";
+  const baseUrl = "https://www.homeprosgroup.com";
 
   // Core pages
   const staticPages: MetadataRoute.Sitemap = [
@@ -60,22 +81,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/services/commercial-duct-cleaning`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/services/dust-collector-cleaning`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/services/commercial-furnace-cleaning`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 
-  // Location-specific service pages (these have real, unique content)
-  const locationPages: MetadataRoute.Sitemap = [
-    "stony-plain",
-    "spruce-grove",
-    "parkland-county",
-    "edmonton",
-  ].map((location) => ({
-    url: `${baseUrl}/services/${location}`,
+  // City hub pages
+  const cityPages: MetadataRoute.Sitemap = CITIES.map((city) => ({
+    url: `${baseUrl}/services/${city}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
-  // Dedicated blog articles (hardcoded, high-quality content)
+  // City + service combo pages
+  const cityServicePages: MetadataRoute.Sitemap = CITIES.flatMap((city) =>
+    SERVICES.map((service) => ({
+      url: `${baseUrl}/services/${city}/${service}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }))
+  );
+
+  // Dedicated blog articles
   const blogArticles = [
     "duct-cleaning-cost-guide-stony-plain-spruce-grove",
     "best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
@@ -90,7 +134,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Dynamic blog posts from posts.json (only include posts with real content)
+  // Dynamic blog posts from posts.json
   let dynamicPosts: MetadataRoute.Sitemap = [];
   try {
     const filePath = path.join(process.cwd(), "src/data/posts.json");
@@ -107,7 +151,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   } catch {}
 
-  // NO legacy pages — removed 392 off-topic URLs that were destroying topical authority
-
-  return [...staticPages, ...locationPages, ...articlePages, ...dynamicPosts];
+  return [...staticPages, ...cityPages, ...cityServicePages, ...articlePages, ...dynamicPosts];
 }

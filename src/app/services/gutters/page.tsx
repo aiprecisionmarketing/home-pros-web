@@ -31,9 +31,9 @@ export default function GuttersPage() {
                         <p className="text-xl text-blue-100 max-w-2xl mx-auto mb-8">
                             Don't let clogged gutters damage your home. We safely remove debris and ensure proper drainage.
                         </p>
-                        <a href="tel:18254359977">
+                        <a href="tel:17809327337">
                             <Button size="lg" className="bg-blue-500 hover:bg-blue-400 text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all">
-                                Call (825) 435-9977 for a Free Quote
+                                Call (780) 932-7337 for a Free Quote
                             </Button>
                         </a>
                     </motion.div>
@@ -88,8 +88,8 @@ export default function GuttersPage() {
                             <li className="flex items-center gap-2"><CheckCircle2 className="text-green-500 h-5 w-5" /> Downspout flushing</li>
                             <li className="flex items-center gap-2"><CheckCircle2 className="text-green-500 h-5 w-5" /> Site cleanup</li>
                         </ul>
-                        <a href="tel:18254359977">
-                            <Button className="w-full bg-blue-600 hover:bg-blue-700">Call (825) 435-9977 to Schedule</Button>
+                        <a href="tel:17809327337">
+                            <Button className="w-full bg-blue-600 hover:bg-blue-700">Call (780) 932-7337 to Schedule</Button>
                         </a>
                     </div>
                 </div>

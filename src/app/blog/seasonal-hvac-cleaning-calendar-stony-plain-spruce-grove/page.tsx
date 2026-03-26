@@ -30,12 +30,12 @@ export const metadata: Metadata = {
     description:
       "Month-by-month HVAC cleaning schedule tailored to Alberta's extreme climate. Professional furnace, duct & dryer vent cleaning from Home Pros Group.",
     type: "article",
-    url: "https://www.sprucegrovefurnacecleaning.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
+    url: "https://www.homeprosgroup.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
     siteName: "Home Pros Group",
     locale: "en_CA",
     images: [
       {
-        url: "https://www.sprucegrovefurnacecleaning.com/images/blog/seasonal-calendar.png",
+        url: "https://www.homeprosgroup.com/images/blog/seasonal-calendar.png",
         width: 1200,
         height: 630,
         alt: "Seasonal HVAC Cleaning Calendar for Stony Plain and Spruce Grove",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://www.sprucegrovefurnacecleaning.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
+      "https://www.homeprosgroup.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
   },
 };
 
@@ -141,14 +141,14 @@ export default function SeasonalHVACCleaningCalendarPage() {
         author: {
           "@type": "Organization",
           name: "Home Pros Group",
-          url: "https://www.sprucegrovefurnacecleaning.com",
+          url: "https://www.homeprosgroup.com",
         },
         publisher: {
           "@type": "Organization",
           name: "Home Pros Group",
           logo: {
             "@type": "ImageObject",
-            url: "https://www.sprucegrovefurnacecleaning.com/logo.png",
+            url: "https://www.homeprosgroup.com/logo.png",
           },
         },
         datePublished: "2026-01-20",
@@ -156,10 +156,10 @@ export default function SeasonalHVACCleaningCalendarPage() {
         mainEntityOfPage: {
           "@type": "WebPage",
           "@id":
-            "https://www.sprucegrovefurnacecleaning.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
+            "https://www.homeprosgroup.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
         },
         image:
-          "https://www.sprucegrovefurnacecleaning.com/og/seasonal-hvac-cleaning-calendar.jpg",
+          "https://www.homeprosgroup.com/og/seasonal-hvac-cleaning-calendar.jpg",
         articleSection: "HVAC Cleaning",
         keywords:
           "furnace cleaning schedule Stony Plain, HVAC cleaning calendar, when to clean furnace Spruce Grove, seasonal furnace cleaning Alberta",
@@ -180,8 +180,8 @@ export default function SeasonalHVACCleaningCalendarPage() {
         name: "Home Pros Group",
         description:
           "Professional furnace cleaning, duct cleaning, and dryer vent cleaning in Stony Plain, Spruce Grove, and Parkland County, Alberta.",
-        url: "https://www.sprucegrovefurnacecleaning.com",
-        telephone: "+1-825-435-9977",
+        url: "https://www.homeprosgroup.com",
+        telephone: "+1-780-932-7337",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Stony Plain",
@@ -300,10 +300,10 @@ export default function SeasonalHVACCleaningCalendarPage() {
                       add-ons for dryer vent and AC coil cleaning.
                     </p>
                     <a
-                      href="tel:18254359977"
+                      href="tel:17809327337"
                       className="inline-flex items-center gap-2 px-6 py-3 bg-[#e9261c] text-white font-bold rounded-xl hover:bg-red-700 transition-all no-underline text-sm"
                     >
-                      Book Now: +1 (825) 435-9977
+                      Book Now: +1 (780) 932-7337
                     </a>
                   </div>
                 </section>
@@ -522,10 +522,10 @@ export default function SeasonalHVACCleaningCalendarPage() {
                         whole system cleaned for the season.
                       </p>
                       <a
-                        href="tel:18254359977"
+                        href="tel:17809327337"
                         className="inline-flex items-center gap-2 text-[#e9261c] font-bold text-sm no-underline hover:underline"
                       >
-                        Call (825) 435-9977 to book your spring cleaning &rarr;
+                        Call (780) 932-7337 to book your spring cleaning &rarr;
                       </a>
                     </div>
                   </div>
@@ -702,10 +702,10 @@ export default function SeasonalHVACCleaningCalendarPage() {
                         Google reviews.
                       </p>
                       <a
-                        href="tel:18254359977"
+                        href="tel:17809327337"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-[#e9261c] text-white font-bold rounded-xl hover:bg-red-700 transition-all no-underline"
                       >
-                        Call +1 (825) 435-9977
+                        Call +1 (780) 932-7337
                       </a>
                     </div>
                   </div>
@@ -757,10 +757,10 @@ export default function SeasonalHVACCleaningCalendarPage() {
                       <strong>Missed your September furnace cleaning?</strong> Call
                       Home Pros Group at{" "}
                       <a
-                        href="tel:18254359977"
+                        href="tel:17809327337"
                         className="text-[#e9261c] font-bold no-underline hover:underline"
                       >
-                        (825) 435-9977
+                        (780) 932-7337
                       </a>{" "}
                       to book in early October. Availability fills quickly once
                       the cold hits, so do not wait any longer.
@@ -1252,10 +1252,10 @@ export default function SeasonalHVACCleaningCalendarPage() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a
-                      href="tel:18254359977"
+                      href="tel:17809327337"
                       className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-[#e9261c] font-bold rounded-xl hover:bg-slate-100 transition-all no-underline"
                     >
-                      Call +1 (825) 435-9977
+                      Call +1 (780) 932-7337
                     </a>
                   </div>
                 </div>
@@ -1323,10 +1323,10 @@ export default function SeasonalHVACCleaningCalendarPage() {
                     </p>
                     <div className="flex flex-col items-center gap-4">
                       <a
-                        href="tel:18254359977"
+                        href="tel:17809327337"
                         className="inline-flex items-center gap-3 px-10 py-5 bg-[#e9261c] text-white text-xl md:text-2xl font-black rounded-xl hover:bg-red-700 transition-all shadow-xl no-underline"
                       >
-                        Call +1 (825) 435-9977
+                        Call +1 (780) 932-7337
                       </a>
                       <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-slate-400 mt-2">
                         <span>Furnace &amp; Duct Cleaning: $345</span>

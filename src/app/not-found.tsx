@@ -16,10 +16,10 @@ export default function NotFound() {
           Go Home
         </Link>
         <a
-          href="tel:18254359977"
+          href="tel:17809327337"
           className="px-8 py-3 bg-slate-900 text-white font-bold rounded-xl hover:bg-slate-700 transition-colors"
         >
-          Call (825) 435-9977
+          Call (780) 932-7337
         </a>
       </div>
     </div>

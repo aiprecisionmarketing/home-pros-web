@@ -32,9 +32,9 @@ export default function DryerVentsPage() {
                         <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
                             Prevent fire hazards, reduce energy bills, and extend the life of your dryer with our thorough cleaning service.
                         </p>
-                        <a href="tel:18254359977">
+                        <a href="tel:17809327337">
                             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-primary/25 transition-all">
-                                Book Now - Call (825) 435-9977
+                                Book Now - Call (780) 932-7337
                             </Button>
                         </a>
                     </motion.div>

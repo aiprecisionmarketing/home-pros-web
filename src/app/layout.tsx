@@ -19,22 +19,22 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Duct Cleaning Stony Plain & Spruce Grove | Furnace Cleaning | Home Pros",
-  description: "Top-rated Furnace & Duct Cleaning in Stony Plain and Spruce Grove. Flat-rate pricing, unlimited vents. Local family-owned HVAC cleaning experts.",
+  title: "Home Pros Group | Furnace & Duct Cleaning | Stony Plain & Spruce Grove",
+  description: "Professional furnace cleaning, duct cleaning, dryer vent cleaning, and gutter cleaning across Greater Edmonton. NADCA certified, flat-rate pricing, 20+ years experience. Call 780-932-7337.",
   verification: {
     google: "IqYPDuB_UqlKoDM3zjlydFRn7z5FcAvF4BQEM-xOAgM",
   },
-  metadataBase: new URL("https://www.sprucegrovefurnacecleaning.com"),
+  metadataBase: new URL("https://www.homeprosgroup.com"),
   openGraph: {
-    title: "Duct Cleaning Stony Plain & Spruce Grove | Home Pros Group",
-    description: "Top-rated furnace & duct cleaning in Stony Plain and Spruce Grove. $345 flat-rate, unlimited vents. Family-owned since 2005.",
-    url: "https://www.sprucegrovefurnacecleaning.com",
+    title: "Home Pros Group | Furnace & Duct Cleaning | Stony Plain & Spruce Grove",
+    description: "Professional furnace & duct cleaning across Greater Edmonton. Flat-rate pricing, NADCA certified technicians. Family-owned since 2005. Call 780-932-7337.",
+    url: "https://www.homeprosgroup.com",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.sprucegrovefurnacecleaning.com",
+    canonical: "https://www.homeprosgroup.com",
   },
 };
 
@@ -69,12 +69,12 @@ export default function RootLayout({
               "@type": "HVACBusiness",
               "name": "Home Pros Group",
               "legalName": "Home Pros Group",
-              "image": "https://www.sprucegrovefurnacecleaning.com/logo.png",
-              "@id": "https://www.sprucegrovefurnacecleaning.com",
-              "url": "https://www.sprucegrovefurnacecleaning.com",
-              "telephone": "+18254359977",
-              "email": "info@sprucegrovefurnacecleaning.com",
-              "description": "Professional furnace cleaning, duct cleaning, and dryer vent cleaning in Stony Plain, Spruce Grove, and Parkland County. Flat-rate pricing, unlimited vents. Family-owned and operated since 2005.",
+              "image": "https://www.homeprosgroup.com/logo.png",
+              "@id": "https://www.homeprosgroup.com",
+              "url": "https://www.homeprosgroup.com",
+              "telephone": "+17809327337",
+              "email": "info@homeprosgroup.com",
+              "description": "Professional furnace cleaning, duct cleaning, dryer vent cleaning, and gutter cleaning across Greater Edmonton. NADCA certified technicians, flat-rate pricing. Family-owned and operated with 20+ years experience.",
               "foundingDate": "2005",
               "address": {
                 "@type": "PostalAddress",
@@ -89,20 +89,29 @@ export default function RootLayout({
                 "latitude": 53.5251,
                 "longitude": -114.0076
               },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                "opens": "08:00",
-                "closes": "18:00"
-              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "17:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Saturday"],
+                  "opens": "08:00",
+                  "closes": "17:00"
+                }
+              ],
               "areaServed": [
                 { "@type": "City", "name": "Stony Plain" },
                 { "@type": "City", "name": "Spruce Grove" },
-                { "@type": "City", "name": "Parkland County" },
                 { "@type": "City", "name": "Edmonton" },
                 { "@type": "City", "name": "St. Albert" },
-                { "@type": "City", "name": "Devon" },
-                { "@type": "City", "name": "Beaumont" }
+                { "@type": "City", "name": "Leduc" },
+                { "@type": "City", "name": "Sherwood Park" },
+                { "@type": "City", "name": "Fort Saskatchewan" },
+                { "@type": "City", "name": "Edson" }
               ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
@@ -113,9 +122,9 @@ export default function RootLayout({
                     "itemOffered": {
                       "@type": "Service",
                       "name": "Furnace & Duct Cleaning",
-                      "description": "Complete furnace and duct cleaning. Flat rate $345, unlimited vents."
+                      "description": "Complete furnace and duct cleaning. $285 single furnace / $385 double + GST. All vents included."
                     },
-                    "price": "345.00",
+                    "price": "285.00",
                     "priceCurrency": "CAD"
                   },
                   {

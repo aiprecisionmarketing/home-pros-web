@@ -10,10 +10,10 @@ export function ArticleSidebar({ relatedSlugs }: { relatedSlugs?: { title: strin
           Call us today for your free quote!
         </p>
         <a
-          href="tel:18254359977"
+          href="tel:17809327337"
           className="block w-full py-4 px-6 bg-white text-[#e9261c] text-center text-lg font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg no-underline"
         >
-          +1 (825) 435-9977
+          +1 (780) 932-7337
         </a>
         <div className="mt-6 pt-6 border-t border-white/20">
           <div className="space-y-3 text-sm text-white/90">

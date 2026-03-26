@@ -29,13 +29,13 @@ export const metadata: Metadata = {
       "How to Choose the Best Furnace & Duct Cleaning Company in Stony Plain & Spruce Grove",
     description:
       "The complete homeowner guide to finding a trustworthy HVAC cleaning company in Parkland County. Avoid scams, compare pricing, and book with confidence.",
-    url: "https://www.sprucegrovefurnacecleaning.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
+    url: "https://www.homeprosgroup.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "article",
     images: [
       {
-        url: "https://www.sprucegrovefurnacecleaning.com/images/blog/best-company-guide.png",
+        url: "https://www.homeprosgroup.com/images/blog/best-company-guide.png",
         width: 1200,
         height: 630,
         alt: "Professional HVAC technician with a checklist in a clean home",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://www.sprucegrovefurnacecleaning.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
+      "https://www.homeprosgroup.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
   },
 };
 
@@ -171,15 +171,15 @@ const articleJsonLd = {
   author: {
     "@type": "Organization",
     name: "Home Pros Group",
-    url: "https://www.sprucegrovefurnacecleaning.com",
+    url: "https://www.homeprosgroup.com",
   },
   publisher: {
     "@type": "Organization",
     name: "Home Pros Group",
-    url: "https://www.sprucegrovefurnacecleaning.com",
+    url: "https://www.homeprosgroup.com",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.sprucegrovefurnacecleaning.com/logo.png",
+      url: "https://www.homeprosgroup.com/logo.png",
     },
   },
   datePublished: "2025-12-18",
@@ -187,7 +187,7 @@ const articleJsonLd = {
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://www.sprucegrovefurnacecleaning.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
+      "https://www.homeprosgroup.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
   },
   about: {
     "@type": "Service",
@@ -217,10 +217,10 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "HVACBusiness",
   name: "Home Pros Group",
-  image: "https://www.sprucegrovefurnacecleaning.com/logo.png",
-  "@id": "https://www.sprucegrovefurnacecleaning.com",
-  url: "https://www.sprucegrovefurnacecleaning.com",
-  telephone: "+18254359977",
+  image: "https://www.homeprosgroup.com/logo.png",
+  "@id": "https://www.homeprosgroup.com",
+  url: "https://www.homeprosgroup.com",
+  telephone: "+17809327337",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Stony Plain",
@@ -374,10 +374,10 @@ export default function BestFurnaceDuctCleaningCompanyPage() {
                     high-pressure upsells.
                   </p>
                   <a
-                    href="tel:18254359977"
+                    href="tel:17809327337"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-[#e9261c] text-white font-bold rounded-xl hover:bg-red-700 transition-colors no-underline text-base"
                   >
-                    Call (825) 435-9977 for a Free Quote
+                    Call (780) 932-7337 for a Free Quote
                   </a>
                 </div>
 
@@ -1010,10 +1010,10 @@ export default function BestFurnaceDuctCleaningCompanyPage() {
                     surprises. 4.9 stars from 200+ reviews.
                   </p>
                   <a
-                    href="tel:18254359977"
+                    href="tel:17809327337"
                     className="inline-flex items-center gap-2 px-8 py-4 bg-[#e9261c] text-white text-lg font-bold rounded-xl hover:bg-red-700 transition-colors no-underline"
                   >
-                    Call (825) 435-9977 Now
+                    Call (780) 932-7337 Now
                   </a>
                 </div>
 
@@ -1405,10 +1405,10 @@ export default function BestFurnaceDuctCleaningCompanyPage() {
                     vent add-on. No surprises.
                   </p>
                   <a
-                    href="tel:18254359977"
+                    href="tel:17809327337"
                     className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#e9261c] text-lg font-bold rounded-xl hover:bg-slate-100 transition-colors no-underline"
                   >
-                    Call (825) 435-9977 to Book Today
+                    Call (780) 932-7337 to Book Today
                   </a>
                 </div>
 
@@ -1480,10 +1480,10 @@ export default function BestFurnaceDuctCleaningCompanyPage() {
                       honest work from a local family-owned business.
                     </p>
                     <a
-                      href="tel:18254359977"
+                      href="tel:17809327337"
                       className="inline-flex items-center gap-3 px-10 py-5 bg-[#e9261c] text-white text-xl md:text-2xl font-black rounded-xl hover:bg-red-700 transition-all shadow-xl no-underline"
                     >
-                      Call +1 (825) 435-9977 for Your Free Quote
+                      Call +1 (780) 932-7337 for Your Free Quote
                     </a>
                     <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-slate-400">
                       <span>$345 Flat Rate</span>

@@ -64,9 +64,9 @@ export default function AboutPage() {
             {/* CTA */}
             <section className="py-20 bg-white text-center">
                 <h2 className="text-3xl font-bold mb-6">Ready to Work with the Pros?</h2>
-                <a href="tel:18254359977">
+                <a href="tel:17809327337">
                     <Button size="lg" className="px-8 bg-primary hover:bg-red-600 text-white text-lg">
-                        Call +1 (825) 435-9977
+                        Call +1 (780) 932-7337
                     </Button>
                 </a>
                 <p className="mt-4 text-slate-500 text-sm">Talk to our voice agent to book your free quote</p>

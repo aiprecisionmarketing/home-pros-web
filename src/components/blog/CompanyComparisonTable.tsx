@@ -106,10 +106,10 @@ export function CompanyComparisonTable() {
             Ready to experience the Home Pros difference?
           </p>
           <a
-            href="tel:18254359977"
+            href="tel:17809327337"
             className="inline-flex items-center gap-2 px-5 py-3 bg-[#e9261c] text-white font-bold rounded-xl hover:bg-red-700 transition-colors no-underline text-sm"
           >
-            📞 Call (825) 435-9977
+            📞 Call (780) 932-7337
           </a>
         </div>
       </div>

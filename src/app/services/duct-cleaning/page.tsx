@@ -12,7 +12,7 @@ const faqs = [
     },
     {
         question: "How much does duct cleaning cost in Stony Plain and Spruce Grove?",
-        answer: "At Home Pros Group, our flat rate of $345 covers a complete furnace and duct cleaning — every single supply and return vent in your home. Many competitors advertise a low base price of $99-$149, then add $15-$25 per vent. With a typical Alberta home having 15-20 vents, those bills quickly reach $500-$700+. Our price is honest and all-inclusive."
+        answer: "At Home Pros Group, our flat rate of $285+ covers a complete furnace and duct cleaning — every single supply and return vent in your home. Many competitors advertise a low base price of $99-$149, then add $15-$25 per vent. With a typical Alberta home having 15-20 vents, those bills quickly reach $500-$700+. Our price is honest and all-inclusive."
     },
     {
         question: "What is included in your duct cleaning service?",
@@ -59,9 +59,9 @@ export default function DuctCleaningPage() {
                             Every vent in your home cleaned for one flat rate — no vent counting, no surprises. Improve your indoor air quality and reduce dust, allergens, and energy waste.
                         </p>
                         <p className="text-lg text-slate-400 mb-8">Trusted by 1,200+ homeowners across Parkland County since 2005.</p>
-                        <a href="tel:18254359977">
+                        <a href="tel:17809327337">
                             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-primary/25 transition-all">
-                                Call (825) 435-9977 — Get Your Free Quote
+                                Call (780) 932-7337 — Get Your Free Quote
                             </Button>
                         </a>
                     </motion.div>
@@ -173,9 +173,9 @@ export default function DuctCleaningPage() {
                     <p className="text-xl text-slate-300 mb-8">
                         Flat rate pricing. Every vent included. No hidden fees. Serving Stony Plain, Spruce Grove, Parkland County, and Greater Edmonton.
                     </p>
-                    <a href="tel:18254359977">
+                    <a href="tel:17809327337">
                         <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-xl rounded-full shadow-lg hover:shadow-primary/25 transition-all">
-                            Call (825) 435-9977 — Free Quote
+                            Call (780) 932-7337 — Free Quote
                         </Button>
                     </a>
                     <p className="mt-6 text-sm text-slate-400">
@@ -196,8 +196,8 @@ export default function DuctCleaningPage() {
                         "provider": {
                             "@type": "HVACBusiness",
                             "name": "Home Pros Group",
-                            "url": "https://www.sprucegrovefurnacecleaning.com",
-                            "telephone": "+18254359977",
+                            "url": "https://www.homeprosgroup.com",
+                            "telephone": "+17809327337",
                             "address": {
                                 "@type": "PostalAddress",
                                 "streetAddress": "53 Umbach Road",

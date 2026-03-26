@@ -27,7 +27,7 @@ const seasons: Season[] = [
     bgColor: "bg-orange-50",
     borderColor: "border-orange-300",
     items: [
-      { id: "fall-1", task: "Schedule professional furnace cleaning", detail: "Book with Home Pros Group before the October rush — (825) 435-9977" },
+      { id: "fall-1", task: "Schedule professional furnace cleaning", detail: "Book with Home Pros Group before the October rush — (780) 932-7337" },
       { id: "fall-2", task: "Replace furnace filter with fresh MERV 8-11+", detail: "Start the season with a clean filter for maximum efficiency" },
       { id: "fall-3", task: "Test furnace before first freeze", detail: "Run the furnace on a cool evening to make sure it starts and heats properly" },
       { id: "fall-4", task: "Check thermostat batteries and programming", detail: "Set your winter heating schedule and ensure batteries are fresh" },
