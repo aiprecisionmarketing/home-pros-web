@@ -84,7 +84,7 @@ vercel --prod
 
 In Vercel dashboard:
 1. Go to your project → Settings → Domains
-2. Add your custom domain (e.g., `sprucegrovefurnacecleaning.com`)
+2. Add your custom domain (e.g., `homeprosgroup.com`)
 3. Update DNS records as instructed by Vercel
 4. SSL certificate will be auto-provisioned
 
@@ -160,7 +160,7 @@ Your blog posts now have:
 ### Issue: Images Not Loading
 
 **Solution:**
-- Images use external URLs (sprucegrovefurnacecleaning.com)
+- Images use external URLs (homeprosgroup.com)
 - Verify those URLs are accessible
 - Update `next.config.ts` if needed
 

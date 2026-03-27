@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 
 /**
- * Sitemap for sprucegrovefurnacecleaning.com
+ * Sitemap for homeprosgroup.com
  * Includes core pages, service pages, city hub pages, and city+service combo pages.
  */
 
@@ -29,7 +29,7 @@ const SERVICES = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.sprucegrovefurnacecleaning.com";
+  const baseUrl = "https://www.homeprosgroup.com";
 
   // Core pages
   const staticPages: MetadataRoute.Sitemap = [

@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Expert Gutter Cleaning | Home Pros Group",
     description: "Professional gutter cleaning in Stony Plain and Spruce Grove. Prevent water damage and protect your foundation. Call for Quote.",
-    url: "https://www.sprucegrovefurnacecleaning.com/services/gutters",
+    url: "https://www.homeprosgroup.com/services/gutters",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.sprucegrovefurnacecleaning.com/services/gutters",
+    canonical: "https://www.homeprosgroup.com/services/gutters",
   },
 };
 

@@ -10,7 +10,7 @@ const sitemapPath = path.join(__dirname, '../../legacy_data/current_sitemap.md')
 const sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
 const ALL_URLS = sitemapContent
     .split('\n')
-    .filter(line => line.includes('https://sprucegrovefurnacecleaning.com/'))
+    .filter(line => line.includes('https://homeprosgroup.com/'))
     .map(line => line.replace('- ', '').trim());
 
 console.log(`Found ${ALL_URLS.length} URLs to hydrate.`);

@@ -30,12 +30,12 @@ export const metadata: Metadata = {
     description:
       "Month-by-month HVAC cleaning schedule tailored to Alberta's extreme climate. Professional furnace, duct & dryer vent cleaning from Home Pros Group.",
     type: "article",
-    url: "https://www.sprucegrovefurnacecleaning.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
+    url: "https://www.homeprosgroup.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
     siteName: "Home Pros Group",
     locale: "en_CA",
     images: [
       {
-        url: "https://www.sprucegrovefurnacecleaning.com/images/blog/seasonal-calendar.png",
+        url: "https://www.homeprosgroup.com/images/blog/seasonal-calendar.png",
         width: 1200,
         height: 630,
         alt: "Seasonal HVAC Cleaning Calendar for Stony Plain and Spruce Grove",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://www.sprucegrovefurnacecleaning.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
+      "https://www.homeprosgroup.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
   },
 };
 
@@ -141,14 +141,14 @@ export default function SeasonalHVACCleaningCalendarPage() {
         author: {
           "@type": "Organization",
           name: "Home Pros Group",
-          url: "https://www.sprucegrovefurnacecleaning.com",
+          url: "https://www.homeprosgroup.com",
         },
         publisher: {
           "@type": "Organization",
           name: "Home Pros Group",
           logo: {
             "@type": "ImageObject",
-            url: "https://www.sprucegrovefurnacecleaning.com/logo.png",
+            url: "https://www.homeprosgroup.com/logo.png",
           },
         },
         datePublished: "2026-01-20",
@@ -156,10 +156,10 @@ export default function SeasonalHVACCleaningCalendarPage() {
         mainEntityOfPage: {
           "@type": "WebPage",
           "@id":
-            "https://www.sprucegrovefurnacecleaning.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
+            "https://www.homeprosgroup.com/blog/seasonal-hvac-cleaning-calendar-stony-plain-spruce-grove",
         },
         image:
-          "https://www.sprucegrovefurnacecleaning.com/og/seasonal-hvac-cleaning-calendar.jpg",
+          "https://www.homeprosgroup.com/og/seasonal-hvac-cleaning-calendar.jpg",
         articleSection: "HVAC Cleaning",
         keywords:
           "furnace cleaning schedule Stony Plain, HVAC cleaning calendar, when to clean furnace Spruce Grove, seasonal furnace cleaning Alberta",
@@ -180,7 +180,7 @@ export default function SeasonalHVACCleaningCalendarPage() {
         name: "Home Pros Group",
         description:
           "Professional furnace cleaning, duct cleaning, and dryer vent cleaning in Stony Plain, Spruce Grove, and Parkland County, Alberta.",
-        url: "https://www.sprucegrovefurnacecleaning.com",
+        url: "https://www.homeprosgroup.com",
         telephone: "+1-780-932-7337",
         address: {
           "@type": "PostalAddress",

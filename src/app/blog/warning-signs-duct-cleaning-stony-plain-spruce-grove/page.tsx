@@ -32,11 +32,11 @@ export const metadata: Metadata = {
       "Is your Parkland County home showing signs of dirty ductwork? Learn the 10 warning signs from local experts at Home Pros Group. Flat-rate pricing, family-owned since 2018.",
     type: "article",
     locale: "en_CA",
-    url: "https://www.sprucegrovefurnacecleaning.com/blog/warning-signs-duct-cleaning-stony-plain-spruce-grove",
+    url: "https://www.homeprosgroup.com/blog/warning-signs-duct-cleaning-stony-plain-spruce-grove",
     siteName: "Home Pros Group",
     images: [
       {
-        url: "https://www.sprucegrovefurnacecleaning.com/images/blog/warning-signs.png",
+        url: "https://www.homeprosgroup.com/images/blog/warning-signs.png",
         width: 1200,
         height: 630,
         alt: "Warning Signs Your Home Needs Duct Cleaning",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://www.sprucegrovefurnacecleaning.com/blog/warning-signs-duct-cleaning-stony-plain-spruce-grove",
+      "https://www.homeprosgroup.com/blog/warning-signs-duct-cleaning-stony-plain-spruce-grove",
   },
 };
 
@@ -82,15 +82,15 @@ const jsonLd = {
       author: {
         "@type": "Organization",
         name: "Home Pros Group",
-        url: "https://www.sprucegrovefurnacecleaning.com",
+        url: "https://www.homeprosgroup.com",
       },
       publisher: {
         "@type": "Organization",
         name: "Home Pros Group",
-        url: "https://www.sprucegrovefurnacecleaning.com",
+        url: "https://www.homeprosgroup.com",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.sprucegrovefurnacecleaning.com/logo.png",
+          url: "https://www.homeprosgroup.com/logo.png",
         },
       },
       datePublished: "2026-02-22",
@@ -98,7 +98,7 @@ const jsonLd = {
       mainEntityOfPage: {
         "@type": "WebPage",
         "@id":
-          "https://www.sprucegrovefurnacecleaning.com/blog/warning-signs-duct-cleaning-stony-plain-spruce-grove",
+          "https://www.homeprosgroup.com/blog/warning-signs-duct-cleaning-stony-plain-spruce-grove",
       },
       keywords: [
         "signs you need duct cleaning",
@@ -187,11 +187,11 @@ const jsonLd = {
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.sprucegrovefurnacecleaning.com/#business",
+      "@id": "https://www.homeprosgroup.com/#business",
       name: "Home Pros Group",
       description:
         "Professional furnace cleaning, duct cleaning, and dryer vent cleaning in Stony Plain, Spruce Grove, and Parkland County, Alberta.",
-      url: "https://www.sprucegrovefurnacecleaning.com",
+      url: "https://www.homeprosgroup.com",
       telephone: "+1-780-932-7337",
       address: {
         "@type": "PostalAddress",

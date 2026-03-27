@@ -6,8 +6,8 @@
 export const PHONE = "780-932-7337";
 export const PHONE_HREF = "tel:17809327337";
 export const PHONE_DISPLAY = "(780) 932-7337";
-export const EMAIL = "info@sprucegrovefurnacecleaning.com";
-export const BASE_URL = "https://www.sprucegrovefurnacecleaning.com";
+export const EMAIL = "info@homeprosgroup.com";
+export const BASE_URL = "https://www.homeprosgroup.com";
 export const BUSINESS_NAME = "Home Pros Group";
 export const ADDRESS = {
   street: "53 Umbach Road",

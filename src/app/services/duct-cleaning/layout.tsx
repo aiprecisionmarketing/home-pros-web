@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Duct Cleaning Stony Plain & Spruce Grove | Flat Rate | Home Pros Group",
     description: "Professional duct cleaning in Stony Plain and Spruce Grove. Every vent included in our flat rate. No hidden fees. Family-owned since 2005.",
-    url: "https://www.sprucegrovefurnacecleaning.com/services/duct-cleaning",
+    url: "https://www.homeprosgroup.com/services/duct-cleaning",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.sprucegrovefurnacecleaning.com/services/duct-cleaning",
+    canonical: "https://www.homeprosgroup.com/services/duct-cleaning",
   },
 };
 

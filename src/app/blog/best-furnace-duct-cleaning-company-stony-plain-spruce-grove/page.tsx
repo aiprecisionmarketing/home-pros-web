@@ -29,13 +29,13 @@ export const metadata: Metadata = {
       "How to Choose the Best Furnace & Duct Cleaning Company in Stony Plain & Spruce Grove",
     description:
       "The complete homeowner guide to finding a trustworthy HVAC cleaning company in Parkland County. Avoid scams, compare pricing, and book with confidence.",
-    url: "https://www.sprucegrovefurnacecleaning.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
+    url: "https://www.homeprosgroup.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "article",
     images: [
       {
-        url: "https://www.sprucegrovefurnacecleaning.com/images/blog/best-company-guide.png",
+        url: "https://www.homeprosgroup.com/images/blog/best-company-guide.png",
         width: 1200,
         height: 630,
         alt: "Professional HVAC technician with a checklist in a clean home",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical:
-      "https://www.sprucegrovefurnacecleaning.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
+      "https://www.homeprosgroup.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
   },
 };
 
@@ -171,15 +171,15 @@ const articleJsonLd = {
   author: {
     "@type": "Organization",
     name: "Home Pros Group",
-    url: "https://www.sprucegrovefurnacecleaning.com",
+    url: "https://www.homeprosgroup.com",
   },
   publisher: {
     "@type": "Organization",
     name: "Home Pros Group",
-    url: "https://www.sprucegrovefurnacecleaning.com",
+    url: "https://www.homeprosgroup.com",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.sprucegrovefurnacecleaning.com/logo.png",
+      url: "https://www.homeprosgroup.com/logo.png",
     },
   },
   datePublished: "2025-12-18",
@@ -187,7 +187,7 @@ const articleJsonLd = {
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://www.sprucegrovefurnacecleaning.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
+      "https://www.homeprosgroup.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",
   },
   about: {
     "@type": "Service",
@@ -217,9 +217,9 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "HVACBusiness",
   name: "Home Pros Group",
-  image: "https://www.sprucegrovefurnacecleaning.com/logo.png",
-  "@id": "https://www.sprucegrovefurnacecleaning.com",
-  url: "https://www.sprucegrovefurnacecleaning.com",
+  image: "https://www.homeprosgroup.com/logo.png",
+  "@id": "https://www.homeprosgroup.com",
+  url: "https://www.homeprosgroup.com",
   telephone: "+17809327337",
   address: {
     "@type": "PostalAddress",
