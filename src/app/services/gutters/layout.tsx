@@ -2,10 +2,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Expert Gutter Cleaning | Stony Plain & Spruce Grove | Home Pros Group",
-  description: "Professional gutter cleaning in Stony Plain and Spruce Grove. Prevent water damage, basement flooding, and ice dams. From $149. Family-owned, WCB insured. Call (780) 932-7337.",
+  description: "Professional gutter cleaning in Stony Plain and Spruce Grove. Prevent water damage, basement flooding, and ice dams. Call for Quote. Family-owned, WCB insured. Call (780) 932-7337.",
   openGraph: {
     title: "Expert Gutter Cleaning | Home Pros Group",
-    description: "Professional gutter cleaning in Stony Plain and Spruce Grove. Prevent water damage and protect your foundation. From $149.",
+    description: "Professional gutter cleaning in Stony Plain and Spruce Grove. Prevent water damage and protect your foundation. Call for Quote.",
     url: "https://www.sprucegrovefurnacecleaning.com/services/gutters",
     siteName: "Home Pros Group",
     locale: "en_CA",

@@ -12,7 +12,7 @@ const faqs = [
     },
     {
         question: "How much does duct cleaning cost in Stony Plain and Spruce Grove?",
-        answer: "At Home Pros Group, our flat rate of $285+ covers a complete furnace and duct cleaning — every single supply and return vent in your home. Many competitors advertise a low base price of $99-$149, then add $15-$25 per vent. With a typical Alberta home having 15-20 vents, those bills quickly reach $500-$700+. Our price is honest and all-inclusive."
+        answer: "At Home Pros Group, our flat rate covers a complete furnace and duct cleaning — every single supply and return vent in your home. Many competitors advertise a low base price of $99-$149, then add $15-$25 per vent. With a typical Alberta home having 15-20 vents, those bills quickly reach $500-$700+. Our price is honest and all-inclusive."
     },
     {
         question: "What is included in your duct cleaning service?",

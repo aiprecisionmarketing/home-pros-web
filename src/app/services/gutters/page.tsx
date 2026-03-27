@@ -80,7 +80,7 @@ export default function GuttersPage() {
                     <div className="inline-block p-8 bg-white rounded-2xl shadow-lg border border-slate-100 max-w-lg w-full">
                         <h3 className="text-2xl font-bold mb-2">Standard Home</h3>
                         <div className="text-4xl font-extrabold text-blue-600 mb-4">
-                            From $149
+                            Call for Quote
                         </div>
                         <p className="text-muted-foreground mb-6">For single-story homes up to 2,000 sq ft.</p>
                         <ul className="text-left space-y-3 mb-8">

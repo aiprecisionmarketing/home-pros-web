@@ -10,7 +10,7 @@ const services = [
         icon: Flame,
         title: "Furnace Cleaning",
         description: "Complete furnace cleaning covering burners, blower compartment, motor, flame sensor, and all accessible components. Keep your furnace running efficiently and safely all winter long.",
-        price: "$285 Single / $385 Double + GST",
+        price: "Call for Quote",
         href: "/services/furnace-cleaning",
         color: "bg-orange-50 border-orange-200 hover:border-orange-400",
         iconColor: "text-orange-600",
@@ -19,7 +19,7 @@ const services = [
         icon: Wind,
         title: "Duct Cleaning",
         description: "Every supply and return duct in your home cleaned with professional-grade equipment. Improve air quality, reduce dust, and breathe easier. All vents included — no counting, no surprises.",
-        price: "Included with Furnace Cleaning",
+        price: "Call for Quote",
         href: "/services/duct-cleaning",
         color: "bg-blue-50 border-blue-200 hover:border-blue-400",
         iconColor: "text-blue-600",
@@ -37,7 +37,7 @@ const services = [
         icon: CloudRain,
         title: "Gutter Cleaning",
         description: "Protect your foundation, prevent basement flooding, and stop ice dams with professional gutter cleaning. We safely remove all debris and ensure proper drainage.",
-        price: "From $149",
+        price: "Call for Quote",
         href: "/services/gutters",
         color: "bg-emerald-50 border-emerald-200 hover:border-emerald-400",
         iconColor: "text-emerald-600",
@@ -138,7 +138,7 @@ export default function ServicesPage() {
                     <h2 className="text-3xl font-bold mb-6 text-slate-900">Why Homeowners Choose Home Pros Group</h2>
                     <div className="grid md:grid-cols-3 gap-8 mt-12">
                         <div className="text-center">
-                            <div className="text-4xl font-black text-primary mb-2">$285+</div>
+                            <div className="text-4xl font-black text-primary mb-2">Free Quote</div>
                             <p className="text-sm font-bold text-slate-700 uppercase tracking-wider">Flat Rate Pricing</p>
                             <p className="text-slate-500 mt-2">Every vent included. No vent counting, no surprise charges.</p>
                         </div>

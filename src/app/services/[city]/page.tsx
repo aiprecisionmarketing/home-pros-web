@@ -140,7 +140,7 @@ export default async function CityHubPage({ params }: PageProps) {
           <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-4">
             {cityInfo.hero}
           </p>
-          <p className="text-lg text-slate-400 mb-8">$285 single / $385 double + GST &bull; All vents included &bull; Money-back guarantee</p>
+          <p className="text-lg text-slate-400 mb-8">Call for a Free Quote &bull; All vents included &bull; Money-back guarantee</p>
           <a href={PHONE_HREF}>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-primary/25 transition-all">
               Call {PHONE_DISPLAY} — Book Today
@@ -159,7 +159,7 @@ export default async function CityHubPage({ params }: PageProps) {
               {city.name} winters are no joke. With temperatures regularly dropping below -30 degrees, your furnace is working overtime from October through April. That is six to seven months of continuous operation, pulling air through dusty ducts and pushing it back out through every register in your home. Without regular cleaning, dust, debris, and allergens build up — raising your energy bills and putting extra strain on your system.
             </p>
             <p>
-              At Home Pros Group, we provide complete furnace and duct cleaning starting at $285 for a single furnace system plus GST. That price includes every single supply and return vent in your home, the hot water tank, and one dryer vent. We do not charge per vent like most competitors, and we never add hidden fees. What we quote is what you pay.
+              At Home Pros Group, we provide complete furnace and duct cleaning that includes every single supply and return vent in your home, the hot water tank, and one dryer vent. We do not charge per vent like most competitors, and we never add hidden fees. What we quote is what you pay.
             </p>
 
             <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-4">Residential Services in {city.name}</h3>
@@ -205,7 +205,7 @@ export default async function CityHubPage({ params }: PageProps) {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-black text-primary">$285</div>
+              <div className="text-3xl font-black text-primary"> Call for Quote</div>
               <p className="text-sm text-slate-500 font-bold uppercase tracking-wider mt-1">Starting + GST</p>
             </div>
             <div>
@@ -247,7 +247,7 @@ export default async function CityHubPage({ params }: PageProps) {
         <div className="container px-4 md:px-6 mx-auto max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-black mb-4">Book Your {city.name} Furnace Cleaning</h2>
           <p className="text-xl text-slate-300 mb-8">
-            $285 single / $385 double + GST. All vents included. Your {city.name} HVAC cleaning experts.
+            Call for a Free Quote. All vents included. Your {city.name} HVAC cleaning experts.
           </p>
           <a href={PHONE_HREF}>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-xl rounded-full shadow-lg hover:shadow-primary/25 transition-all">

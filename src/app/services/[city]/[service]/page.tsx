@@ -124,7 +124,7 @@ function getServiceDetails(serviceSlug: string): { benefits: string[]; process: 
         "NADCA certified technicians handle every job",
       ],
       process: "Our furnace cleaning covers burners, blower compartment, blower motor, heat exchanger, flame sensor, ignitor area, and furnace cabinet interior. We use professional truck-mount equipment and a power-driven whip system to clean every component thoroughly.",
-      pricing: "$285 for a single furnace system or $385 for a double furnace system, plus GST. Includes furnace, all ducting (hot and cold), all registers, HWT, and one dryer vent. AC addition available for $49.",
+      pricing: "Contact us for current pricing. Includes furnace, all ducting (hot and cold), all registers, HWT, and one dryer vent. AC addition available for $49.",
     },
     "duct-cleaning": {
       benefits: [
@@ -136,7 +136,7 @@ function getServiceDetails(serviceSlug: string): { benefits: string[]; process: 
         "Before-and-after video inspection available",
       ],
       process: "Using our truck-mount vacuum system with bypass cleaning method, we clean every supply duct, return duct, main trunk line, and branch line in your home. Our power-driven whip system dislodges even stubborn buildup, and compressed air forces contaminants into our truck-mounted vacuum for disposal.",
-      pricing: "$285 for a single furnace system or $385 for a double furnace system, plus GST. All ducts, registers, and vents included. Optional duct sanitizing available for $59 or Vac-U-Flow cleaning for $89.",
+      pricing: "Contact us for current pricing. All ducts, registers, and vents included. Optional duct sanitizing available for $59 or Vac-U-Flow cleaning for $89.",
     },
     "dryer-vent-cleaning": {
       benefits: [
@@ -238,7 +238,7 @@ export default async function CityServicePage({ params }: PageProps) {
           <p className="text-lg text-slate-400 mb-8">
             {service.isCommercial
               ? "NADCA certified \u2022 20+ years experience \u2022 Free quotes"
-              : "$285 single / $385 double + GST \u2022 All vents included \u2022 Money-back guarantee"}
+              : "Call for a Free Quote \u2022 All vents included \u2022 Money-back guarantee"}
           </p>
           <a href={PHONE_HREF}>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-primary/25 transition-all">
@@ -287,7 +287,7 @@ export default async function CityServicePage({ params }: PageProps) {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-black text-primary">$285</div>
+              <div className="text-3xl font-black text-primary"> Call for Quote</div>
               <p className="text-sm text-slate-500 font-bold uppercase tracking-wider mt-1">Starting Price + GST</p>
             </div>
             <div>
@@ -362,7 +362,7 @@ export default async function CityServicePage({ params }: PageProps) {
           <p className="text-xl text-slate-300 mb-8">
             {service.isCommercial
               ? `Professional ${service.name.toLowerCase()} with NADCA certified technicians. Free on-site assessment. Call today.`
-              : `$285 single / $385 double + GST. All vents included. NADCA certified. Money-back guarantee.`}
+              : `Call for a Free Quote. All vents included. NADCA certified. Money-back guarantee.`}
           </p>
           <a href={PHONE_HREF}>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-xl rounded-full shadow-lg hover:shadow-primary/25 transition-all">

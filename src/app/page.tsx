@@ -793,12 +793,12 @@ export default function Home() {
                   className="faq-btn w-full py-6 flex justify-between items-center text-left gap-4"
                   style={{ background: "none", border: "none", cursor: "pointer" }}
                 >
-                  <span className="text-lg font-bold text-charcoal">What does the $285 single / $385 double + GST actually include?</span>
+                  <span className="text-lg font-bold text-charcoal">What does the Call for a Free Quote actually include?</span>
                   <span className="material-symbols-outlined faq-icon text-primary flex-shrink-0">add</span>
                 </button>
                 <div className="faq-body pb-6">
                   <p className="text-slate-600 leading-relaxed">
-                    The $285 single / $385 double + GST includes cleaning <strong>every register in your home</strong> — every hot supply and
+                    The Call for a Free Quote includes cleaning <strong>every register in your home</strong> — every hot supply and
                     every cold return, no matter how many you have. It also includes cleaning all accessible furnace
                     components: burners, blower compartment, motors, and electrical areas. There is no per-vent charge and
                     no hidden fees of any kind.

@@ -12,7 +12,7 @@ const faqs = [
     },
     {
         question: "What does a furnace cleaning include?",
-        answer: "Our furnace cleaning covers all accessible components: burners, blower compartment, blower motor, heat exchanger (visible portions), flame sensor, ignitor area, and the furnace cabinet interior. We also clean all supply and return ducts connected to the system. Everything is included in our $285 single / $385 double + GST — no extra charges per vent."
+        answer: "Our furnace cleaning covers all accessible components: burners, blower compartment, blower motor, heat exchanger (visible portions), flame sensor, ignitor area, and the furnace cabinet interior. We also clean all supply and return ducts connected to the system. Everything is included in our Call for a Free Quote — no extra charges per vent."
     },
     {
         question: "How long does a furnace cleaning take?",
@@ -23,8 +23,8 @@ const faqs = [
         answer: "No. Home Pros Group specializes exclusively in cleaning services — furnace cleaning, duct cleaning, dryer vent cleaning, and gutter cleaning. We do not perform repairs, maintenance, or mechanical work. This specialization is what allows us to deliver the best possible cleaning results. If you need repairs, we are happy to refer you to a trusted local HVAC technician."
     },
     {
-        question: "Is your $285 single / $385 double + GST really all-inclusive?",
-        answer: "Yes. Our $285 single / $385 double + GST covers your entire furnace cleaning plus every duct, supply vent, and return vent in your home. Other companies charge $15-$25 per vent on top of a base price, so a typical Alberta home with 15-20 vents ends up costing $500-$700+. With Home Pros, you know exactly what you are paying before we start."
+        question: "Is your Call for a Free Quote really all-inclusive?",
+        answer: "Yes. Our Call for a Free Quote covers your entire furnace cleaning plus every duct, supply vent, and return vent in your home. Other companies charge $15-$25 per vent on top of a base price, so a typical Alberta home with 15-20 vents ends up costing $500-$700+. With Home Pros, you know exactly what you are paying before we start."
     },
     {
         question: "What areas do you serve for furnace cleaning?",
@@ -56,7 +56,7 @@ export default function FurnaceCleaningPage() {
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold mb-6">Professional Furnace Cleaning in Stony Plain &amp; Spruce Grove</h1>
                         <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-4">
-                            Complete furnace and duct cleaning for just <strong className="text-white">$285 single / $385 double + GST</strong> — every single vent included, zero surprises. Family-owned, WCB insured, and trusted by 1,200+ Parkland County homeowners.
+                            Complete furnace and duct cleaning for just <strong className="text-white">Call for a Free Quote</strong> — every single vent included, zero surprises. Family-owned, WCB insured, and trusted by 1,200+ Parkland County homeowners.
                         </p>
                         <p className="text-lg text-slate-400 mb-8">Serving Stony Plain, Spruce Grove, Parkland County &amp; Greater Edmonton since 2005.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -74,7 +74,7 @@ export default function FurnaceCleaningPage() {
             <section className="py-16 bg-white">
                 <div className="container px-4 md:px-6 mx-auto">
                     <div className="max-w-4xl mx-auto bg-gradient-to-r from-primary/5 to-red-50 border-2 border-primary/20 rounded-2xl p-10 text-center">
-                        <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">$285 Single / $385 Double + GST — Everything Included</h2>
+                        <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">Call for a Free Quote — Everything Included</h2>
                         <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
                             Other companies charge per vent, adding $15-$25 for every register. A typical Alberta home with 15-20 vents ends up costing $500-$700+. Our flat rate covers <strong>every supply and return vent</strong> in your home. No vent counting, no surprises.
                         </p>
@@ -254,7 +254,7 @@ export default function FurnaceCleaningPage() {
                 <div className="container px-4 md:px-6 mx-auto max-w-3xl">
                     <h2 className="text-3xl md:text-4xl font-black mb-4">Ready to Book Your Furnace Cleaning?</h2>
                     <p className="text-xl text-slate-300 mb-8">
-                        $285 single / $385 double + GST. Every vent included. No hidden fees. Serving Stony Plain, Spruce Grove, Parkland County, and Greater Edmonton.
+                        Call for a Free Quote. Every vent included. No hidden fees. Serving Stony Plain, Spruce Grove, Parkland County, and Greater Edmonton.
                     </p>
                     <a href="tel:17809327337">
                         <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-xl rounded-full shadow-lg hover:shadow-primary/25 transition-all">
@@ -275,7 +275,7 @@ export default function FurnaceCleaningPage() {
                         "@context": "https://schema.org",
                         "@type": "Service",
                         "name": "Furnace Cleaning",
-                        "description": "Professional furnace cleaning in Stony Plain, Spruce Grove, and Parkland County. $285 single / $385 double + GST, unlimited vents.",
+                        "description": "Professional furnace cleaning in Stony Plain, Spruce Grove, and Parkland County. Call for a Free Quote, unlimited vents.",
                         "provider": {
                             "@type": "HVACBusiness",
                             "name": "Home Pros Group",

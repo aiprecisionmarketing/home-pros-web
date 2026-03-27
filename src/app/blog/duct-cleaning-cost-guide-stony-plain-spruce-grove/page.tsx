@@ -981,9 +981,7 @@ export default function DuctCleaningCostGuidePage() {
                   <p className="text-lg text-slate-700 leading-relaxed mb-6">
                     There is also a risk factor. Without proper training, it is possible to
                     damage flexible duct connections, dislodge insulation inside ducts, or
-                    disturb the furnace in ways that affect its operation. In older Stony
-                    Plain homes, you may also encounter asbestos-containing duct tape or
-                    insulation that requires professional handling.
+                    disturb the furnace in ways that affect its operation.
                   </p>
 
                   <h3 className="text-2xl font-black text-[#e9261c] mb-4 mt-10">
