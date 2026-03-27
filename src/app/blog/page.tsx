@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     title: "HVAC Cleaning Blog | Home Pros Group",
     description:
       "Expert furnace & duct cleaning guides for Stony Plain, Spruce Grove, and Parkland County homeowners.",
-    url: "https://www.homeprosgroup.com/blog",
+    url: "https://www.sprucegrovefurnacecleaning.com/blog",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.homeprosgroup.com/blog",
+    canonical: "https://www.sprucegrovefurnacecleaning.com/blog",
   },
 };
 
@@ -273,11 +273,11 @@ export default async function BlogIndexPage() {
             name: "Home Pros Group HVAC Cleaning Blog",
             description:
               "Expert furnace cleaning, duct cleaning, and indoor air quality guides for Stony Plain, Spruce Grove, and Parkland County homeowners.",
-            url: "https://www.homeprosgroup.com/blog",
+            url: "https://www.sprucegrovefurnacecleaning.com/blog",
             publisher: {
               "@type": "Organization",
               name: "Home Pros Group",
-              url: "https://www.homeprosgroup.com",
+              url: "https://www.sprucegrovefurnacecleaning.com",
               telephone: "+1-780-932-7337",
               address: {
                 "@type": "PostalAddress",
@@ -295,7 +295,7 @@ export default async function BlogIndexPage() {
                 "@type": "Organization",
                 name: "Home Pros Group",
               },
-              url: `https://www.homeprosgroup.com/blog/${post.slug}`,
+              url: `https://www.sprucegrovefurnacecleaning.com/blog/${post.slug}`,
             })),
           }),
         }}

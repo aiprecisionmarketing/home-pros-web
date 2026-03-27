@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         openGraph: {
             title: post.title,
             description,
-            url: `https://www.homeprosgroup.com/blog/${slug}`,
+            url: `https://www.sprucegrovefurnacecleaning.com/blog/${slug}`,
             siteName: "Home Pros Group",
             locale: "en_CA",
             type: "article",
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             authors: [post.author || "Home Pros Team"],
         },
         alternates: {
-            canonical: `https://www.homeprosgroup.com/blog/${slug}`,
+            canonical: `https://www.sprucegrovefurnacecleaning.com/blog/${slug}`,
         },
     };
 }
@@ -199,14 +199,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             "name": "Home Pros Group",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://www.homeprosgroup.com/logo.png"
+                                "url": "https://www.sprucegrovefurnacecleaning.com/logo.png"
                             }
                         },
                         "datePublished": post.date,
                         "dateModified": post.date,
                         "mainEntityOfPage": {
                             "@type": "WebPage",
-                            "@id": `https://www.homeprosgroup.com/blog/${slug}`
+                            "@id": `https://www.sprucegrovefurnacecleaning.com/blog/${slug}`
                         },
                         ...(post.featured_image ? { "image": post.featured_image } : {})
                     })

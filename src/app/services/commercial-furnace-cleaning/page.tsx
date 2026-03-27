@@ -216,7 +216,7 @@ export default function CommercialFurnaceCleaningPage() {
                         </Button>
                     </a>
                     <p className="mt-6 text-sm text-slate-400">
-                        Or email info@homeprosgroup.com &bull; 53 Umbach Road, Stony Plain, AB T7Z 1G1
+                        Or email info@sprucegrovefurnacecleaning.com &bull; 53 Umbach Road, Stony Plain, AB T7Z 1G1
                     </p>
                 </div>
             </section>
@@ -233,7 +233,7 @@ export default function CommercialFurnaceCleaningPage() {
                         "provider": {
                             "@type": "HVACBusiness",
                             "name": "Home Pros Group",
-                            "url": "https://www.homeprosgroup.com",
+                            "url": "https://www.sprucegrovefurnacecleaning.com",
                             "telephone": "+17809327337",
                             "address": {
                                 "@type": "PostalAddress",

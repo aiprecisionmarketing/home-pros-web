@@ -196,7 +196,7 @@ export default function DuctCleaningPage() {
                         "provider": {
                             "@type": "HVACBusiness",
                             "name": "Home Pros Group",
-                            "url": "https://www.homeprosgroup.com",
+                            "url": "https://www.sprucegrovefurnacecleaning.com",
                             "telephone": "+17809327337",
                             "address": {
                                 "@type": "PostalAddress",

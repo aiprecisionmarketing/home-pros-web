@@ -56,6 +56,7 @@ export function SiteHeader() {
                 <nav className="hidden md:flex gap-8 text-[11px] font-black uppercase tracking-[0.15em] text-gray-500">
                     <Link href="/services" className="hover:text-red-500 transition-colors">Services</Link>
                     <Link href="/services/furnace-cleaning" className="hover:text-red-500 transition-colors">Furnace Cleaning</Link>
+                    <Link href="/services/commercial-duct-cleaning" className="hover:text-red-500 transition-colors">Commercial</Link>
                     <Link href="/about" className="hover:text-red-500 transition-colors">About</Link>
                     <Link href="/blog" className="hover:text-red-500 transition-colors">Blog</Link>
                 </nav>

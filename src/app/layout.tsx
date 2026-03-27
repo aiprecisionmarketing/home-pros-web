@@ -24,17 +24,17 @@ export const metadata: Metadata = {
   verification: {
     google: "IqYPDuB_UqlKoDM3zjlydFRn7z5FcAvF4BQEM-xOAgM",
   },
-  metadataBase: new URL("https://www.homeprosgroup.com"),
+  metadataBase: new URL("https://www.sprucegrovefurnacecleaning.com"),
   openGraph: {
     title: "Home Pros Group | Furnace & Duct Cleaning | Stony Plain & Spruce Grove",
     description: "Professional furnace & duct cleaning across Greater Edmonton. Flat-rate pricing, NADCA certified technicians. Family-owned since 2005. Call 780-932-7337.",
-    url: "https://www.homeprosgroup.com",
+    url: "https://www.sprucegrovefurnacecleaning.com",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.homeprosgroup.com",
+    canonical: "https://www.sprucegrovefurnacecleaning.com",
   },
 };
 
@@ -69,11 +69,11 @@ export default function RootLayout({
               "@type": "HVACBusiness",
               "name": "Home Pros Group",
               "legalName": "Home Pros Group",
-              "image": "https://www.homeprosgroup.com/logo.png",
-              "@id": "https://www.homeprosgroup.com",
-              "url": "https://www.homeprosgroup.com",
+              "image": "https://www.sprucegrovefurnacecleaning.com/logo.png",
+              "@id": "https://www.sprucegrovefurnacecleaning.com",
+              "url": "https://www.sprucegrovefurnacecleaning.com",
               "telephone": "+17809327337",
-              "email": "info@homeprosgroup.com",
+              "email": "info@sprucegrovefurnacecleaning.com",
               "description": "Professional furnace cleaning, duct cleaning, dryer vent cleaning, and gutter cleaning across Greater Edmonton. NADCA certified technicians, flat-rate pricing. Family-owned and operated with 20+ years experience.",
               "foundingDate": "2005",
               "address": {

@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Flame, Wind, AlertTriangle, CloudRain, ArrowRight } from "lucide-react";
+import { Flame, Wind, AlertTriangle, CloudRain, ArrowRight, Building2, Factory, Wrench } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -42,13 +42,44 @@ const services = [
         color: "bg-emerald-50 border-emerald-200 hover:border-emerald-400",
         iconColor: "text-emerald-600",
     },
+    {
+        icon: Building2,
+        title: "Commercial Duct Cleaning",
+        description: "NADCA-certified commercial duct cleaning for offices, restaurants, warehouses, and industrial facilities. Three cleaning methods: Standard, Power Whip, and Pneumatic Brush.",
+        price: "Call for Quote",
+        href: "/services/commercial-duct-cleaning",
+        color: "bg-purple-50 border-purple-200 hover:border-purple-400",
+        iconColor: "text-purple-600",
+    },
+    {
+        icon: Factory,
+        title: "Dust Collector Cleaning",
+        description: "Professional dust collector system cleaning for sawmills, woodworking shops, manufacturing plants, and industrial facilities. Keep your air filtration systems running at peak performance.",
+        price: "Call for Quote",
+        href: "/services/dust-collector-cleaning",
+        color: "bg-amber-50 border-amber-200 hover:border-amber-400",
+        iconColor: "text-amber-600",
+    },
+    {
+        icon: Wrench,
+        title: "Commercial Furnace Cleaning",
+        description: "Commercial and industrial furnace cleaning for businesses, warehouses, and large facilities. Maintain efficiency, reduce energy costs, and extend equipment life.",
+        price: "Call for Quote",
+        href: "/services/commercial-furnace-cleaning",
+        color: "bg-slate-50 border-slate-200 hover:border-slate-400",
+        iconColor: "text-slate-600",
+    },
 ];
 
 const serviceAreas = [
     { name: "Stony Plain", href: "/services/stony-plain" },
     { name: "Spruce Grove", href: "/services/spruce-grove" },
-    { name: "Parkland County", href: "/services/parkland-county" },
     { name: "Edmonton", href: "/services/edmonton" },
+    { name: "St. Albert", href: "/services/st-albert" },
+    { name: "Leduc", href: "/services/leduc" },
+    { name: "Sherwood Park", href: "/services/sherwood-park" },
+    { name: "Fort Saskatchewan", href: "/services/fort-saskatchewan" },
+    { name: "Edson", href: "/services/edson" },
 ];
 
 export default function ServicesPage() {

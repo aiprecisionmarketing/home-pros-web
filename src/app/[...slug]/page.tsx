@@ -54,12 +54,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         description,
         robots: { index: false, follow: false }, // Noindex legacy pages — they dilute topical authority
         alternates: {
-            canonical: `https://www.homeprosgroup.com/${slugPath}`,
+            canonical: `https://www.sprucegrovefurnacecleaning.com/${slugPath}`,
         },
         openGraph: {
             title: `${title} | Home Pros Group`,
             description,
-            url: `https://www.homeprosgroup.com/${slugPath}`,
+            url: `https://www.sprucegrovefurnacecleaning.com/${slugPath}`,
             siteName: "Home Pros Group",
             locale: "en_CA",
             type: "article",

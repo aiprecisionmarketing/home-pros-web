@@ -59,8 +59,8 @@ export function SiteFooter() {
                         <a href="tel:17809327337" className="flex items-center gap-2 text-white hover:text-red-500 transition-colors">
                             <span className="text-sm font-black tracking-wider">(780) 932-7337</span>
                         </a>
-                        <a href="mailto:info@homeprosgroup.com" className="text-[10px] font-black uppercase tracking-[0.2em] hover:text-red-500 transition-colors">
-                            info@homeprosgroup.com
+                        <a href="mailto:info@sprucegrovefurnacecleaning.com" className="text-[10px] font-black uppercase tracking-[0.2em] hover:text-red-500 transition-colors">
+                            info@sprucegrovefurnacecleaning.com
                         </a>
                     </div>
                 </div>

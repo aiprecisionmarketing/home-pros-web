@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Our Services | Furnace & Duct Cleaning | Home Pros Group",
     description: "Professional furnace cleaning, duct cleaning, dryer vent cleaning, and gutter cleaning in Stony Plain, Spruce Grove, and Parkland County.",
-    url: "https://www.homeprosgroup.com/services",
+    url: "https://www.sprucegrovefurnacecleaning.com/services",
     siteName: "Home Pros Group",
     locale: "en_CA",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.homeprosgroup.com/services",
+    canonical: "https://www.sprucegrovefurnacecleaning.com/services",
   },
 };
 
