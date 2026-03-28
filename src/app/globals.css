@@ -286,3 +286,97 @@ body {
   display: inline-block;
   animation: ring 5s ease-in-out infinite;
 }
+
+/* Blog Premium Table Styles */
+.blog-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.blog-table thead th {
+  position: relative;
+}
+
+.blog-table thead th:first-child {
+  border-radius: 12px 0 0 0;
+}
+
+.blog-table thead th:last-child {
+  border-radius: 0 12px 0 0;
+}
+
+.blog-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.blog-table tbody tr:hover {
+  background-color: rgba(233, 38, 28, 0.03);
+}
+
+.blog-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.blog-table tbody tr:nth-child(even):hover {
+  background-color: rgba(233, 38, 28, 0.05);
+}
+
+.blog-table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 12px;
+}
+
+.blog-table tbody tr:last-child td:last-child {
+  border-radius: 0 0 12px 0;
+}
+
+/* Blog Callout Styles */
+.blog-callout-tip {
+  position: relative;
+  border-left: 4px solid #22c55e;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+}
+
+.blog-callout-warning {
+  position: relative;
+  border-left: 4px solid #f59e0b;
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+}
+
+.blog-callout-info {
+  position: relative;
+  border-left: 4px solid #3b82f6;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+/* Blog CTA Pulse */
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(233, 38, 28, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(233, 38, 28, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(233, 38, 28, 0);
+  }
+}
+
+.blog-cta-pulse {
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Blog stat card shine */
+@keyframes shine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.blog-stat-shine {
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shine 3s ease-in-out infinite;
+}
