@@ -74,6 +74,21 @@ export const CITIES: CityConfig[] = [
     name: "Edson",
     description: "Home Pros Group extends our professional HVAC cleaning services to Edson and the surrounding area. Same quality, same flat-rate pricing.",
   },
+  {
+    slug: "parkland-county",
+    name: "Parkland County",
+    description: "Home Pros Group is based right in the heart of Parkland County. We serve rural acreages and hamlets throughout the county with the same flat-rate pricing and NADCA certified service.",
+  },
+  {
+    slug: "devon",
+    name: "Devon",
+    description: "Devon homeowners trust Home Pros Group for professional furnace and duct cleaning. Just a short drive from our Stony Plain shop, we bring 20+ years of experience to Devon homes.",
+  },
+  {
+    slug: "beaumont",
+    name: "Beaumont",
+    description: "Home Pros Group serves the growing community of Beaumont with professional HVAC cleaning services. Same flat-rate pricing, same NADCA certified technicians.",
+  },
 ];
 
 export const SERVICES: ServiceConfig[] = [

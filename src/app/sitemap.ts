@@ -16,6 +16,9 @@ const CITIES = [
   "sherwood-park",
   "fort-saskatchewan",
   "edson",
+  "parkland-county",
+  "devon",
+  "beaumont",
 ];
 
 const SERVICES = [
@@ -151,5 +154,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   } catch {}
 
-  return [...staticPages, ...cityPages, ...cityServicePages, ...articlePages, ...dynamicPosts];
+  // Programmatic SEO location pages (flat URLs targeting high-intent keywords)
+  const locationServicePages: MetadataRoute.Sitemap = [
+    "duct-cleaning-spruce-grove",
+    "duct-cleaning-stony-plain",
+    "duct-cleaning-parkland-county",
+    "duct-cleaning-st-albert",
+    "duct-cleaning-sherwood-park",
+    "duct-cleaning-fort-saskatchewan",
+    "duct-cleaning-leduc",
+    "duct-cleaning-beaumont",
+    "duct-cleaning-devon",
+    "furnace-cleaning-spruce-grove",
+    "furnace-cleaning-stony-plain",
+    "furnace-cleaning-parkland-county",
+    "dryer-vent-cleaning-spruce-grove",
+    "dryer-vent-cleaning-stony-plain",
+    "commercial-duct-cleaning-edmonton",
+    "commercial-duct-cleaning-spruce-grove",
+  ].map((slug) => ({
+    url: `${baseUrl}/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
+  return [...staticPages, ...cityPages, ...cityServicePages, ...locationServicePages, ...articlePages, ...dynamicPosts];
 }
