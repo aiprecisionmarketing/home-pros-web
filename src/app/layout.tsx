@@ -33,6 +33,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Home Pros Group | Furnace & Duct Cleaning | Stony Plain & Spruce Grove",
+    description: "Professional furnace & duct cleaning across Greater Edmonton. Flat-rate pricing, NADCA certified technicians. Family-owned since 2005. Call 780-932-7337.",
+    images: ["https://www.homeprosgroup.com/og-image.png"],
+  },
   alternates: {
     canonical: "https://www.homeprosgroup.com",
   },

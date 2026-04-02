@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Duct Cleaning Spruce Grove | ${BUSINESS_NAME} — NADCA Certified`,
+    description: `Professional duct cleaning in Spruce Grove, AB. Flat-rate pricing includes every vent. NADCA certified technicians with 20+ years experience.`,
+    images: [`${BASE_URL}/og-image.png`],
+  },
 };
 
 export default function Page() {

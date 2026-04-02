@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Furnace Cleaning Parkland County | ${BUSINESS_NAME} — Acreage & Rural Service`,
+    description: `Professional furnace cleaning for Parkland County acreages. Flat-rate pricing, NADCA certified.`,
+    images: [`${BASE_URL}/og-image.png`],
+  },
 };
 
 export default function Page() {

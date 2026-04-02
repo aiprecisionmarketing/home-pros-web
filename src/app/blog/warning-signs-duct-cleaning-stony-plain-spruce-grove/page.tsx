@@ -43,6 +43,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "10 Warning Signs Your Home Needs Professional Duct Cleaning | Stony Plain & Spruce Grove",
+    description: "Is your Parkland County home showing signs of dirty ductwork? Learn the 10 warning signs from local experts at Home Pros Group.",
+    images: ["https://www.homeprosgroup.com/images/blog/warning-signs.png"],
+  },
   alternates: {
     canonical:
       "https://www.homeprosgroup.com/blog/warning-signs-duct-cleaning-stony-plain-spruce-grove",

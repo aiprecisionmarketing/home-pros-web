@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Home Pros Group | Family-Owned HVAC Cleaning | Stony Plain & Spruce Grove",
+    description: "Family-owned furnace and duct cleaning serving Stony Plain, Spruce Grove, and Parkland County since 2018.",
+    images: ["https://www.homeprosgroup.com/og-image.png"],
+  },
   alternates: {
     canonical: "https://www.homeprosgroup.com/about",
   },

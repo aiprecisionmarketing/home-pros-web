@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Services | Furnace Cleaning, Duct Cleaning, Dryer Vents & Gutters | Home Pros Group",
+    description: "Professional furnace cleaning, duct cleaning, dryer vent cleaning, and gutter cleaning in Stony Plain, Spruce Grove, and Parkland County.",
+    images: ["https://www.homeprosgroup.com/og-image.png"],
+  },
   alternates: {
     canonical: "https://www.homeprosgroup.com/services",
   },

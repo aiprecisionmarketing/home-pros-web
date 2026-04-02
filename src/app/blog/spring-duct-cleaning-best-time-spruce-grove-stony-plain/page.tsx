@@ -59,6 +59,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Spring Duct Cleaning: Why March to May Is the Best Time in Spruce Grove & Stony Plain",
+    description: "Learn why spring is the perfect window to clean your ducts, improve indoor air quality, and prepare your home for wildfire season.",
+    images: ["https://www.homeprosgroup.com/images/blog/spring-duct-cleaning-stony-plain.png"],
+  },
   alternates: {
     canonical:
       "https://www.homeprosgroup.com/blog/spring-duct-cleaning-best-time-spruce-grove-stony-plain",

@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Duct Cleaning Parkland County | ${BUSINESS_NAME} — Rural & Acreage Service`,
+    description: `Professional duct cleaning for Parkland County homes and acreages. NADCA certified, flat-rate pricing. Based right in Parkland County.`,
+    images: [`${BASE_URL}/og-image.png`],
+  },
 };
 
 export default function Page() {

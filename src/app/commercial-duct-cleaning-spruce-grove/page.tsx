@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Commercial Duct Cleaning Spruce Grove | ${BUSINESS_NAME} — NADCA Certified`,
+    description: `Professional commercial duct cleaning for Spruce Grove businesses. NADCA certified, free assessments.`,
+    images: [`${BASE_URL}/og-image.png`],
+  },
 };
 
 export default function Page() {

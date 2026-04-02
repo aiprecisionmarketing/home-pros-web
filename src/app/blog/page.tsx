@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "HVAC Cleaning Blog | Furnace & Duct Cleaning Tips | Home Pros Group",
+    description: "Expert furnace & duct cleaning guides for Stony Plain, Spruce Grove, and Parkland County homeowners.",
+    images: ["https://www.homeprosgroup.com/og-image.png"],
+  },
   alternates: {
     canonical: "https://www.homeprosgroup.com/blog",
   },

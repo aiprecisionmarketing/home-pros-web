@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Duct Cleaning Leduc | ${BUSINESS_NAME} — NADCA Certified`,
+    description: `Professional duct cleaning in Leduc. Flat-rate pricing, NADCA certified. Call ${PHONE_DISPLAY}.`,
+    images: [`${BASE_URL}/og-image.png`],
+  },
 };
 
 export default function Page() {

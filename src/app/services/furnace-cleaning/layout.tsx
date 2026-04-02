@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Furnace Cleaning Stony Plain & Spruce Grove | Call for a Free Quote | Home Pros Group",
+    description: "Professional furnace cleaning in Stony Plain and Spruce Grove. Call for a Free Quote includes every vent in your home. No hidden fees. Family-owned since 2005.",
+    images: ["https://www.homeprosgroup.com/og-image.png"],
+  },
   alternates: {
     canonical: "https://www.homeprosgroup.com/services/furnace-cleaning",
   },

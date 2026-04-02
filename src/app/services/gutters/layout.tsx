@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Expert Gutter Cleaning | Stony Plain & Spruce Grove | Home Pros Group",
+    description: "Professional gutter cleaning in Stony Plain and Spruce Grove. Prevent water damage and protect your foundation. Call for Quote.",
+    images: ["https://www.homeprosgroup.com/og-image.png"],
+  },
   alternates: {
     canonical: "https://www.homeprosgroup.com/services/gutters",
   },

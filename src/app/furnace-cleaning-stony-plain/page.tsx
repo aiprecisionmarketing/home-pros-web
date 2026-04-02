@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Furnace Cleaning Stony Plain | ${BUSINESS_NAME} — Local & NADCA Certified`,
+    description: `Stony Plain's local furnace cleaning experts. Complete service, flat-rate pricing. NADCA certified.`,
+    images: [`${BASE_URL}/og-image.png`],
+  },
 };
 
 export default function Page() {

@@ -45,6 +45,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Duct Cleaning Cost in Stony Plain & Spruce Grove: Complete 2026 Guide",
+    description: "How much does duct cleaning cost in Stony Plain & Spruce Grove? Flat-rate $345 for unlimited vents. No hidden fees. Compare prices, avoid scams.",
+    images: ["https://www.homeprosgroup.com/images/blog/cost-guide.png"],
+  },
   alternates: {
     canonical:
       "https://www.homeprosgroup.com/blog/duct-cleaning-cost-guide-stony-plain-spruce-grove",

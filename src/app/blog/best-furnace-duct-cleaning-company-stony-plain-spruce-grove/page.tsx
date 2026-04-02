@@ -42,6 +42,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Choose the Best Furnace & Duct Cleaning Company in Stony Plain & Spruce Grove",
+    description: "The complete homeowner guide to finding a trustworthy HVAC cleaning company in Parkland County. Avoid scams, compare pricing, and book with confidence.",
+    images: ["https://www.homeprosgroup.com/images/blog/best-company-guide.png"],
+  },
   alternates: {
     canonical:
       "https://www.homeprosgroup.com/blog/best-furnace-duct-cleaning-company-stony-plain-spruce-grove",

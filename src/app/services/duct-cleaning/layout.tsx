@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Duct Cleaning Stony Plain & Spruce Grove | Flat Rate Pricing | Home Pros Group",
+    description: "Professional duct cleaning in Stony Plain and Spruce Grove. Every vent included in our flat rate. No hidden fees. Family-owned since 2005.",
+    images: ["https://www.homeprosgroup.com/og-image.png"],
+  },
   alternates: {
     canonical: "https://www.homeprosgroup.com/services/duct-cleaning",
   },

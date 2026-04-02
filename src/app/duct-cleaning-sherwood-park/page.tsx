@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Duct Cleaning Sherwood Park | ${BUSINESS_NAME} — NADCA Certified`,
+    description: `Professional duct cleaning in Sherwood Park. Flat-rate pricing, every vent included. NADCA certified.`,
+    images: [`${BASE_URL}/og-image.png`],
+  },
 };
 
 export default function Page() {

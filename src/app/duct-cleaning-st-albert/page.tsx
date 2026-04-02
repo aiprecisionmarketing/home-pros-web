@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Duct Cleaning St. Albert | ${BUSINESS_NAME} — NADCA Certified`,
+    description: `Professional duct cleaning in St. Albert. Flat-rate pricing, NADCA certified, 20+ years experience.`,
+    images: [`${BASE_URL}/og-image.png`],
+  },
 };
 
 export default function Page() {

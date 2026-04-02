@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Dryer Vent Cleaning Stony Plain | ${BUSINESS_NAME} — Fire Prevention`,
+    description: `Professional dryer vent cleaning from Stony Plain's local HVAC experts. Reduce fire risk, improve dryer efficiency.`,
+    images: [`${BASE_URL}/og-image.png`],
+  },
 };
 
 export default function Page() {

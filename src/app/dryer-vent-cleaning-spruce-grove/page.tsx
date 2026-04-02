@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Dryer Vent Cleaning Spruce Grove | ${BUSINESS_NAME} — Fire Prevention`,
+    description: `Professional dryer vent cleaning in Spruce Grove. Reduce fire risk, cut drying times, lower energy bills.`,
+    images: [`${BASE_URL}/og-image.png`],
+  },
 };
 
 export default function Page() {

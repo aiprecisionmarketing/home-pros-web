@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `Duct Cleaning Stony Plain | ${BUSINESS_NAME} — Local & NADCA Certified`,
+    description: `Professional duct cleaning from Stony Plain's own HVAC cleaning company. Flat-rate pricing, every vent included. 20+ years experience.`,
+    images: [`${BASE_URL}/og-image.png`],
+  },
 };
 
 export default function Page() {
