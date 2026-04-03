@@ -426,5 +426,116 @@
     "local_business_schema": true,
     "featured_image": null,
     "isDedicatedPage": true
+  },
+  {
+    "id": "19",
+    "title": "Is Duct Cleaning Worth It in Alberta? The Honest Answer",
+    "slug": "is-duct-cleaning-worth-it-alberta",
+    "excerpt": "An honest breakdown of whether duct cleaning is worth it in Alberta — when you truly need it, when you can wait, and what makes Alberta homes different from the rest of Canada.",
+    "author": "Home Pros Team",
+    "date": "2026-04-02",
+    "category": "Buyer's Guide",
+    "tags": [
+      "is duct cleaning worth it alberta",
+      "does duct cleaning make a difference",
+      "duct cleaning benefits alberta",
+      "duct cleaning stony plain",
+      "indoor air quality alberta"
+    ],
+    "meta_title": "Is Duct Cleaning Worth It in Alberta? The Honest Answer | Home Pros Group",
+    "meta_description": "Is duct cleaning actually worth it in Alberta? An honest breakdown of the benefits, when you truly need it, and when you can wait. From a local Stony Plain HVAC cleaning company.",
+    "schema_type": "Article",
+    "local_business_schema": true,
+    "featured_image": "/images/blog/is-duct-cleaning-worth-it-alberta.png",
+    "featured_image_alt": "HVAC technician performing professional duct cleaning in an Alberta home"
+  },
+  {
+    "id": "20",
+    "title": "Best Time for Furnace Cleaning in Stony Plain, AB",
+    "slug": "best-time-furnace-cleaning-stony-plain",
+    "excerpt": "When should you book furnace cleaning in Stony Plain? This Alberta seasonal guide breaks down every season — and explains why fall appointments fill up fast in Parkland County.",
+    "author": "Home Pros Team",
+    "date": "2026-04-02",
+    "category": "Seasonal Guide",
+    "tags": [
+      "best time furnace cleaning stony plain",
+      "fall furnace cleaning stony plain",
+      "when to clean furnace alberta",
+      "furnace cleaning stony plain",
+      "furnace maintenance parkland county"
+    ],
+    "meta_title": "Best Time for Furnace Cleaning in Stony Plain, AB | Home Pros Group",
+    "meta_description": "When should you book furnace cleaning in Stony Plain? This Alberta seasonal guide tells you exactly when to schedule — and why fall books up fast in Parkland County.",
+    "schema_type": "Article",
+    "local_business_schema": true,
+    "featured_image": "/images/blog/best-time-furnace-cleaning-stony-plain.png",
+    "featured_image_alt": "Home Pros Group furnace cleaning technician in a Stony Plain Alberta home"
+  },
+  {
+    "id": "21",
+    "title": "Furnace Cleaning vs Duct Cleaning: What's the Difference?",
+    "slug": "furnace-cleaning-vs-duct-cleaning",
+    "excerpt": "Furnace cleaning and duct cleaning are two completely different services. This guide breaks down what each covers, when you need one versus both, and where dryer vent cleaning fits in.",
+    "author": "Home Pros Team",
+    "date": "2026-04-02",
+    "category": "Buyer's Guide",
+    "tags": [
+      "furnace cleaning vs duct cleaning",
+      "what's included in furnace cleaning",
+      "difference between furnace and duct cleaning",
+      "furnace cleaning stony plain",
+      "duct cleaning stony plain"
+    ],
+    "meta_title": "Furnace Cleaning vs Duct Cleaning: What's the Difference? | Home Pros Group",
+    "meta_description": "Furnace cleaning and duct cleaning are different services. Learn what each covers, which one you need, and why most Stony Plain homeowners should get both.",
+    "schema_type": "Article",
+    "local_business_schema": true,
+    "featured_image": "/images/blog/furnace-cleaning-vs-duct-cleaning.png",
+    "featured_image_alt": "Diagram comparing furnace cleaning and duct cleaning components in an Alberta home"
+  },
+  {
+    "id": "25",
+    "title": "Indoor Air Quality in Stony Plain, AB | How Clean Ducts Protect Your Family",
+    "slug": "indoor-air-quality-stony-plain",
+    "excerpt": "Poor indoor air quality in Stony Plain can trigger allergies, asthma, and respiratory issues. Learn how clean ducts and furnaces dramatically improve the air your family breathes.",
+    "author": "Home Pros Group - Stony Plain",
+    "date": "2026-04-02",
+    "category": "Indoor Air Quality",
+    "tags": [
+      "indoor air quality stony plain",
+      "air quality duct cleaning alberta",
+      "improve indoor air quality stony plain",
+      "indoor air pollution stony plain",
+      "wildfire smoke indoor air quality",
+      "allergy relief duct cleaning stony plain"
+    ],
+    "featured_image": "/images/blog/indoor-air-quality-stony-plain-family.png",
+    "featured_image_alt": "Family breathing clean indoor air in a bright Stony Plain home after professional duct cleaning",
+    "meta_title": "Indoor Air Quality in Stony Plain, AB | How Clean Ducts Protect Your Family",
+    "meta_description": "Poor indoor air quality in Stony Plain can trigger allergies, asthma, and respiratory issues. Learn how clean ducts and furnaces dramatically improve the air your family breathes.",
+    "schema_type": "Article",
+    "local_business_schema": true
+  },
+  {
+    "id": "26",
+    "title": "Commercial Duct Cleaning in Stony Plain, AB | Home Pros Group",
+    "slug": "commercial-duct-cleaning-stony-plain-guide",
+    "excerpt": "Professional commercial duct cleaning in Stony Plain and Parkland County. Serving offices, retail, restaurants, and industrial facilities. Flat rate commercial quotes available.",
+    "author": "Home Pros Group - Stony Plain",
+    "date": "2026-04-02",
+    "category": "Commercial Services",
+    "tags": [
+      "commercial duct cleaning stony plain",
+      "office duct cleaning stony plain",
+      "industrial duct cleaning parkland county",
+      "commercial HVAC cleaning stony plain",
+      "restaurant duct cleaning stony plain"
+    ],
+    "featured_image": "/images/blog/commercial-duct-cleaning-stony-plain.png",
+    "featured_image_alt": "Professional commercial duct cleaning technician servicing HVAC system in Stony Plain office building",
+    "meta_title": "Commercial Duct Cleaning in Stony Plain, AB | Home Pros Group",
+    "meta_description": "Professional commercial duct cleaning in Stony Plain and Parkland County. Serving offices, retail, restaurants, and industrial facilities. Flat rate commercial quotes available.",
+    "schema_type": "Article",
+    "local_business_schema": true
   }
 ]
