@@ -195,7 +195,7 @@ export default function DustCollectorCleaningPage() {
                         </Button>
                     </a>
                     <p className="mt-6 text-sm text-slate-400">
-                        Or email info@homeprosgroup.com &bull; 53 Umbach Road, Stony Plain, AB T7Z 1G1
+                        Or email <a href="mailto:info@homeprosgroup.com" className="underline hover:text-white transition-colors">info@homeprosgroup.com</a> &bull; 53 Umbach Road, Stony Plain, AB T7Z 1G1
                     </p>
                 </div>
             </section>
