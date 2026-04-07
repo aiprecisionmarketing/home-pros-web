@@ -5,6 +5,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { ChatWidget } from "@/components/ai/ChatWidget";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -66,6 +67,7 @@ export default function RootLayout({
           {children}
         </main>
         <SiteFooter />
+        <ChatWidget />
 
         <script
           type="application/ld+json"

@@ -491,7 +491,11 @@ export default function PostRenovationDuctCleaningPage() {
                     <p className="text-lg text-slate-700 leading-relaxed">
                       A typical renovation generates multiple types of
                       airborne debris, each with different characteristics and
-                      health implications.
+                      health implications. According to{" "}
+                      <a href="https://www.canada.ca/en/health-canada/services/air-quality/indoor-air-contaminants.html" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">Health Canada</a>,
+                      indoor air can be 2 to 5 times more polluted than outdoor air, and renovation activities dramatically worsen this. The{" "}
+                      <a href="https://nadca.com" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">National Air Duct Cleaners Association (NADCA)</a>{" "}
+                      specifically recommends duct cleaning after any renovation work.
                     </p>
                     <p className="text-lg text-slate-700 leading-relaxed">
                       <strong>Drywall dust</strong> is the most common and

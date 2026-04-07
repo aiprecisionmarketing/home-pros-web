@@ -501,7 +501,12 @@ export default function SpringDuctCleaningPage() {
                   <div className="prose prose-lg max-w-none">
                     <p className="text-lg text-slate-700 leading-relaxed">
                       The timing of your duct cleaning matters more than most
-                      people realize. Here are the five reasons spring stands out
+                      people realize. The{" "}
+                      <a href="https://nadca.com" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">National Air Duct Cleaners Association (NADCA)</a>{" "}
+                      recommends cleaning every 3 to 5 years, but timing within the year matters too.{" "}
+                      <a href="https://www.canada.ca/en/health-canada/services/air-quality/indoor-air-contaminants.html" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">Health Canada</a>{" "}
+                      warns that indoor air can be 2 to 5 times more polluted than outdoor air — and after a long Alberta winter, that pollution is at its peak.
+                      Here are the five reasons spring stands out
                       as the optimal window for Spruce Grove and Stony Plain
                       homeowners.
                     </p>

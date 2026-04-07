@@ -460,7 +460,10 @@ export default function BestTimeFurnaceCleaningPage() {
                       April accumulates significantly more debris in its blower, heat exchanger, and
                       connected ductwork than a furnace that operates for 3 to 4 months. Regular
                       cleaning is not optional maintenance in this climate — it is essential to keep the
-                      system running safely and efficiently.
+                      system running safely and efficiently. The{" "}
+                      <a href="https://nadca.com" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">National Air Duct Cleaners Association (NADCA)</a>{" "}
+                      recommends cleaning every 3 to 5 years as a baseline, but Alberta&apos;s extended heating season means more frequent service is warranted. <a href="https://www.canada.ca/en/health-canada/services/air-quality/indoor-air-contaminants.html" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">Health Canada</a>{" "}
+                      also identifies poorly maintained heating systems as a leading source of indoor air contamination.
                     </p>
                   </div>
                 </ScrollReveal>

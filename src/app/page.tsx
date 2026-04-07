@@ -1,15 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { Concierge } from "@/components/ai/concierge";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  const [isConciergeOpen, setIsConciergeOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const scrollBarRef = useRef<HTMLDivElement>(null);
   const stickyBottomRef = useRef<HTMLDivElement>(null);
@@ -134,7 +132,7 @@ export default function Home() {
           <span>🏠 Serving Spruce Grove · Stony Plain · Greater Edmonton</span>
           <span>⚡ Transparent Pricing — No hidden fees, no surprises</span>
           <span>✓ 100% Satisfaction Guaranteed or we return FREE</span>
-          <span className="cursor-pointer hover:underline font-bold" onClick={() => setIsConciergeOpen(true)}>🤖 Tap to Speak with AI Agent — 24/7 Support</span>
+          <span className="cursor-pointer hover:underline font-bold" onClick={() => window.dispatchEvent(new Event("open-chat-widget"))}>💬 Chat with Our AI Assistant — 24/7 Support</span>
           <span>💰 Honest flat-rate pricing — call for your custom quote</span>
           <span>🏠 Serving Spruce Grove · Stony Plain · Greater Edmonton</span>
         </div>
@@ -176,10 +174,10 @@ export default function Home() {
             </a>
           </nav>
           <button
-            onClick={() => setIsConciergeOpen(true)}
+            onClick={() => window.dispatchEvent(new Event("open-chat-widget"))}
             className="flex items-center gap-2 cursor-pointer min-w-[140px] justify-center rounded-lg h-11 px-5 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:bg-red-700 transition-all active:scale-95"
           >
-            <span className="material-symbols-outlined text-lg">smart_toy</span> Speak to Agent
+            <span className="material-symbols-outlined text-lg">chat</span> Chat with Us
           </button>
         </div>
       </header>
@@ -214,10 +212,10 @@ export default function Home() {
                   <span className="material-symbols-outlined">phone</span> Get Your Free Quote
                 </a>
                 <button
-                  onClick={() => setIsConciergeOpen(true)}
+                  onClick={() => window.dispatchEvent(new Event("open-chat-widget"))}
                   className="flex min-w-[200px] cursor-pointer items-center justify-center gap-2 rounded-xl h-14 px-8 bg-charcoal text-white text-lg font-bold shadow-xl hover:scale-105 hover:bg-slate-800 transition-all active:scale-95"
                 >
-                  <span className="material-symbols-outlined">smart_toy</span> Speak to Agent
+                  <span className="material-symbols-outlined">chat</span> Chat with Us
                 </button>
               </div>
               <div className="flex flex-wrap gap-5 pt-2">
@@ -536,7 +534,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <button
-                  onClick={() => setIsConciergeOpen(true)}
+                  onClick={() => window.dispatchEvent(new Event("open-chat-widget"))}
                   className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl h-14 bg-primary text-white text-lg font-bold shadow-xl shadow-primary/30 hover:bg-red-700 transition-all active:scale-95"
                 >
                   <span className="material-symbols-outlined">smart_toy</span> Book with AI Agent
@@ -927,19 +925,19 @@ export default function Home() {
               <div className="flex flex-col items-center gap-3">
                 <button
                   className="text-4xl md:text-5xl font-black hover:underline underline-offset-8 transition-all"
-                  onClick={() => setIsConciergeOpen(true)}
+                  onClick={() => window.dispatchEvent(new Event("open-chat-widget"))}
                 >
-                  Talk to our AI Agent
+                  Chat with Our AI Assistant
                 </button>
                 <p className="uppercase tracking-[0.3em] font-bold text-white/70 text-sm">
                   Available 24/7 for instant booking
                 </p>
               </div>
               <button
-                onClick={() => setIsConciergeOpen(true)}
+                onClick={() => window.dispatchEvent(new Event("open-chat-widget"))}
                 className="mt-2 flex items-center gap-3 px-12 py-5 bg-white text-primary font-black rounded-2xl text-xl shadow-2xl hover:scale-105 transition-transform active:scale-95 cursor-pointer"
               >
-                <span className="material-symbols-outlined text-2xl">smart_toy</span> Start Voice Call
+                <span className="material-symbols-outlined text-2xl">chat</span> Start Chat
               </button>
               <div className="flex flex-wrap gap-6 justify-center text-white/70 text-sm font-semibold mt-2">
                 <span>✓ All registers included</span>
@@ -1043,14 +1041,13 @@ export default function Home() {
             </div>
           </div>
           <button
-            onClick={() => setIsConciergeOpen(true)}
+            onClick={() => window.dispatchEvent(new Event("open-chat-widget"))}
             className="flex-shrink-0 flex items-center gap-2 cursor-pointer rounded-lg h-11 px-6 bg-primary text-white text-sm font-bold hover:bg-red-700 transition-all active:scale-95"
           >
-            <span className="material-symbols-outlined text-base">smart_toy</span> Speak to Agent
+            <span className="material-symbols-outlined text-base">chat</span> Chat with Us
           </button>
         </div>
       </div>
-      <Concierge isOpen={isConciergeOpen} onOpenChange={setIsConciergeOpen} />
     </>
   );
 }

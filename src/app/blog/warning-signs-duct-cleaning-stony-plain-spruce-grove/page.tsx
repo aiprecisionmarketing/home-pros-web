@@ -356,9 +356,13 @@ export default function WarningSignsDuctCleaningPage() {
                     In Alberta, your furnace runs for roughly seven to eight months of the year. That means air is
                     circulating through your ductwork almost constantly during our long prairie winters. Every cycle
                     pushes whatever is inside those ducts directly into the rooms where your family eats, sleeps, and
-                    breathes. According to the National Air Duct Cleaners Association (NADCA), the average home
+                    breathes. According to the{" "}
+                    <a href="https://nadca.com" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">National Air Duct Cleaners Association (NADCA)</a>,
+                    the average home
                     generates approximately 40 pounds of dust per year, and a significant portion of that ends up
-                    inside your duct system.
+                    inside your duct system.{" "}
+                    <a href="https://www.canada.ca/en/health-canada/services/air-quality/indoor-air-contaminants.html" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">Health Canada</a>{" "}
+                    warns that indoor air contaminants from fuel-burning appliances and poor ventilation are a significant health concern for Canadian households.
                   </p>
                   <p className="text-lg text-slate-700 leading-relaxed mb-6">
                     The challenge is that dirty ductwork does not always announce itself with a single dramatic symptom.

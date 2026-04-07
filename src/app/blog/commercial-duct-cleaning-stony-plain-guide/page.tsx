@@ -554,7 +554,11 @@ export default function CommercialDuctCleaningStonyPlainPage() {
                       WorkSafe Alberta inspectors can and do cite employers for workplace health hazards, including inadequate ventilation and poor air quality. While there is no specific provincial regulation mandating commercial duct cleaning at set intervals (outside of food service and some industrial operations), the general duty clause of OHS legislation covers HVAC maintenance as part of a workplace&apos;s overall health and safety obligations.
                     </p>
                     <p className="text-lg text-slate-700 leading-relaxed">
-                      For businesses in the food service industry, the National Fire Protection Association standard NFPA 96 — Standard for Ventilation Control and Fire Protection of Commercial Cooking Operations — sets specific mandatory cleaning frequencies for exhaust hoods and kitchen ventilation systems. This standard is referenced in the Alberta Building Code and by most commercial property insurers. Non-compliance can void commercial kitchen insurance coverage.
+                      For businesses in the food service industry, the{" "}
+                      <a href="https://www.nfpa.org/codes-and-standards/nfpa-96-standard-development/96" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">National Fire Protection Association standard NFPA 96</a>{" "}
+                      — Standard for Ventilation Control and Fire Protection of Commercial Cooking Operations — sets specific mandatory cleaning frequencies for exhaust hoods and kitchen ventilation systems. This standard is referenced in the Alberta Building Code and by most commercial property insurers. Non-compliance can void commercial kitchen insurance coverage. The{" "}
+                      <a href="https://nadca.com" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">NADCA</a>{" "}
+                      also publishes commercial duct cleaning standards that many insurers reference.
                     </p>
 
                     <div className="bg-red-50 border border-red-200 rounded-xl p-6 my-6">

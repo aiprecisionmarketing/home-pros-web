@@ -552,7 +552,13 @@ export default function FurnaceVsDuctCleaningPage() {
                       contaminants from the duct walls into your living spaces. For Alberta homes —
                       where windows are sealed 6 or more months per year and the HVAC system is the
                       sole air circulation mechanism — duct cleanliness has a direct impact on indoor
-                      air quality and the health of everyone in the home.
+                      air quality and the health of everyone in the home. The{" "}
+                      <a href="https://nadca.com" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">National Air Duct Cleaners Association (NADCA)</a>{" "}
+                      recommends professional duct cleaning every 3 to 5 years, or more frequently for homes with pets, allergies, or recent renovations.
+                    </p>
+                    <p className="text-lg text-slate-700 leading-relaxed">
+                      <a href="https://www.canada.ca/en/health-canada/services/air-quality/indoor-air-contaminants.html" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">Health Canada</a>{" "}
+                      identifies indoor air pollution as a significant health concern, noting that Canadians spend approximately 90% of their time indoors. In Alberta homes where windows remain sealed for most of the year, HVAC maintenance is the primary way to control indoor air quality.
                     </p>
                   </div>
                 </ScrollReveal>

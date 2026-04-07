@@ -764,10 +764,14 @@ export default function DuctCleaningCostGuidePage() {
                   <p className="text-lg text-slate-700 leading-relaxed mb-6">
                     For most homes in the Stony Plain, Spruce Grove, and Parkland County
                     area, we recommend professional duct cleaning{" "}
-                    <strong>every 2 to 3 years</strong>. However, several local factors can
+                    <strong>every 2 to 3 years</strong>. The{" "}
+                    <a href="https://nadca.com" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">National Air Duct Cleaners Association (NADCA)</a>{" "}
+                    recommends every 3 to 5 years as a general guideline, but several local factors can
                     affect this timeline. Alberta is not like British Columbia or Ontario
                     &mdash; our climate puts unique demands on HVAC systems, and our
-                    recommendations reflect that.
+                    recommendations reflect that.{" "}
+                    <a href="https://www.canada.ca/en/health-canada/services/air-quality/indoor-air-contaminants.html" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">Health Canada</a>{" "}
+                    notes that indoor air can be significantly more polluted than outdoor air, making regular duct maintenance essential.
                   </p>
 
                   <h3 className="text-2xl font-black text-[#e9261c] mb-4 mt-10">

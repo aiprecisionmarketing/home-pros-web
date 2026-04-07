@@ -358,7 +358,10 @@ export default function Page() {
                   Our flat rate is designed to reflect the true cost of doing
                   the job properly: professional equipment, NADCA-certified
                   technicians, 2 to 3 hours of thorough work, and complete
-                  cleaning of every component. We have operated on this
+                  cleaning of every component.{" "}
+                  <a href="https://www.canada.ca/en/health-canada/services/air-quality/indoor-air-contaminants.html" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">Health Canada</a>{" "}
+                  identifies poorly maintained heating systems as a leading source of indoor air contamination, which is why cutting corners on furnace cleaning is never worth the savings.
+                  We have operated on this
                   transparent pricing model since 2005 and stand behind every
                   quote with a money-back satisfaction guarantee.
                 </p>

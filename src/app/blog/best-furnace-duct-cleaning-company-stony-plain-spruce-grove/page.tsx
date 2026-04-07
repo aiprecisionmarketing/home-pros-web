@@ -441,7 +441,9 @@ export default function BestFurnaceDuctCleaningCompanyPage() {
                       A subpar cleaning job leaves behind dust, pet dander,
                       construction debris, and allergens that your furnace then
                       circulates through every room in your home, thousands of
-                      times per heating season.
+                      times per heating season. The{" "}
+                      <a href="https://nadca.com" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">National Air Duct Cleaners Association (NADCA)</a>{" "}
+                      recommends choosing only certified professionals for duct cleaning.
                     </li>
                     <li>
                       <strong className="text-slate-900">
@@ -467,8 +469,9 @@ export default function BestFurnaceDuctCleaningCompanyPage() {
                         Fire safety.
                       </strong>{" "}
                       Lint and debris trapped in ductwork and especially in <a href="/blog/dryer-vent-fire-prevention-stony-plain-spruce-grove" className="text-[#e9261c] underline hover:text-red-700 transition-colors">dryer
-                      vents</a> are genuine fire hazards. The National Fire
-                      Protection Association reports that failure to clean dryer
+                      vents</a> are genuine fire hazards. The{" "}
+                      <a href="https://www.nfpa.org/education-and-research/home-safety/dryer" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">National Fire
+                      Protection Association (NFPA)</a> reports that failure to clean dryer
                       vents is the leading cause of residential dryer fires in
                       North America.
                     </li>

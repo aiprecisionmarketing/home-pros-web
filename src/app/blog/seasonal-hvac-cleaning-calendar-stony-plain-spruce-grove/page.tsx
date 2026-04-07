@@ -344,7 +344,12 @@ export default function SeasonalHVACCleaningCalendarPage() {
                   </p>
                   <p className="text-slate-700 text-base md:text-lg leading-relaxed mb-6">
                     A structured seasonal cleaning approach is not about being
-                    obsessive. It is about being practical. When you know exactly
+                    obsessive. It is about being practical. The{" "}
+                    <a href="https://nadca.com" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">National Air Duct Cleaners Association (NADCA)</a>{" "}
+                    recommends professional duct cleaning every 3 to 5 years as a baseline, but Alberta&apos;s extended heating season often warrants more frequent attention.{" "}
+                    <a href="https://www.canada.ca/en/health-canada/services/air-quality/indoor-air-contaminants.html" target="_blank" rel="noopener noreferrer" className="text-[#e9261c] underline hover:text-red-700 transition-colors">Health Canada</a>{" "}
+                    notes that indoor air can be significantly more polluted than outdoor air, making regular HVAC maintenance essential.
+                    When you know exactly
                     what to do each month, you avoid the two most common mistakes
                     homeowners make: doing nothing until something breaks, or
                     spending money on services they do not actually need yet.
